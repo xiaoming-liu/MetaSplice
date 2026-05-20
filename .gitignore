@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+scores.tsv
+*.fa
+*.fa.fai
+*.fa.gz
