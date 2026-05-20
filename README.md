@@ -104,7 +104,16 @@ you skip can be omitted.
 └── pangolin_scores.csv
 ```
 
-Database sources are documented in `reproducibility/docs/DATA_SOURCES.md`.
+### Downloading the data
+
+A pre-built data package containing all databases for both hg19 and hg38
+input modes (including the pre-computed hg38→hg19 reverse liftover) is
+available at:
+
+> **https://usf.box.com/s/u583ubbntyjjim7i752lor2zf0e4gjoa**
+
+Download and extract into a single directory (e.g., `/path/to/data/`).
+The archive follows the layout shown above — no reorganization needed.
 
 ---
 
@@ -185,10 +194,13 @@ features (phyloP, phastCons, gnomAD, GPN-MSA) through the hg38 databases
 directly and routes hg19-direct features (GERP, DANN, Eigen) through an
 hg38→hg19 reverse liftover.
 
-### One-time setup: pre-compute the hg38→hg19 reverse liftover
+### hg38→hg19 reverse liftover
 
-The Docker image ships `/app/invert_liftover.py`. Run it once via Docker by
-overriding the default entrypoint:
+The data package (see *Downloading the data* above) includes pre-computed
+`hg38tohg19/` reverse liftover files. No additional setup is needed.
+
+If you prefer to regenerate them from the `hg19tohg38/` files, the Docker
+image ships `/app/invert_liftover.py`:
 
 ```bash
 docker run --rm \
@@ -200,12 +212,7 @@ docker run --rm \
   --output_dir /data/hg38tohg19
 ```
 
-This reads the supplied `hg19tohg38/chr{N}.hg19tohg38.gz` files (sorted by
-hg19 position) and writes `hg38tohg19/chr{M}.hg38tohg19.gz` (sorted by hg38
-position), grouped by hg38 chromosome. Runtime ~2 hours single-threaded,
-output ~13 GB. If you have a local Python with `numpy`, you can also run the
-same script directly without Docker — the source is available at
-`reproducibility/scripts/invert_liftover.py` in this repository.
+Runtime ~2 hours single-threaded, output ~13 GB.
 
 ### Run on hg38 VCF
 
