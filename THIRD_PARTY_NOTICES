@@ -1,0 +1,47 @@
+Third-Party Data and Software Attributions
+
+MetaSplice incorporates or depends on the following third-party resources.
+Users are responsible for complying with each resource's terms of use.
+
+Bundled data
+------------
+- SMS 7-mer scores: Ke, S. et al. Genome Res. 28, 11-24 (2018).
+  Supplementary Table S7 from PMC5749175.
+- RESCUE-ESE hexamers: Fairbrother, W.G. et al. Science 297, 1007-1013 (2002).
+- FAS-ESS hexamers: Wang, Z. et al. Cell 119, 831-845 (2004).
+
+Python dependencies (installed at build time)
+----------------------------------------------
+- XGBoost: Apache License 2.0
+- pysam: MIT License
+- pandas: BSD 3-Clause License
+- NumPy: BSD 3-Clause License
+- scikit-learn: BSD 3-Clause License
+- joblib: BSD 3-Clause License
+
+User-supplied databases (not distributed with MetaSplice)
+---------------------------------------------------------
+- DANN: Quang, D. et al. Bioinformatics 31, 761-763 (2015). Free for
+  non-commercial use; available from cbcl.ics.uci.edu.
+- Eigen: Ionita-Laza, I. et al. Nat. Genet. 48, 214-220 (2016).
+- GERP++: Davydov, E.V. et al. PLoS Comput. Biol. 6, e1001025 (2010).
+- phyloP: Pollard, K.S. et al. Genome Res. 20, 110-121 (2010).
+- phastCons: Siepel, A. et al. Genome Res. 15, 1034-1050 (2005).
+- gnomAD v4.1: Karczewski, K.J. et al. Nature 581, 434-443 (2020).
+  Open Database License (ODbL).
+- GPN-MSA: Benegas, G. et al. Nat. Biotechnol. 43, 1960-1965 (2025).
+  MIT License.
+- dbNSFP: Liu, X. et al. Genome Med. 12, 103 (2020).
+- GENCODE: Harrow, J. et al. Genome Res. 22, 1760-1774 (2012);
+  Frankish, A. et al. Nucleic Acids Res. 49, D916-D923 (2021).
+  v49 is CC BY 4.0.
+- hg19/hg38 reference genomes: UCSC Genome Browser.
+
+Optional external tools (user installs separately)
+---------------------------------------------------
+- SpliceTransformer: You, Y. et al. Nat. Commun. 15, 9129 (2024).
+  Apache License 2.0.
+- Pangolin: Zeng, T. & Li, Y.I. Genome Biol. 23, 103 (2022).
+  GNU GPLv3. Note: Pangolin is not bundled with MetaSplice; users run it
+  independently and pass scores via --pangolin-scores. MetaSplice does not
+  link to or incorporate Pangolin code.
