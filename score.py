@@ -158,44 +158,54 @@ def build_exon_index(gtf_path):
 def classify_variant(chrom, pos, bnd_index):
     if chrom not in bnd_index: return None, None
     boundaries, bnd_positions = bnd_index[chrom]
-    lo = bisect.bisect_left(bnd_positions, pos - 50)
-    hi = bisect.bisect_right(bnd_positions, pos + 50)
+    idx = bisect.bisect_left(bnd_positions, pos)
     best_r, best_g, best_p = None, None, 999
+    best_dist = float("inf")
     seen = set()
-    for j in range(lo, hi):
-        bp, s, e, strand, gene = boundaries[j]
-        key = (s, e, strand, gene)
-        if key in seen: continue
-        seen.add(key)
-        if s <= pos <= e: continue  # exonic
-        if strand == "+":
-            if pos < s:
-                d = s - pos
-                if d <= 2: r = "Canonical Acceptor Site"
-                elif d <= 10: r = "Acceptor Region"
-                elif d <= 25: r = "PPT Region"
-                elif d <= 44: r = "Branch Point Region"
-                else: r = "Deep Intronic"
-            else:
-                d = pos - e
-                if d <= 2: r = "Canonical Donor Site"
-                elif d <= 8: r = "Donor Region"
-                else: r = "Deep Intronic"
-        else:
-            if pos > e:
-                d = pos - e
-                if d <= 2: r = "Canonical Acceptor Site"
-                elif d <= 10: r = "Acceptor Region"
-                elif d <= 25: r = "PPT Region"
-                elif d <= 44: r = "Branch Point Region"
-                else: r = "Deep Intronic"
-            else:
-                d = s - pos
-                if d <= 2: r = "Canonical Donor Site"
-                elif d <= 8: r = "Donor Region"
-                else: r = "Deep Intronic"
-        p = PRIORITY.get(r, 999)
-        if p < best_p: best_p, best_r, best_g = p, r, gene
+    for direction in (-1, 1):
+        i = idx if direction == 1 else idx - 1
+        while 0 <= i < len(boundaries):
+            bp, s, e, strand, gene = boundaries[i]
+            if abs(pos - bp) > best_dist and best_r is not None:
+                break
+            key = (s, e, strand, gene)
+            if key not in seen:
+                seen.add(key)
+                if s <= pos <= e:
+                    i += direction
+                    continue
+                if strand == "+":
+                    if pos < s:
+                        d = s - pos
+                        if d <= 2: r = "Canonical Acceptor Site"
+                        elif d <= 10: r = "Acceptor Region"
+                        elif d <= 25: r = "PPT Region"
+                        elif d <= 44: r = "Branch Point Region"
+                        else: r = "Deep Intronic"
+                    else:
+                        d = pos - e
+                        if d <= 2: r = "Canonical Donor Site"
+                        elif d <= 8: r = "Donor Region"
+                        else: r = "Deep Intronic"
+                else:
+                    if pos > e:
+                        d = pos - e
+                        if d <= 2: r = "Canonical Acceptor Site"
+                        elif d <= 10: r = "Acceptor Region"
+                        elif d <= 25: r = "PPT Region"
+                        elif d <= 44: r = "Branch Point Region"
+                        else: r = "Deep Intronic"
+                    else:
+                        d = s - pos
+                        if d <= 2: r = "Canonical Donor Site"
+                        elif d <= 8: r = "Donor Region"
+                        else: r = "Deep Intronic"
+                p = PRIORITY.get(r, 999)
+                d_actual = min(abs(pos - s), abs(pos - e))
+                if p < best_p or (p == best_p and d_actual < best_dist):
+                    best_p, best_r, best_g = p, r, gene
+                    best_dist = d_actual
+            i += direction
     return best_r, best_g
 
 
