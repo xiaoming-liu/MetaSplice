@@ -289,8 +289,7 @@ cd SpliceTransformer
 conda create -n spt python=3.10 -y
 conda activate spt
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-pip install -r requirements.txt
-pip install pyensembl pyfaidx
+pip install numpy pandas gffutils tqdm sinkhorn-transformer pyfaidx pyvcf3 pyensembl
 
 # 2. Download model weights (see SpliceTransformer/README.md)
 # 3. Build the pyensembl reference cache
