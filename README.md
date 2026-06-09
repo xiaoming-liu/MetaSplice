@@ -343,6 +343,7 @@ cd Pangolin
 conda create -n pangolin python=3.10 -y
 conda activate pangolin
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install "setuptools<81" pyvcf3 gffutils pandas pyfastx
 pip install .
 
 # 2. Download the GENCODE annotation database (hg19/GRCh37, ~400 MB)
