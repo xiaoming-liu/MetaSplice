@@ -4,7 +4,7 @@
 
 MetaSplice integrates evolutionary constraint, deep learning splice predictions,
 and exonic splice regulatory motifs to predict pathogenicity of intronic and
-near-splice variants. It achieves auPRC 0.989 on independent ClinVar test data,
+near-splice variants. It achieves auPRC 0.9952 on independent ClinVar test data,
 outperforming SpliceAI, CADD, and other tools in non-canonical splice regions.
 
 ---
@@ -34,6 +34,7 @@ MetaSplice/
 ├── requirements.txt      # pinned Python deps
 ├── score.py              # main scorer (default ENTRYPOINT)
 ├── invert_liftover.py    # one-time hg38->hg19 precompute (alt entrypoint)
+├── prepare_pangolin_input.py  # VCF-to-CSV converter for Pangolin
 ├── test.sh               # 3-variant smoke test
 ├── README.md             # this file
 └── model/
@@ -286,6 +287,7 @@ GPU environment:
 # 1. Install SpliceTransformer
 git clone https://github.com/ShenLab-Genomics/SpliceTransformer.git
 cd SpliceTransformer
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 pip install sinkhorn-transformer pyvcf3 pyensembl pyfaidx
 
 # 2. Set up reference files (SpliceTransformer expects data/data_package/)
@@ -336,6 +338,7 @@ Lung, Muscle, Nerve, Small Intestine, Skin, Spleen, Stomach`.
 # 1. Install Pangolin
 git clone https://github.com/tkzeng/Pangolin.git
 cd Pangolin
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 pip install .
 
 # 2. Download the GENCODE annotation database (hg19/GRCh37, ~400 MB)
@@ -351,20 +354,20 @@ wget -O gencode.v38lift37.annotation.db \
 #    Without this patch, variants in soft-masked (repeat) regions are
 #    skipped due to case-sensitive ref mismatch (e.g. 'g' != 'G').
 
-# 4. Score your variants
-pangolin \
+# 4. Convert your VCF to CSV (Pangolin outputs CSV when given CSV input,
+#    which score.py can read directly)
+python /path/to/metasplice/prepare_pangolin_input.py \
   /path/to/data/variants.vcf \
+  /path/to/data/pangolin_input.csv
+
+# 5. Score your variants
+pangolin \
+  /path/to/data/pangolin_input.csv \
   /path/to/data/hg19.fa \
   gencode.v38lift37.annotation.db \
   /path/to/data/pangolin_scores
-# Output: pangolin_scores.vcf
+# Output: pangolin_scores.csv (directly usable by score.py --pangolin-scores)
 ```
-
-Pangolin's native output is VCF. Convert to the CSV format MetaSplice expects
-(columns `CHROM, POS, REF, ALT, Pangolin`) using
-`reproducibility/scripts/04_score_pangolin.py` as a reference. The Pangolin
-column is a `|`-separated string per gene; MetaSplice extracts max increase /
-max decrease internally.
 
 ---
 
@@ -412,7 +415,7 @@ out-of-distribution input (treat those values with caution).
 
 ## Score Interpretation
 
-Operating points calibrated on training cross-validation (414,279 variants,
+Operating points calibrated on training cross-validation (381,226 variants,
 5-fold gene-grouped CV):
 
 | Threshold | Use case | Sensitivity | Specificity |
