@@ -286,16 +286,39 @@ GPU environment:
 # 1. Install SpliceTransformer
 git clone https://github.com/ShenLab-Genomics/SpliceTransformer.git
 cd SpliceTransformer
-conda create -n spt python=3.10 -y
-conda activate spt
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-pip install numpy pandas gffutils tqdm sinkhorn-transformer pyfaidx pyvcf3 pyensembl
+pip install sinkhorn-transformer pyvcf3 pyensembl pyfaidx
 
-# 2. Download model weights (see SpliceTransformer/README.md)
-# 3. Build the pyensembl reference cache
-pyensembl install --release 75 --species human
+# 2. Set up reference files (SpliceTransformer expects data/data_package/)
+mkdir -p data/data_package
+# hg19 FASTA (uncompressed — pyfaidx requires .fa, not .fa.gz):
+zcat /path/to/data/hg19.fa.gz > data/data_package/hg19.fa
+# pyfaidx will auto-create hg19.fa.fai on first run.
 
-# 4. Score your variants (~9 variants/sec on a single GPU)
+# hg19 GTF annotation (GENCODE v19, gzipped):
+cp /path/to/data/gencode.v19.annotation.gtf.gz \
+   data/data_package/hg19.annotation.gtf.gz
+
+# 3. Build pyensembl database from the GTF (required for gene lookups)
+pyensembl install --reference-name hg19 --annotation-name gencode.v19 \
+   --gtf "data/data_package/hg19.annotation.gtf.gz"
+
+# 4. Download pre-trained weights (see SpliceTransformer README for URL)
+#    Place at: model/weights/SpTransformer_pytorch.ckpt
+
+# 5. Fix PyTorch >=2.0 compatibility: the checkpoint uses underscore-separated
+#    ParameterList keys (weights_0) but newer PyTorch expects dot-separated
+#    (weights.0). Patch tasks_annotate_mutations.py around line 413:
+#
+#      save_dict = torch.load(weight_path, map_location="cpu")
+#      # --- add these lines ---
+#      sd = save_dict["state_dict"]
+#      sd = {k.replace("weights_0", "weights.0").replace("weights_1", "weights.1"): v
+#            for k, v in sd.items()}
+#      save_dict["state_dict"] = sd
+#      # --- end patch ---
+#      model.load_state_dict(save_dict["state_dict"])
+
+# 6. Score your variants (~9 variants/sec on a single GPU)
 python sptransformer.py \
   --input /path/to/data/variants.vcf \
   --output /path/to/data/spt_scores.tsv \
@@ -316,16 +339,26 @@ Lung, Muscle, Nerve, Small Intestine, Skin, Spleen, Stomach`.
 # 1. Install Pangolin
 git clone https://github.com/tkzeng/Pangolin.git
 cd Pangolin
-conda create -n pangolin python=3.10 -y
-conda activate pangolin
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-pip install pangolin
+pip install .
 
-# 2. Score your variants (Pangolin packages its own gene database)
+# 2. Download the GENCODE annotation database (hg19/GRCh37, ~400 MB)
+wget -O gencode.v38lift37.annotation.db \
+  https://www.dropbox.com/sh/6zo0aegoalvgd9f/AAA9Q90Pi1UqSzX99R_NM803a/gencode.v38lift37.annotation.db
+
+# 3. Patch for soft-masked genomes (required for hg19.fa):
+#    In pangolin/pangolin.py, find the line:
+#        if seq[5000+d:5000+d+len(ref)] != ref:
+#    and add this line BEFORE it:
+#        seq = seq.upper()
+#    Then reinstall: pip install .
+#    Without this patch, variants in soft-masked (repeat) regions are
+#    skipped due to case-sensitive ref mismatch (e.g. 'g' != 'G').
+
+# 4. Score your variants
 pangolin \
   /path/to/data/variants.vcf \
   /path/to/data/hg19.fa \
-  /path/to/data/gencode.v19.annotation.db \
+  gencode.v38lift37.annotation.db \
   /path/to/data/pangolin_scores
 # Output: pangolin_scores.vcf
 ```
