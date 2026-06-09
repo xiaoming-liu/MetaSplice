@@ -287,6 +287,8 @@ GPU environment:
 # 1. Install SpliceTransformer
 git clone https://github.com/ShenLab-Genomics/SpliceTransformer.git
 cd SpliceTransformer
+conda create -n spt python=3.10 -y
+conda activate spt
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 pip install sinkhorn-transformer pyvcf3 pyensembl pyfaidx
 
@@ -338,6 +340,8 @@ Lung, Muscle, Nerve, Small Intestine, Skin, Spleen, Stomach`.
 # 1. Install Pangolin
 git clone https://github.com/tkzeng/Pangolin.git
 cd Pangolin
+conda create -n pangolin python=3.10 -y
+conda activate pangolin
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 pip install .
 
