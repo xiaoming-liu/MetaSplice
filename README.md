@@ -11,6 +11,11 @@ outperforming SpliceAI, CADD, and other tools in non-canonical splice regions.
 
 ## Installation
 
+```bash
+git clone https://github.com/xiaoming-liu/MetaSplice.git
+cd MetaSplice
+```
+
 ### Docker (recommended)
 
 ```bash
