@@ -290,11 +290,8 @@ pip install sinkhorn-transformer pyvcf3 pyensembl pyfaidx
 
 # 2. Set up reference files (SpliceTransformer expects data/data_package/)
 mkdir -p data/data_package
-# hg19 FASTA (uncompressed — pyfaidx requires .fa, not .fa.gz):
-zcat /path/to/data/hg19.fa.gz > data/data_package/hg19.fa
-# pyfaidx will auto-create hg19.fa.fai on first run.
-
-# hg19 GTF annotation (GENCODE v19, gzipped):
+cp /path/to/data/hg19.fa data/data_package/hg19.fa
+cp /path/to/data/hg19.fa.fai data/data_package/hg19.fa.fai
 cp /path/to/data/gencode.v19.annotation.gtf.gz \
    data/data_package/hg19.annotation.gtf.gz
 
