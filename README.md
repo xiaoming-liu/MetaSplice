@@ -361,11 +361,14 @@ python sptransformer.py \
   --raw_score True
 
 #    For hg38 input: set up hg38 reference files and use --reference hg38
+#    NOTE: SpliceTransformer hardcodes annotation_name='gencode.v38',
+#    so you must use the GENCODE v38 GTF (not v49).
 cp /path/to/data/hg38.fa data/data_package/hg38.fa
 cp /path/to/data/hg38.fa.fai data/data_package/hg38.fa.fai
-cp /path/to/data/gencode.v49.annotation.gtf.gz \
-   data/data_package/hg38.annotation.gtf.gz
-pyensembl install --reference-name hg38 --annotation-name gencode.v49 \
+#    Download GENCODE v38 GTF:
+wget -O data/data_package/hg38.annotation.gtf.gz \
+   https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_38/gencode.v38.annotation.gtf.gz
+pyensembl install --reference-name hg38 --annotation-name gencode.v38 \
    --gtf "data/data_package/hg38.annotation.gtf.gz"
 
 python sptransformer.py \
