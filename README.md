@@ -247,6 +247,33 @@ Note that `--liftover-dir` is replaced with `--reverse-liftover-dir`, and FASTA
 (those databases were not re-released for hg38); MetaSplice does the hg38→hg19
 mapping internally.
 
+### Full scoring on hg38 VCF (with SpliceTransformer + Pangolin)
+
+Score SpT and Pangolin on the hg38 VCF using `--reference hg38` and hg38
+databases (see the GPU sections below), then pass their output files:
+
+```bash
+docker run --rm \
+  -v /path/to/data:/data \
+  metasplice \
+  --input /data/variants.hg38.vcf \
+  --output /data/scores.tsv \
+  --genome hg38 \
+  --fasta /data/hg38.fa \
+  --gtf /data/gencode.v49.annotation.gtf.gz \
+  --dbnsfp-gene /data/dbNSFP5.3_gene.gz \
+  --gerp-dir /data/GERP_hg19 \
+  --dann-dir /data/DANN \
+  --eigen-dir /data/Eigen \
+  --reverse-liftover-dir /data/hg38tohg19 \
+  --phylop-dir /data/phyloP_GRCh38 \
+  --phastcons-dir /data/phastCons_GRCh38 \
+  --gnomad-dir /data/gnomAD \
+  --gpn-msa /data/gpn_msa/scores.tsv.bgz \
+  --spt-scores /data/spt_scores.tsv \
+  --pangolin-scores /data/pangolin_scores.csv
+```
+
 ### Caveats for the hg38 path
 
 The hg38 path is best-effort and does NOT byte-reproduce the published
@@ -325,10 +352,26 @@ pyensembl install --reference-name hg19 --annotation-name gencode.v19 \
 #      model.load_state_dict(save_dict["state_dict"])
 
 # 6. Score your variants (~9 variants/sec on a single GPU)
+#    For hg19 input:
 python sptransformer.py \
   --input /path/to/data/variants.vcf \
   --output /path/to/data/spt_scores.tsv \
   --reference hg19 \
+  --vcf True \
+  --raw_score True
+
+#    For hg38 input: set up hg38 reference files and use --reference hg38
+cp /path/to/data/hg38.fa data/data_package/hg38.fa
+cp /path/to/data/hg38.fa.fai data/data_package/hg38.fa.fai
+cp /path/to/data/gencode.v49.annotation.gtf.gz \
+   data/data_package/hg38.annotation.gtf.gz
+pyensembl install --reference-name hg38 --annotation-name gencode.v49 \
+   --gtf "data/data_package/hg38.annotation.gtf.gz"
+
+python sptransformer.py \
+  --input /path/to/data/variants.hg38.vcf \
+  --output /path/to/data/spt_scores.tsv \
+  --reference hg38 \
   --vcf True \
   --raw_score True
 ```
@@ -371,12 +414,25 @@ python /path/to/metasplice/prepare_pangolin_input.py \
   /path/to/data/pangolin_input.csv
 
 # 5. Score your variants
+#    For hg19 input:
 pangolin \
   /path/to/data/pangolin_input.csv \
   /path/to/data/hg19.fa \
   gencode.v38lift37.annotation.db \
   /path/to/data/pangolin_scores
 # Output: pangolin_scores.csv (directly usable by score.py --pangolin-scores)
+
+#    For hg38 input: download the GRCh38 annotation DB and use hg38.fa
+wget -O gencode.v38.annotation.db \
+  https://www.dropbox.com/sh/6zo0aegoalvgd9f/AADOhGYJo8tbUhpscp3wSFj6a/gencode.v38.annotation.db
+python /path/to/metasplice/prepare_pangolin_input.py \
+  /path/to/data/variants.hg38.vcf \
+  /path/to/data/pangolin_input.csv
+pangolin \
+  /path/to/data/pangolin_input.csv \
+  /path/to/data/hg38.fa \
+  gencode.v38.annotation.db \
+  /path/to/data/pangolin_scores
 ```
 
 ---
