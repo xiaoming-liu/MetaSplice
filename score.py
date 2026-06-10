@@ -21,13 +21,14 @@ import bisect
 import numpy as np
 import pandas as pd
 import pysam
-import joblib
+import xgboost as xgb
 from collections import defaultdict
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(SCRIPT_DIR, "model")
 
-MODEL = joblib.load(os.path.join(MODEL_DIR, "metasplice.joblib"))
+MODEL = xgb.XGBClassifier()
+MODEL.load_model(os.path.join(MODEL_DIR, "metasplice.ubj"))
 with open(os.path.join(MODEL_DIR, "features.json")) as f:
     FEAT_DEF = json.load(f)
 ALL_FEATURES = FEAT_DEF["ALL_FEATURES"]

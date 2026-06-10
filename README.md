@@ -43,7 +43,7 @@ MetaSplice/
 ├── test.sh               # 3-variant smoke test
 ├── README.md             # this file
 └── model/
-    ├── metasplice.joblib   # trained XGBoost (53 features)
+    ├── metasplice.ubj      # trained XGBoost (53 features, native format)
     ├── features.json       # feature column definitions
     └── sms_7mer_scores.json
 ```
