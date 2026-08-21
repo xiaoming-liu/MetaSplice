@@ -34,10 +34,16 @@ python score.py \
     --output /tmp/metasplice_test_scores.tsv \
     --fasta "${DATA}/hg19.fa" \
     --gtf "${DATA}/gencode.v19.annotation.gtf.gz" \
-    ${DATA}/dbNSFP5.3_gene.gz && --dbnsfp-gene "${DATA}/dbNSFP5.3_gene.gz" || true
+    --dbnsfp-gene "${DATA}/dbNSFP5.3_gene.gz" \
+    --dann-dir "${DATA}/DANN" \
+    --eigen-dir "${DATA}/Eigen"
 
 echo ""
 echo "=== Results ==="
 cat /tmp/metasplice_test_scores.tsv
 echo ""
 echo "=== Test complete ==="
+
+echo ""
+echo "=== Eigen two-block regression tests ==="
+python "$(dirname "$0")/test_eigen_regression.py" "${DATA}"
