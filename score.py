@@ -315,13 +315,16 @@ def compute_dann_eigen(variants, dann_dir, eigen_dir):
                           if f"chr{chrom_num}." in f and f.endswith(".gz")]
             if not candidates: continue
             path = os.path.join(db_dir, candidates[0])
+            # map each key to ALL matching input rows: a VCF may legitimately repeat
+            # a variant, and a dict of single indices would score only the last
             lookup = {}
             for idx, pos, ref, alt in vlist:
-                lookup[(pos, ref, alt)] = idx
-                lookup[(pos, ref.translate(COMP), alt.translate(COMP))] = idx
+                lookup.setdefault((pos, ref, alt), []).append(idx)
+                lookup.setdefault((pos, ref.translate(COMP), alt.translate(COMP)), []).append(idx)
             positions = {pos for _, pos, _, _ in vlist}
             min_pos, max_pos = min(positions), max(positions)
             remaining = set(idx for idx,_,_,_ in vlist)
+            prev_pos, seen_reset = -1, False
             with gzip.open(path, "rt") as f:
                 for line in f:
                     if line.startswith("#"): continue
@@ -329,20 +332,27 @@ def compute_dann_eigen(variants, dann_dir, eigen_dir):
                     if len(parts) <= score_col: continue
                     try: pos = int(parts[1])
                     except: continue
+                    if multi_block and pos < prev_pos:
+                        seen_reset = True      # entered the second (noncoding) block
+                    prev_pos = pos
                     if pos < min_pos: continue
                     if pos > max_pos:
-                        if multi_block: continue   # a later block may restart lower
+                        # In the first block keep scanning: the noncoding block that
+                        # follows restarts lower and holds the intronic records. Once
+                        # inside it the early exit is safe again -- without this an
+                        # unmatched variant forces a read to end-of-file.
+                        if multi_block and not seen_reset: continue
                         break
                     key = (pos, parts[2], parts[3])
                     if key in lookup:
-                        idx = lookup[key]
-                        if idx in remaining:
-                            try:
-                                val = parts[score_col].rstrip()
-                                if val != ".": result_dict[idx] = float(val)
-                            except: pass
-                            remaining.discard(idx)
-                            if not remaining: break
+                        for idx in lookup[key]:
+                            if idx in remaining:
+                                try:
+                                    val = parts[score_col].rstrip()
+                                    if val != ".": result_dict[idx] = float(val)
+                                except: pass
+                                remaining.discard(idx)
+                        if not remaining: break
     return dann_scores, eigen_scores
 
 
