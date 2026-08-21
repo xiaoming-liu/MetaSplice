@@ -300,9 +300,13 @@ def compute_dann_eigen(variants, dann_dir, eigen_dir):
         if not chrom: continue  # unmapped after reverse liftover
         by_chr[chrom.replace("chr","")].append((i, pos, ref, alt))
 
-    for db_name, db_dir, result_dict, score_col in [
-        ("DANN", dann_dir, dann_scores, 4),
-        ("Eigen", eigen_dir, eigen_scores, 6),
+    # Eigen files store coding and noncoding records as two separately sorted
+    # blocks; intronic variants appear only in the noncoding block. Scanning must
+    # not stop at the first position past max_pos or those records are never read.
+    # DANN is a single sorted block, so its early break is kept.
+    for db_name, db_dir, result_dict, score_col, multi_block in [
+        ("DANN", dann_dir, dann_scores, 4, False),
+        ("Eigen", eigen_dir, eigen_scores, 6, True),
     ]:
         if not db_dir: continue
         for chrom_num in sorted(by_chr.keys(), key=lambda x: (len(x),x)):
@@ -326,7 +330,9 @@ def compute_dann_eigen(variants, dann_dir, eigen_dir):
                     try: pos = int(parts[1])
                     except: continue
                     if pos < min_pos: continue
-                    if pos > max_pos: break
+                    if pos > max_pos:
+                        if multi_block: continue   # a later block may restart lower
+                        break
                     key = (pos, parts[2], parts[3])
                     if key in lookup:
                         idx = lookup[key]
