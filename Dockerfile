@@ -19,7 +19,14 @@ FROM python:3.12-slim AS base
 
 LABEL maintainer="[Author]"
 LABEL description="MetaSplice: an ensemble predictor for splice variant pathogenicity"
-LABEL version="1.0.2"
+LABEL version="1.0.3"
+# 1.0.1 fixes Eigen retrieval for intronic variants (see EIGEN_SCAN_BUG_REPORT.md).
+# 1.0.2 bounds the Eigen scan and annotates every copy of a duplicated input row for
+#       the DANN, Eigen and dbNSFP lookups.
+# 1.0.3 completes that duplicate handling for gnomAD: compute_gnomad still mapped each
+#       position key to a single row, so duplicate rows received different gnomAD AF and
+#       POPMAX values and therefore different predictions.
+#       Model weights unchanged throughout; scoring code only.
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \

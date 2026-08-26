@@ -410,8 +410,12 @@ def compute_gnomad(variants, hg38_map, gnomad_dir):
         if not os.path.exists(path): continue
         lookup = {}
         for idx, pos, ref, alt in vlist:
-            lookup[(pos, ref, alt)] = idx
-            lookup[(pos, ref.translate(COMP), alt.translate(COMP))] = idx
+            # map each key to ALL matching input rows, as the annotation lookups above
+            # already do: a VCF may legitimately repeat a variant, and a dict of single
+            # indices annotates only the last copy. gnomAD AF and POPMAX are model
+            # features, so the copies would then receive different predictions.
+            lookup.setdefault((pos, ref, alt), []).append(idx)
+            lookup.setdefault((pos, ref.translate(COMP), alt.translate(COMP)), []).append(idx)
         positions = {pos for _,pos,_,_ in vlist}
         min_pos, max_pos = min(positions), max(positions)
         with gzip.open(path, "rt") as f:
@@ -426,11 +430,11 @@ def compute_gnomad(variants, hg38_map, gnomad_dir):
                 if pos > max_pos: break
                 key = (pos, parts[2], parts[3])
                 if key in lookup:
-                    idx = lookup[key]
-                    try: af_scores[idx] = float(parts[af_idx])
-                    except: pass
-                    try: popmax_scores[idx] = float(parts[pm_idx])
-                    except: pass
+                    for idx in lookup[key]:
+                        try: af_scores[idx] = float(parts[af_idx])
+                        except: pass
+                        try: popmax_scores[idx] = float(parts[pm_idx])
+                        except: pass
                     del lookup[key]
                     if not lookup: break
     return af_scores, popmax_scores
