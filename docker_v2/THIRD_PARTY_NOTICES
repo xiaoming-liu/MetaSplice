@@ -33,11 +33,13 @@ GENCODE v50 MANE Select and MANE Plus Clinical annotation (and databases built f
   restrictions on access to, or use of, the data". Harrow J, et al. Genome Res. 2012;22:1760-74; Morales J, et al.
   Nature. 2022;604:310-5.
 
-Gene-level values (metasplice_gene_level_dbNSFP5.4.tsv.gz): gnomAD_pLI (gnomAD v2.1.1), gnomAD_LOEUF (gnomAD v4.1)
-  and ClinGen_Haploinsufficiency_Score (ClinGen gene curation list of 28 July 2026), for HGNC's genes of 28 July 2026.
-  gnomAD, ClinGen and HGNC release these data under CC0. data/build_gene_level.py builds the file from them, with the
-  rules of the dbNSFP 5.4 gene file, whose values it reproduces (data/README_gene_level.md). Karczewski KJ, et al.
-  Nature. 2020;581:434-43; Chen S, et al. Nature. 2024;625:92-100; Liu X, et al. Genome Med. 2020;12:103.
+Gene-level values (metasplice_gene_level_dbNSFP5.4.tsv.gz): gnomAD_pLI (gnomAD v2.1.1), gnomAD_LOEUF (gnomAD v4.1) and
+  ClinGen_Haploinsufficiency_Score (ClinGen gene curation list of 28 July 2026), for HGNC's genes of 28 July 2026.
+  ClinGen and HGNC release their data under CC0. gnomAD releases its data openly and dedicates "the primary data from
+  the gnomAD exomes and genomes" to CC0; its terms do not name the constraint metrics (pLI, LOEUF) separately.
+  data/build_gene_level.py builds the file from them, with the rules of the dbNSFP 5.4 gene file, whose values it
+  reproduces (data/README_gene_level.md). Karczewski KJ, et al. Nature. 2020;581:434-43; Chen S, et al. Nature.
+  2024;625:92-100; Liu X, et al. Genome Med. 2020;12:103.
 
 Data in the annotation bundle (mounted at /data; not in the image)
 -----------------------------------------------------------------

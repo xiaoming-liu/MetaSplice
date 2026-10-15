@@ -22,8 +22,13 @@ bit-identical to the published score (`tests/`).
 - The annotation data bundle `metasplice_v2_data` (219 GB; `bundle/README.md`), mounted at `/data`. It is mirrored on
   USF Box (https://usf.box.com/s/44v8lpk6rxi8d6vdvw1032cfr5olmzdq). Download it, with every file checked, using:
 
+      mkdir -p "$PWD/metasplice_v2_data"
       docker run --rm --user $(id -u):$(id -g) -v "$PWD/metasplice_v2_data":/data --entrypoint python \
           metasplice:2.0.1 /opt/metasplice/bundle/tools/fetch_and_build.py --out /data --all-from-mirror
+
+  Create the folder first, as above: a folder that Docker creates belongs to root, and the download then stops with
+  "Permission denied". If an earlier attempt left an empty `metasplice_v2_data` owned by root, remove it
+  (`sudo rmdir metasplice_v2_data`) or use another folder.
 
 ## Getting the image
 

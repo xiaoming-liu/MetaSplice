@@ -33,8 +33,13 @@ There are two routes. Both give the same files, each checked against `MANIFEST.t
 
 The script needs Python 3.8+, pysam, pyfastx, bash, gzip and mawk. The image has all of them:
 
+    mkdir -p "$PWD/metasplice_v2_data"
     docker run --rm --user $(id -u):$(id -g) -v "$PWD/metasplice_v2_data":/data --entrypoint python \
         metasplice:2.0.1 /opt/metasplice/bundle/tools/fetch_and_build.py --out /data --all-from-mirror
+
+Create the folder first, as above: a folder that Docker creates belongs to root, and the download then stops with
+"Permission denied". If an earlier attempt left an empty `metasplice_v2_data` owned by root, remove it
+(`sudo rmdir metasplice_v2_data`) or use another folder.
 
 It can be rerun after an interruption; files that already pass their check are kept. When it finishes, it makes each
 index (`.fai`, `.fxi`, `.tbi`) newer than its data file. To check a bundle obtained any other way, run
@@ -52,7 +57,7 @@ file, as a copy that does not keep timestamps can leave one; `touch` that index.
 | `dann/` | `DANN_whole_genome_SNVs.tsv.gz.chr{1..22,X,Y}.gz` | `DANN_score` | DANN's precomputed scores; host offline, so mirror only (`dann/README.md`) | MIT (`dann/LICENSE`) |
 | `conservation/` | phyloP and phastCons, 100-way vertebrate and 470-way mammalian, per chromosome | Four conservation features | UCSC `phyloP100way`, `phyloP470way`, `phastCons100way`, `phastCons470way` | UCSC |
 | `gpn_msa/` | `scores.tsv.bgz`, `.tbi` | `gpn_msa_score` | Hugging Face `songlab/gpn-msa-hg38-scores`, revision `cf1718a` | MIT (`gpn_msa/LICENSE`) |
-| `gene_level/` | `metasplice_gene_level_dbNSFP5.4.tsv.gz` | `gnomAD_pLI`, `gnomAD_LOEUF`, `ClinGen_Haploinsufficiency_Score` | Built from gnomAD, ClinGen and HGNC for the MANE genes (`gene_level/README_gene_level.md`) | MetaSplice licence; sources CC0 |
+| `gene_level/` | `metasplice_gene_level_dbNSFP5.4.tsv.gz` | `gnomAD_pLI`, `gnomAD_LOEUF`, `ClinGen_Haploinsufficiency_Score` | Built from gnomAD, ClinGen and HGNC for the MANE genes (`gene_level/README_gene_level.md`) | MetaSplice licence; gnomAD (open data; CC0 named for its primary data), ClinGen and HGNC (CC0) |
 | `gnomad/` (optional) | `gnomad.joint.v4.1.sites.chr{1..22,X,Y}.vcf.bgz.snp.tsv.gz` | Reported allele frequencies (`gnomad_af`, `gnomad_popmax_af`); not model inputs | Built by `tools/build_gnomad_tables.py` from gnomAD v4.1 joint VCFs | CC0 |
 | `tools/` | `fetch_and_build.py`, `build_liftover_tables.py`, `build_gnomad_tables.py`, `assemble_bundle.py`, `make_mirror_links.py` | Building, mirroring and checking the bundle | MetaSplice | MetaSplice licence |
 
@@ -103,7 +108,7 @@ third-party data keep their own terms:
 - **Ensembl**: the chain file is from the Ensembl assembly-mapping release; Ensembl imposes no restrictions.
 - **DANN**: MIT. Quang D, et al. *Bioinformatics* 2015;31:761-3.
 - **GPN-MSA**: MIT. Benegas G, et al. *Nat Biotechnol.* 2025;43:1960-5.
-- **gnomAD**: CC0. Chen S, et al. *Nature* 2024;625:92-100.
-- **Gene-level values**: from gnomAD (pLI, LOEUF), ClinGen (haploinsufficiency) and HGNC (genes), all CC0, with the
-  rules of the dbNSFP 5.4 gene file (Liu X, et al. *Genome Med.* 2020;12:103), whose values they reproduce
-  (`gene_level/README_gene_level.md`).
+- **gnomAD** (allele frequencies, `gnomad/`): CC0. Chen S, et al. *Nature* 2024;625:92-100.
+- **Gene-level values**: from gnomAD (pLI, LOEUF; open data, with CC0 named for its primary data), ClinGen
+  (haploinsufficiency; CC0) and HGNC (genes; CC0), with the rules of the dbNSFP 5.4 gene file (Liu X, et al. *Genome
+  Med.* 2020;12:103), whose values they reproduce (`gene_level/README_gene_level.md`).

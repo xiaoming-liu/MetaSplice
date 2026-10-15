@@ -7,9 +7,9 @@ in [`LICENSE`](../LICENSE), and states: "For commercial use — including use wi
 offerings, and internal use by for-profit entities — please contact xiaomingliu@usf.edu."
 
 MetaSplice 2.0 also uses software and data from other providers, which keep their own terms. This page lists them,
-with each provider's licence statement and a link to it, so that you can check the terms for your own use. A summary of
-the notices is in [`THIRD_PARTY_NOTICES`](../THIRD_PARTY_NOTICES); the licence texts are in the Docker image and the
-data bundle, at the paths given below. The statements below were checked against the linked pages in October 2026.
+with each provider's licence statement and a link to it, so that you can check the terms for your own use. A summary
+of the notices is in [`THIRD_PARTY_NOTICES`](../THIRD_PARTY_NOTICES); the licence texts are in the Docker image and
+the data bundle, at the paths given below. The statements below were checked against the linked pages in October 2026.
 This page is not legal advice.
 
 ## Summary
@@ -24,7 +24,7 @@ This page is not legal advice.
 | GRCh38 and GRCh37 reference sequences | Reference | Data bundle | UCSC: free for public and commercial use |
 | GENCODE v50 annotation | 10 features (exon context 3, region 7) and scope | Data bundle (GTF); Docker image (MANE databases) | Open access, no restrictions |
 | Ensembl GRCh37–GRCh38 chain | Liftover tables built from it | Data bundle (the tables) | No restrictions |
-| gnomAD pLI and LOEUF, ClinGen haploinsufficiency score, for HGNC's genes | 3 features | This repository (`data/`), the Docker image and the data bundle | Sources CC0 (gnomAD, ClinGen, HGNC); the file is under the MetaSplice licence |
+| gnomAD pLI and LOEUF, ClinGen haploinsufficiency score, for HGNC's genes | 3 features | This repository (`data/`), the Docker image and the data bundle | ClinGen, HGNC: CC0. gnomAD: open data, CC0 named for its primary data (below). The file is under the MetaSplice licence |
 | gnomAD v4.1 allele frequencies | Reported only, not a model input | Data bundle (optional) | CC0 |
 
 The Python packages in the Docker image keep their own licences; the image lists them in
@@ -70,9 +70,10 @@ data provided and the software used to analyse and present it"
 `GRCh37_to_GRCh38.chain.gz` by
 [`docker_v2/bundle/tools/build_liftover_tables.py`](../docker_v2/bundle/tools/build_liftover_tables.py).
 
-**gnomAD.** "The primary data from the gnomAD exomes and genomes are available free of restrictions under the
-Creative Commons Zero Public Domain Dedication" (https://gnomad.broadinstitute.org/policies). The statement does not
-name the constraint metrics (pLI, LOEUF) separately.
+**gnomAD.** "All data here are released openly and publicly for the benefit of the wider biomedical community." "The
+primary data from the gnomAD exomes and genomes are available free of restrictions under the Creative Commons Zero
+Public Domain Dedication" (https://gnomad.broadinstitute.org/policies). The CC0 statement does not name the constraint
+metrics (pLI, LOEUF) separately; the allele frequencies are primary data.
 
 **ClinGen.** "All curated content published by ClinGen is available free of restriction under the CC0 1.0 Universal
 (CC0 1.0) Public Domain Dedication" (https://clinicalgenome.org/docs/terms-of-use/).
@@ -83,9 +84,10 @@ that any form of reuse of the content is permitted." (https://www.genenames.org/
 The gene-level values in [`data/`](../data/README_gene_level.md) are built from gnomAD (pLI from v2.1.1, LOEUF from
 v4.1), ClinGen and HGNC by [`data/build_gene_level.py`](../data/build_gene_level.py). Its ClinGen and HGNC inputs,
 from 28 July 2026, are in [`data/sources/`](../data/sources/); it downloads the gnomAD files. The file of gene-level
-values is distributed under the MetaSplice licence; its sources are CC0. The file in Docker images 2.0.0 and 2.0.1 and
-in the data bundle is this same file (md5 `088ba4d5101c01a8697fbbf503affd06`), which `build_gene_level.py` reproduces
-byte for byte.
+values is distributed under the MetaSplice licence. ClinGen and HGNC release their data under CC0. gnomAD releases its
+data openly and dedicates "the primary data from the gnomAD exomes and genomes" to CC0; its terms do not name the
+constraint metrics (pLI, LOEUF) separately. The file in Docker images 2.0.0 and 2.0.1 and in the data bundle is this
+same file (md5 `088ba4d5101c01a8697fbbf503affd06`), which `build_gene_level.py` reproduces byte for byte.
 
 ## Licence conditions
 

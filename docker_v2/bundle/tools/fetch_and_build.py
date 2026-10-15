@@ -27,6 +27,7 @@ it is not a model input); --with-gnomad downloads gnomAD's joint VCFs one chromo
 Needs Python 3.8+, pysam and pyfastx (indexes), and bash, gzip and mawk (chain tables). The MetaSplice image has all
 of them:
 
+  mkdir -p "$PWD/metasplice_v2_data"     # create it first: a folder Docker creates belongs to root
   docker run --rm --user $(id -u):$(id -g) -v "$PWD/metasplice_v2_data":/data --entrypoint python \\
       metasplice:2.0.1 /opt/metasplice/bundle/tools/fetch_and_build.py --out /data --all-from-mirror
 """

@@ -32,7 +32,7 @@ LIC = {"ucsc": "UCSC Genome Browser data: free for public and commercial use",
        "dann": "MIT (dann/LICENSE)",
        "gpn": "MIT (gpn_msa/LICENSE)",
        "gnomad": "CC0 (tables built by MetaSplice)",
-       "gene": "MetaSplice licence; built from gnomAD, ClinGen and HGNC (CC0)",
+       "gene": "MetaSplice licence; built from gnomAD (open data; CC0 named for its primary data), ClinGen and HGNC (CC0)",
        "metasplice": "MetaSplice licence (LICENSE)"}
 
 

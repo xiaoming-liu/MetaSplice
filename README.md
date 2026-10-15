@@ -26,11 +26,14 @@ from scratch on the GPU, every score was bit-identical to the published score.
 2. Get the annotation data bundle (219 GB; 195 GB without the optional gnomAD tables). It is mirrored on USF Box
    (https://usf.box.com/s/44v8lpk6rxi8d6vdvw1032cfr5olmzdq); the image's tool downloads it and checks every file:
 
+       mkdir -p "$PWD/metasplice_v2_data"
        docker run --rm --user $(id -u):$(id -g) -v "$PWD/metasplice_v2_data":/data --entrypoint python \
            metasplice:2.0.1 /opt/metasplice/bundle/tools/fetch_and_build.py --out /data --all-from-mirror
 
-   The tool can also rebuild the bundle from the original sources; see
-   [`docker_v2/bundle/README.md`](docker_v2/bundle/README.md).
+   Create the folder first, as above: a folder that Docker creates belongs to root, and the download then stops with
+   "Permission denied". If an earlier attempt left an empty `metasplice_v2_data` owned by root, remove it
+   (`sudo rmdir metasplice_v2_data`) or use another folder. The tool can also rebuild the bundle from the original
+   sources; see [`docker_v2/bundle/README.md`](docker_v2/bundle/README.md).
 
 3. Score:
 
