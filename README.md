@@ -1,522 +1,168 @@
 # MetaSplice
 
-**An ensemble predictor for splice variant pathogenicity prediction**
-
-MetaSplice integrates evolutionary constraint, deep learning splice predictions,
-and exonic splice regulatory motifs to predict pathogenicity of intronic and
-near-splice variants. It achieves auPRC 0.9952 on independent ClinVar test data,
-outperforming SpliceAI, CADD, and other tools in non-canonical splice regions.
-
----
-
-## Installation
-
-```bash
-git clone https://github.com/xiaoming-liu/MetaSplice.git
-cd MetaSplice
-```
-
-### Docker (recommended)
-
-```bash
-docker build -t metasplice .
-```
-
-### Local (no Docker)
-
-```bash
-pip install -r requirements.txt
-python score.py --help
-# For hg38 input mode, also pre-compute the reverse liftover once:
-python invert_liftover.py --help
-```
-
-### Package contents
-
-```
-MetaSplice/
-├── Dockerfile            # multi-stage build
-├── requirements.txt      # pinned Python deps
-├── score.py              # main scorer (default ENTRYPOINT)
-├── invert_liftover.py    # one-time hg38->hg19 precompute (alt entrypoint)
-├── prepare_pangolin_input.py  # VCF-to-CSV converter for Pangolin
-├── test.sh               # 3-variant smoke test
-├── README.md             # this file
-└── model/
-    ├── metasplice.ubj      # trained XGBoost (53 features, native format)
-    ├── features.json       # feature column definitions
-    └── sms_7mer_scores.json
-```
-
----
-
-## Feature Tiers
-
-| Tier | Features | Requires | GPU? |
-|------|----------|----------|------|
-| Minimal | 25 | hg19 FASTA + GTF + dbNSFP gene file | No |
-| Standard | 44 | Minimal + conservation + DANN + Eigen + gnomAD + GPN-MSA + liftover | No |
-| Full | 53 | Standard + SpliceTransformer + Pangolin | Yes |
-
-The XGBoost model handles missing features natively; performance degrades
-gracefully as tiers drop features.
-
----
-
-## Expected Data Layout
-
-For Full-tier scoring, organize your data directory as below. Files for tiers
-you skip can be omitted.
-
-```
-/path/to/data/
-├── variants.vcf                              # your input (hg19 or hg38)
-│
-├── hg19.fa                                   # ── hg19 input path ──
-├── hg19.fa.fai
-├── gencode.v19.annotation.gtf.gz
-│
-├── hg38.fa                                   # ── hg38 input path ──
-├── hg38.fa.fai
-├── gencode.v49.annotation.gtf.gz
-│
-├── dbNSFP5.3_gene.gz                         # gene-level (build-agnostic)
-│
-├── GERP_hg19/                                # hg19-direct databases
-│   └── chr{1..22,X,Y}.maf.rates.gz           #   (used by both paths;
-├── DANN/                                     #    hg38 input is mapped
-│   └── DANN_whole_genome_SNVs.tsv.gz.chr{1..22,X,Y}.gz   # back to hg19)
-├── Eigen/
-│   └── Eigen_hg19_combined.tab.chr{1..22,X,Y}.gz
-│
-├── phyloP_GRCh38/                            # hg38-direct databases
-│   ├── chr{1..22,X,Y}.phyloP100way.wigFix.gz #   (used by both paths;
-│   └── chr{1..22,X,Y}.phyloP470way.wigFix.gz #    hg19 input is mapped
-├── phastCons_GRCh38/                         #    forward to hg38)
-│   ├── chr{1..22,X,Y}.phastCons100way.wigFix.gz
-│   └── chr{1..22,X,Y}.phastCons470way.wigFix.gz
-├── gnomAD/
-│   └── gnomad.joint.v4.1.sites.chr{1..22,X,Y}.vcf.bgz.snp.tsv.gz
-├── gpn_msa/
-│   ├── scores.tsv.bgz
-│   └── scores.tsv.bgz.tbi
-│
-├── hg19tohg38/                               # forward liftover (--genome hg19)
-│   └── chr{1..22,X,Y}.hg19tohg38.gz
-├── hg38tohg19/                               # reverse liftover (--genome hg38;
-│   └── chr{1..22,X,Y}.hg38tohg19.gz          #   one-time precompute, see below)
-│
-├── spt_scores.tsv                            # ── Full tier (GPU) ──
-└── pangolin_scores.csv
-```
-
-### Downloading the data
-
-A pre-built data package containing all databases for both hg19 and hg38
-input modes (including the pre-computed hg38→hg19 reverse liftover) is
-available at:
-
-> **https://usf.box.com/s/u583ubbntyjjim7i752lor2zf0e4gjoa**
-
-Download and extract into a single directory (e.g., `/path/to/data/`).
-The archive follows the layout shown above — no reorganization needed.
-
----
-
-## Quick Start
-
-### Minimal scoring (no GPU, no large databases)
-
-```bash
-docker run --rm \
-  -v /path/to/data:/data \
-  metasplice \
-  --input /data/variants.vcf \
-  --output /data/scores.tsv \
-  --fasta /data/hg19.fa \
-  --gtf /data/gencode.v19.annotation.gtf.gz \
-  --dbnsfp-gene /data/dbNSFP5.3_gene.gz
-```
-
-### Standard scoring (no GPU)
-
-```bash
-docker run --rm \
-  -v /path/to/data:/data \
-  metasplice \
-  --input /data/variants.vcf \
-  --output /data/scores.tsv \
-  --fasta /data/hg19.fa \
-  --gtf /data/gencode.v19.annotation.gtf.gz \
-  --dbnsfp-gene /data/dbNSFP5.3_gene.gz \
-  --gerp-dir /data/GERP_hg19 \
-  --dann-dir /data/DANN \
-  --eigen-dir /data/Eigen \
-  --liftover-dir /data/hg19tohg38 \
-  --phylop-dir /data/phyloP_GRCh38 \
-  --phastcons-dir /data/phastCons_GRCh38 \
-  --gnomad-dir /data/gnomAD \
-  --gpn-msa /data/gpn_msa/scores.tsv.bgz
-```
-
-### Full scoring (with SpliceTransformer + Pangolin)
-
-Score SpT and Pangolin externally on GPU (see next section), then pass their
-output files to MetaSplice:
-
-```bash
-docker run --rm \
-  -v /path/to/data:/data \
-  metasplice \
-  --input /data/variants.vcf \
-  --output /data/scores.tsv \
-  --fasta /data/hg19.fa \
-  --gtf /data/gencode.v19.annotation.gtf.gz \
-  --dbnsfp-gene /data/dbNSFP5.3_gene.gz \
-  --gerp-dir /data/GERP_hg19 \
-  --dann-dir /data/DANN \
-  --eigen-dir /data/Eigen \
-  --liftover-dir /data/hg19tohg38 \
-  --phylop-dir /data/phyloP_GRCh38 \
-  --phastcons-dir /data/phastCons_GRCh38 \
-  --gnomad-dir /data/gnomAD \
-  --gpn-msa /data/gpn_msa/scores.tsv.bgz \
-  --spt-scores /data/spt_scores.tsv \
-  --pangolin-scores /data/pangolin_scores.csv
-```
-
-**IMPORTANT**: `spt_scores.tsv` and `pangolin_scores.csv` MUST be scored on the
-SAME input VCF in the SAME variant order as `variants.vcf`. The Docker entry
-point validates row alignment by chr:pos:ref:alt and aborts on mismatch.
-
----
-
-## hg38 Input Mode
-
-By default, MetaSplice expects hg19 input. To accept hg38 VCFs natively, pass
-`--genome hg38` and substitute the hg38-compatible reference files. The model
-was trained on hg19 features; on hg38 input, the pipeline routes hg38-bridged
-features (phyloP, phastCons, gnomAD, GPN-MSA) through the hg38 databases
-directly and routes hg19-direct features (GERP, DANN, Eigen) through an
-hg38→hg19 reverse liftover.
-
-### hg38→hg19 reverse liftover
-
-The data package (see *Downloading the data* above) includes pre-computed
-`hg38tohg19/` reverse liftover files. No additional setup is needed.
-
-If you prefer to regenerate them from the `hg19tohg38/` files, the Docker
-image ships `/app/invert_liftover.py`:
-
-```bash
-docker run --rm \
-  -v /path/to/data:/data \
-  --entrypoint python \
-  metasplice \
-  /app/invert_liftover.py \
-  --input_dir  /data/hg19tohg38 \
-  --output_dir /data/hg38tohg19
-```
-
-Runtime ~2 hours single-threaded, output ~13 GB.
-
-### Run on hg38 VCF
-
-```bash
-docker run --rm \
-  -v /path/to/data:/data \
-  metasplice \
-  --input /data/variants.hg38.vcf \
-  --output /data/scores.tsv \
-  --genome hg38 \
-  --fasta /data/hg38.fa \
-  --gtf /data/gencode.v49.annotation.gtf.gz \
-  --dbnsfp-gene /data/dbNSFP5.3_gene.gz \
-  --gerp-dir /data/GERP_hg19 \
-  --dann-dir /data/DANN \
-  --eigen-dir /data/Eigen \
-  --reverse-liftover-dir /data/hg38tohg19 \
-  --phylop-dir /data/phyloP_GRCh38 \
-  --phastcons-dir /data/phastCons_GRCh38 \
-  --gnomad-dir /data/gnomAD \
-  --gpn-msa /data/gpn_msa/scores.tsv.bgz
-```
-
-Note that `--liftover-dir` is replaced with `--reverse-liftover-dir`, and FASTA
-+ GTF are now hg38 + v49. GERP/DANN/Eigen directories themselves remain hg19
-(those databases were not re-released for hg38); MetaSplice does the hg38→hg19
-mapping internally.
-
-### Full scoring on hg38 VCF (with SpliceTransformer + Pangolin)
-
-Score SpT and Pangolin on the hg38 VCF using `--reference hg38` and hg38
-databases (see the GPU sections below), then pass their output files:
-
-```bash
-docker run --rm \
-  -v /path/to/data:/data \
-  metasplice \
-  --input /data/variants.hg38.vcf \
-  --output /data/scores.tsv \
-  --genome hg38 \
-  --fasta /data/hg38.fa \
-  --gtf /data/gencode.v49.annotation.gtf.gz \
-  --dbnsfp-gene /data/dbNSFP5.3_gene.gz \
-  --gerp-dir /data/GERP_hg19 \
-  --dann-dir /data/DANN \
-  --eigen-dir /data/Eigen \
-  --reverse-liftover-dir /data/hg38tohg19 \
-  --phylop-dir /data/phyloP_GRCh38 \
-  --phastcons-dir /data/phastCons_GRCh38 \
-  --gnomad-dir /data/gnomAD \
-  --gpn-msa /data/gpn_msa/scores.tsv.bgz \
-  --spt-scores /data/spt_scores.tsv \
-  --pangolin-scores /data/pangolin_scores.csv
-```
-
-### Caveats for the hg38 path
-
-The hg38 path is best-effort and does NOT byte-reproduce the published
-hg19-path predictions. On a 500-variant chr22 spot check:
-
-- 94% of variants agree within ±0.05 score (471/500)
-- 85% agree within ±0.01 (427/500)
-- A small minority (29/500, ~6%) diverge by >0.05, up to 0.5 in extreme cases
-
-The main sources of divergence:
-
-1. **Gene renames v19→v49.** dbNSFP5.3 indexes by current HGNC names, so when
-   v49 renames a gene (e.g. CECR1→ADA2), the hg38 path finds dbNSFP entries
-   that the hg19 path misses. The hg38 path is arguably more accurate here,
-   but predictions differ from the trained model's expectations for renamed
-   genes (the model was trained with NaN for those variants and may behave
-   non-monotonically when those features are now populated).
-2. **Region reclassification.** A small fraction of variants near revised v49
-   exon boundaries get a different splice region than v19, changing the region
-   one-hot feature.
-3. **Reverse liftover coverage.** Not every hg38 position successfully maps
-   back to hg19; affected variants get NaN for DANN/Eigen/GERP. Typical loss
-   is <0.1% in well-annotated regions.
-4. **FASTA build.** Reference nucleotides at the same biological position are
-   identical between hg19 and hg38, so ESE/ESS hexamer and SMS 7-mer features
-   give the same answer with either FASTA (apart from rare indel-affected loci,
-   which fall outside our SNV-only scope).
-
-**For byte-identical reproduction of the published model evaluation, use the
-default hg19 path.** Use the hg38 path when your VCF is already in hg38 and a
-small score difference is acceptable; consider re-validating thresholds on a
-held-out hg38 set if you make clinical decisions from raw scores on this path.
-
----
-
-## Running SpliceTransformer (GPU)
-
-SpliceTransformer requires PyTorch + CUDA and is not bundled in this Docker
-image (it would add ~3 GB and require nvidia-docker). Score it in a separate
-GPU environment:
-
-```bash
-# 1. Install SpliceTransformer
-git clone https://github.com/ShenLab-Genomics/SpliceTransformer.git
-cd SpliceTransformer
-conda create -n spt python=3.10 -y
-conda activate spt
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-pip install sinkhorn-transformer pyvcf3 pyensembl pyfaidx
-
-# 2. Set up reference files (SpliceTransformer expects data/data_package/)
-mkdir -p data/data_package
-cp /path/to/data/hg19.fa data/data_package/hg19.fa
-cp /path/to/data/hg19.fa.fai data/data_package/hg19.fa.fai
-cp /path/to/data/gencode.v19.annotation.gtf.gz \
-   data/data_package/hg19.annotation.gtf.gz
-
-# 3. Build pyensembl database from the GTF (required for gene lookups)
-pyensembl install --reference-name hg19 --annotation-name gencode.v19 \
-   --gtf "data/data_package/hg19.annotation.gtf.gz"
-
-# 4. Download pre-trained weights (see SpliceTransformer README for URL)
-#    Place at: model/weights/SpTransformer_pytorch.ckpt
-
-# 5. Fix PyTorch >=2.0 compatibility: the checkpoint uses underscore-separated
-#    ParameterList keys (weights_0) but newer PyTorch expects dot-separated
-#    (weights.0). Patch tasks_annotate_mutations.py around line 413:
-#
-#      save_dict = torch.load(weight_path, map_location="cpu")
-#      # --- add these lines ---
-#      sd = save_dict["state_dict"]
-#      sd = {k.replace("weights_0", "weights.0").replace("weights_1", "weights.1"): v
-#            for k, v in sd.items()}
-#      save_dict["state_dict"] = sd
-#      # --- end patch ---
-#      model.load_state_dict(save_dict["state_dict"])
-
-# 6. Score your variants (~9 variants/sec on a single GPU)
-#    For hg19 input:
-python sptransformer.py \
-  --input /path/to/data/variants.vcf \
-  --output /path/to/data/spt_scores.tsv \
-  --reference hg19 \
-  --vcf True \
-  --raw_score True
-
-#    For hg38 input: set up hg38 reference files and use --reference hg38
-cp /path/to/data/hg38.fa data/data_package/hg38.fa
-cp /path/to/data/hg38.fa.fai data/data_package/hg38.fa.fai
-cp /path/to/data/gencode.v49.annotation.gtf.gz \
-   data/data_package/hg38.annotation.gtf.gz
-#    NOTE: annotation_name must be 'gencode.v38' to match SpliceTransformer's
-#    internal config, but the GTF file itself can be any hg38 GENCODE version.
-pyensembl install --reference-name hg38 --annotation-name gencode.v38 \
-   --gtf "data/data_package/hg38.annotation.gtf.gz"
-
-python sptransformer.py \
-  --input /path/to/data/variants.hg38.vcf \
-  --output /path/to/data/spt_scores.tsv \
-  --reference hg38 \
-  --vcf True \
-  --raw_score True
-```
-
-Expected output columns: `index, #CHROM, POS, ID, REF, ALT, score,
-Adipose Tissue, Blood, Blood Vessel, Brain, Colon, Heart, Kidney, Liver,
-Lung, Muscle, Nerve, Small Intestine, Skin, Spleen, Stomach`.
-
----
-
-## Running Pangolin (GPU)
-
-```bash
-# 1. Install Pangolin
-git clone https://github.com/tkzeng/Pangolin.git
-cd Pangolin
-conda create -n pangolin python=3.10 -y
-conda activate pangolin
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-pip install "setuptools<81" pyvcf3 gffutils pandas pyfastx
-pip install .
-
-# 2. Download the GENCODE annotation database (hg19/GRCh37, ~400 MB)
-wget -O gencode.v38lift37.annotation.db \
-  https://www.dropbox.com/sh/6zo0aegoalvgd9f/AAA9Q90Pi1UqSzX99R_NM803a/gencode.v38lift37.annotation.db
-
-# 3. Patch for soft-masked genomes (required for hg19.fa):
-#    In pangolin/pangolin.py, find the line:
-#        if seq[5000+d:5000+d+len(ref)] != ref:
-#    and add this line BEFORE it:
-#        seq = seq.upper()
-#    Then reinstall: pip install .
-#    Without this patch, variants in soft-masked (repeat) regions are
-#    skipped due to case-sensitive ref mismatch (e.g. 'g' != 'G').
-
-# 4. Convert your VCF to CSV (Pangolin outputs CSV when given CSV input,
-#    which score.py can read directly)
-python /path/to/metasplice/prepare_pangolin_input.py \
-  /path/to/data/variants.vcf \
-  /path/to/data/pangolin_input.csv
-
-# 5. Score your variants
-#    For hg19 input:
-pangolin \
-  /path/to/data/pangolin_input.csv \
-  /path/to/data/hg19.fa \
-  gencode.v38lift37.annotation.db \
-  /path/to/data/pangolin_scores
-# Output: pangolin_scores.csv (directly usable by score.py --pangolin-scores)
-
-#    For hg38 input: download the GRCh38 annotation DB and use hg38.fa
-wget -O gencode.v38.annotation.db \
-  https://www.dropbox.com/sh/6zo0aegoalvgd9f/AADOhGYJo8tbUhpscp3wSFj6a/gencode.v38.annotation.db
-python /path/to/metasplice/prepare_pangolin_input.py \
-  /path/to/data/variants.hg38.vcf \
-  /path/to/data/pangolin_input.csv
-pangolin \
-  /path/to/data/pangolin_input.csv \
-  /path/to/data/hg38.fa \
-  gencode.v38.annotation.db \
-  /path/to/data/pangolin_scores
-```
-
----
-
-## Input Format
-
-- **VCF** (`.vcf`): Standard VCF format
-- **TSV** (`.tsv`): Tab-delimited with columns `chr`, `pos`, `ref`, `alt`
-- **CSV** (`.csv`): Comma-delimited with columns `chr`, `pos`, `ref`, `alt`
-- **Coordinates**: hg19/GRCh37 (default) or hg38/GRCh38 (`--genome hg38`).
-  - hg19 path: GENCODE v19 GTF; phyloP/phastCons/gnomAD/GPN-MSA via
-    `hg19tohg38/` forward liftover; DANN/Eigen/GERP matched directly.
-  - hg38 path: GENCODE v49 GTF; phyloP/phastCons/gnomAD/GPN-MSA matched
-    directly; DANN/Eigen/GERP via `hg38tohg19/` reverse liftover
-    (one-time precompute — see *hg38 Input Mode* below).
-- **Variants**: SNVs only (single-base ref and alt)
-
----
-
-## Output
-
-Tab-delimited file with columns:
-
-| Column | Description |
-|--------|-------------|
-| `chr` | Chromosome |
-| `pos` | Position |
-| `ref` | Reference allele |
-| `alt` | Alternative allele |
-| `region` | Splice region (one of the 7 model regions) |
-| `gene` | Assigned gene |
-| `splice_score` | Pathogenicity score (0-1) |
-
-**Only variants classified into one of the 7 model regions are reported by
-default** (Canonical Donor/Acceptor Site, Donor/Acceptor Region, PPT Region,
-Branch Point Region, Deep Intronic). Variants that fall in exonic or
-unclassified regions are excluded from the output, because the model is not
-trained on those positions and the resulting scores are not meaningful.
-
-Pass `--include-out-of-scope` to keep every input variant in the output; an
-additional `in_scope` boolean column is added in that case, and out-of-scope
-rows carry `region=NA` and a `splice_score` produced by the model on
-out-of-distribution input (treat those values with caution).
-
----
-
-## Score Interpretation
-
-Operating points calibrated on training cross-validation (381,226 variants,
-5-fold gene-grouped CV):
-
-| Threshold | Use case | Sensitivity | Specificity |
-|-----------|----------|-------------|-------------|
-| >= 0.1 | Screening  | 99.1% | 98.5% |
-| >= 0.2 | Balanced   | 98.8% | 98.9% |
-| >= 0.5 | Diagnostic | 98.1% | 99.4% |
-
-These are post hoc operating points; users planning prospective application
-should re-calibrate on an internal validation set. For exonic variants (which
-the default output excludes), use CADD v1.7 instead.
-
----
-
-## Splice Regions
-
-| Region | Definition |
-|--------|-----------|
-| Canonical Donor Site | 1-2 bp downstream of exon end |
-| Canonical Acceptor Site | 1-2 bp upstream of exon start |
-| Donor Region | 3-8 bp into intron from donor |
-| Acceptor Region | 3-10 bp into intron from acceptor |
-| PPT Region (putative) | 11-25 bp upstream of acceptor |
-| Branch Point Region (putative) | 26-44 bp upstream of acceptor |
-| Deep Intronic | >44 bp from nearest exon boundary |
-
-The polypyrimidine-tract and branch-point regions are defined by distance
-heuristics; transcript- or motif-specific branch points are not inferred.
-
----
+MetaSplice predicts the pathogenicity of intronic single-nucleotide variants (SNVs) around and beyond the splice sites:
+the donor and acceptor regions, the polypyrimidine tract, the branch-point window and deep-intronic positions. It
+combines splicing predictions (SpliceTransformer, Pangolin), conservation, DANN, GPN-MSA and gene-level constraint in
+an XGBoost model trained on ClinVar.
+
+This is **MetaSplice 2.0** (scorer and model 2.0.0; Docker image 2.0.1): GRCh38, GENCODE v50 MANE transcripts, 38
+features. MetaSplice 1 (GRCh37, 53 features, scorer v1.0.3) remains available at tag
+[`v1.0.3`](https://github.com/xiaoming-liu/MetaSplice/tree/v1.0.3).
+
+## Quick start: the Docker image
+
+The image runs everything from a VCF to the score: scope, SpliceTransformer and Pangolin (on the GPU if one is
+available), the 38 features, and the model. It gives the published model's scores: on 2,200 ClinVar variants scored
+from scratch on the GPU, every score was bit-identical to the published score.
+
+1. Pull the image:
+
+       docker pull ghcr.io/xiaoming-liu/metasplice:2.0.1
+       docker tag ghcr.io/xiaoming-liu/metasplice:2.0.1 metasplice:2.0.1
+
+   The release is the image with manifest digest
+   `sha256:c32fc8d49da016efd39bc0ac3738ee46d873476e775c0a01a6c714621914f105` (image ID `2dee3c2e…`).
+
+2. Get the annotation data bundle (219 GB; 195 GB without the optional gnomAD tables). It is mirrored on USF Box
+   (https://usf.box.com/s/44v8lpk6rxi8d6vdvw1032cfr5olmzdq); the image's tool downloads it and checks every file:
+
+       docker run --rm --user $(id -u):$(id -g) -v "$PWD/metasplice_v2_data":/data --entrypoint python \
+           metasplice:2.0.1 /opt/metasplice/bundle/tools/fetch_and_build.py --out /data --all-from-mirror
+
+   The tool can also rebuild the bundle from the original sources; see
+   [`docker_v2/bundle/README.md`](docker_v2/bundle/README.md).
+
+3. Score:
+
+       docker run --rm --gpus all --user $(id -u):$(id -g) \
+           -v "$PWD/metasplice_v2_data":/data:ro -v "$PWD":/work \
+           metasplice:2.0.1 --input /work/variants.vcf --output /work/scores.tsv
+
+   Add `--genome hg19` for GRCh37 input (each REF is checked against GRCh37, then the variant is lifted to GRCh38), or
+   `--cpu` without a GPU. On an HPC cluster, Apptainer/Singularity runs the image directly:
+
+       apptainer build metasplice_2.0.1.sif docker://ghcr.io/xiaoming-liu/metasplice:2.0.1
+       apptainer run --nv -B "$PWD/metasplice_v2_data":/data:ro -B "$PWD":/work metasplice_2.0.1.sif \
+           --input /work/variants.vcf --output /work/scores.tsv
+
+[`docker_v2/README.md`](docker_v2/README.md) describes the options, input handling, output columns, hardware, run
+times and the acceptance and regression tests.
+
+## Scope and features
+
+A variant is scored if it lies at an intronic position of a GENCODE v50 transcript tagged MANE Select or MANE Plus
+Clinical. Its region follows from its distance to the nearest exon boundary of its gene: canonical donor (+1 to +2) and
+acceptor (−1 to −2) sites, donor region (+3 to +8), acceptor region (−3 to −10), polypyrimidine tract (PPT, −11 to
+−25), branch-point window (−26 to −44) and deep intronic beyond these. Deep-intronic positions inside an exon of any
+GENCODE v50 basic transcript are out of scope. Out-of-scope variants are reported with the reason
+(`--include-out-of-scope`).
+
+The 38 features:
+
+| Group | Features |
+|---|---|
+| SpliceTransformer | the variant score and 15 tissue scores (16) |
+| Pangolin | increase, decrease and maximum change in splice-site usage (3) |
+| Conservation | phyloP and phastCons, 100-way vertebrate and 470-way mammalian (4) |
+| DANN | GRCh37 score at the lifted position (1) |
+| GPN-MSA | score (1) |
+| Gene level | gnomAD pLI, gnomAD LOEUF, ClinGen haploinsufficiency score (3) |
+| Exon context | exon length, exon length mod 3, distance to the boundary (3) |
+| Region | one-hot region (7) |
+
+Allele frequency is reported (`gnomad_af`, `gnomad_popmax_af`) but is not a model input.
+
+## Interpreting the score
+
+The score runs from 0 to 1; higher scores indicate stronger predicted pathogenicity. The paper derives a **candidate**
+PP3/BP4 rule from likelihood ratios calibrated against ClinVar. The rule is offered for independent evaluation and is
+not a clinical recommendation. It assigns:
+
+- **PP3 at Supporting strength** to scores ≥ 0.5439710286928215 (rounded 0.544);
+- **BP4 at Supporting strength** to scores ≤ 0.0017023810017853637 (rounded 0.0017).
+
+Use the exact values: in the paper's calibration cohort, the rounded BP4 threshold changes 9 assignments. Scores are
+written at full precision; read them exactly as well (for pandas, `pd.read_csv(..., float_precision="round_trip")`).
+
+## The scorer without Docker
+
+`score_v2.py` computes the 38 features and the score from SpliceTransformer and Pangolin outputs and the annotation
+bundle. It is the scorer inside the image, and is useful when SpliceTransformer and Pangolin are run separately, for
+example across many GPUs.
+
+    pip install -r requirements.txt        # Python 3.12; the versions the model was trained with
+    python test_v2.py                      # synthetic tests, no data needed
+
+    D=metasplice_v2_data
+    python score_v2.py --input variants.vcf --output scores.tsv \
+        --spt-scores spt.csv --pangolin-scores pangolin.csv \
+        --fasta $D/grch38/hg38.fa --hg19-fasta $D/grch37/hg19.fa --gtf $D/gencode/gencode.v50.annotation.gtf.gz \
+        --reverse-liftover-dir $D/chain/hg38tohg19_ensembl --dann-dir $D/dann \
+        --phylop-dir $D/conservation/phyloP_GRCh38 --phastcons-dir $D/conservation/phastCons_GRCh38 \
+        --gpn-msa $D/gpn_msa/scores.tsv.bgz --gnomad-dir $D/gnomad \
+        --dbnsfp-gene data/metasplice_gene_level_dbNSFP5.4.tsv.gz
+
+Every option can also be set by an environment variable (`python score_v2.py --help`). `--features-out` writes the 38
+features; `--features-only` writes them without scoring.
+
+SpliceTransformer and Pangolin must be run exactly as the image runs them, or the scores change:
+
+- SpliceTransformer at commit `b67a51d` with `docker_v2/patches/spt_torch26.patch`, with TF32 off
+  (`NVIDIA_TF32_OVERRIDE=0`), and `--reference hg38 --vcf True --raw_score True`, from a run directory holding the
+  GENCODE v50 MANE annotation;
+- Pangolin 1.0.2 (commit `5cf94b8`) with `docker_v2/patches/pangolin_softmask.patch` and the GENCODE v50 MANE database,
+  with `-c CHROM,POS,REF,ALT`.
+
+Both need the GRCh38 variants: for GRCh38 input, run them on all input SNVs; for hg19 input, use the image, which lifts
+and selects the variants first. The MANE annotation files are in the image (`/opt/spt_run/data/data_package/`,
+`/opt/annotation/gencode.v50.mane.db`), and [`docker_v2/metasplice_pipeline.py`](docker_v2/metasplice_pipeline.py)
+shows the exact commands and input formats. The Python environment for both tools is
+[`docker_v2/requirements.lock`](docker_v2/requirements.lock) with PyTorch 2.6.0 (CUDA 12.4).
+
+## Changes from MetaSplice 1
+
+- GRCh38 throughout, with GENCODE v50 MANE Select and MANE Plus Clinical transcripts defining regions, genes and exon
+  context. DANN, which exists only for GRCh37, is looked up by lifting each position back.
+- 38 features instead of 53: no allele frequency, RVIS, Eigen, GERP++, exonic splicing enhancer or silencer motifs, or
+  SMS scores.
+- Gene-level features are looked up by Ensembl gene ID; a missing LOEUF stays missing.
+- SpliceTransformer and Pangolin scores are matched to variants by chromosome, position and alleles.
+- Nothing is skipped silently: out-of-scope variants and records that are not SNVs are reported with the reason.
+
+## Files
+
+| Path | Contents |
+|---|---|
+| `score_v2.py` | The scorer: scope, features, model |
+| `test_v2.py` | Synthetic regression tests of the scorer |
+| `model/` | The model (`metasplice_v2_full.joblib`) and its feature list (`metasplice_v2_features.joblib`) |
+| `data/` | The gene-level values (gnomAD pLI and LOEUF, ClinGen haploinsufficiency score), their README, and `build_gene_level.py`, which builds them from gnomAD, ClinGen and HGNC (`data/sources/`) |
+| `docker_v2/` | The Docker image: Dockerfile, pipeline, pinned environment, patches, tests, and the data bundle's README, manifest and tools |
+| `requirements.txt` | Python packages for the scorer |
+| `LICENSE`, `THIRD_PARTY_NOTICES` | Licences |
+| `docs/FEATURE_LICENCES.md` | The licence terms of each input, quoted from its source |
+
+Comments in the code refer to the study's planning documents (`docs/…`) and build scripts (`reproducibility_v2/…`).
+The build scripts are in the reproducibility package (`scripts/build/`).
+
+## Reproducibility
+
+The analyses, data and models of the paper, with a script that reruns them, are in
+[`xiaoming-liu/MetaSplice-reproducibility`](https://github.com/xiaoming-liu/MetaSplice-reproducibility). Its data
+folder (291 MB) is an attachment of that repository's release `v2.0.1`, and its `get_data.py` downloads and checks it.
+
+## Licences
+
+MetaSplice's code, model and derived data are under the MetaSplice licence ([`LICENSE`](LICENSE)). It grants
+permission "to use, copy, modify, and distribute MetaSplice and its associated model files for non-commercial
+research, educational, and clinical (non-revenue-generating) purposes, subject to the following conditions", and
+states: "For commercial use — including use within commercial products, fee-for-service offerings, and internal use by
+for-profit entities — please contact xiaomingliu@usf.edu."
+
+SpliceTransformer (Apache-2.0), Pangolin (GPL-3.0) and the annotation data keep their own terms: see
+[`THIRD_PARTY_NOTICES`](THIRD_PARTY_NOTICES), and [`docs/FEATURE_LICENCES.md`](docs/FEATURE_LICENCES.md) for each
+source's terms, quoted. SpliceAI is not included: its licence does not permit redistribution.
 
 ## Citation
 
-```
-[Citation to be added upon publication]
-```
+A citation will be added here when the paper is published.

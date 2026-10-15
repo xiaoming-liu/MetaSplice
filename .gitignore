@@ -6,3 +6,7 @@ scores.tsv
 *.fa
 *.fa.fai
 *.fa.gz
+*.sif
+metasplice_v2_data/
+metasplice_test_results/
+data/sources/gnomad/

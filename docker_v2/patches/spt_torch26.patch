@@ -1,0 +1,26 @@
+# Modification notice (Apache License 2.0, section 4(b)).
+# SpliceTransformer (https://github.com/ShenLab-Genomics/SpliceTransformer), commit b67a51d.
+# Changed by the MetaSplice authors (file last modified 2026-05-03): tasks_annotate_mutations.py loads the checkpoint with
+# weights_only=False and renames state-dict keys "weights_" to "weights." so that the published checkpoint loads under
+# PyTorch 2.6. Model weights and computations are unchanged. MetaSplice Release 2.0 scores were produced with this change.
+diff --git a/tasks_annotate_mutations.py b/tasks_annotate_mutations.py
+index ac035db..a26e84d 100644
+--- a/tasks_annotate_mutations.py
++++ b/tasks_annotate_mutations.py
+@@ -409,8 +409,14 @@ class SpTransformerDriver(ModelDriver):
+         model = SpTransformer(128, context_len=context, tissue_num=15,
+                               max_seq_len=8192, attn_depth=8, training=False)
+         save_dict = torch.load(
+-            './model/weights/SpTransformer_pytorch.ckpt', map_location='cpu')
+-        model.load_state_dict(save_dict["state_dict"])
++            './model/weights/SpTransformer_pytorch.ckpt', map_location='cpu',
++            weights_only=False)
++        # Fix key name compatibility (older PyTorch used _ instead of . for ParameterList)
++        state = save_dict["state_dict"]
++        fixed = {}
++        for k, v in state.items():
++            fixed[k.replace("weights_", "weights.")] = v
++        model.load_state_dict(fixed)
+         models = [model]
+         super().__init__(ref_fasta, models, load_db)
+ 

@@ -1,5 +1,10 @@
-numpy==1.26.4
-pandas==2.2.2
-scikit-learn==1.5.1
-xgboost>=2.0.3
-pysam==0.22.1
+# MetaSplice 2.0 scorer (score_v2.py, test_v2.py): Python 3.12, with the packages pinned to the versions the model
+# was trained with. The Docker image's complete environment, PyTorch included, is docker_v2/requirements.lock.
+joblib==1.5.3
+numpy==2.3.5
+pandas==3.0.1
+pysam==0.23.3
+scikit-learn==1.8.0
+scipy==1.17.1
+threadpoolctl==3.6.0
+xgboost==3.2.0

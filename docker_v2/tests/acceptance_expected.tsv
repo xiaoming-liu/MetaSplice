@@ -1,0 +1,2201 @@
+chr	pos	ref	alt	region	gene	set	expected
+chr1	943811	G	A	Donor Region	SAMD11	pooled test	0.01015140
+chr1	1213099	C	T	Acceptor Region	TNFRSF4	pooled test	0.00497202
+chr1	1342048	T	C	Donor Region	DVL1	pooled test	0.00138042
+chr1	1817817	G	A	Deep Intronic	GNB1	training	0.00000597
+chr1	2304592	G	T	Donor Region	SKI	pooled test	0.00000317
+chr1	3823571	C	T	Acceptor Region	CEP104	pooled test	0.00018392
+chr1	5905510	C	T	Branch Point Region	NPHP4	pooled test	0.00032520
+chr1	5907114	C	T	Canonical Donor Site	NPHP4	pooled test	0.99630141
+chr1	5909135	G	C	Deep Intronic	NPHP4	pooled test	0.00003791
+chr1	9724256	C	G	PPT Region	PIK3CD	pooled test	0.00008945
+chr1	11233527	C	T	Branch Point Region	MTOR	training	0.00006609
+chr1	11966334	C	A	Deep Intronic	PLOD1	training	0.00003376
+chr1	11997259	T	C	Branch Point Region	MFN2	training	0.00082027
+chr1	12003975	C	T	PPT Region	MFN2	training	0.00001820
+chr1	15444600	C	T	Acceptor Region	CTRC	pooled test	0.00028247
+chr1	15728260	C	T	Acceptor Region	PLEKHM2	pooled test	0.00292015
+chr1	16046534	G	C	Canonical Acceptor Site	CLCNKB	training	0.99966812
+chr1	16048330	C	A	PPT Region	CLCNKB	pooled test	0.00010746
+chr1	16055418	G	T	PPT Region	CLCNKB	pooled test	0.00008262
+chr1	16056392	C	G	Branch Point Region	CLCNKB	pooled test	0.00079405
+chr1	17004690	A	C	Canonical Donor Site	ATP13A2	training	0.99912709
+chr1	19230836	C	T	Donor Region	EMC1	pooled test	0.00004384
+chr1	19238775	T	C	Deep Intronic	EMC1	training	0.00009857
+chr1	21225247	C	T	Donor Region	ECE1	pooled test	0.00057754
+chr1	21563108	A	G	Canonical Acceptor Site	ALPL	pooled test	0.99966896
+chr1	21570263	T	G	Branch Point Region	ALPL	pooled test	0.00138521
+chr1	21570274	C	T	Branch Point Region	ALPL	training	0.00107346
+chr1	21839565	G	A	PPT Region	HSPG2	training	0.00006967
+chr1	21873094	G	T	Acceptor Region	HSPG2	training	0.27215984
+chr1	24342789	G	A	Deep Intronic	GRHL3	pooled test	0.00084644
+chr1	26447521	T	C	Branch Point Region	DHDDS	pooled test	0.01379563
+chr1	26457782	T	C	Acceptor Region	DHDDS	pooled test	0.00033364
+chr1	26732794	T	G	Canonical Donor Site	ARID1A	pooled test	0.99996579
+chr1	26761097	G	A	Canonical Donor Site	ARID1A	pooled test	0.99994826
+chr1	27107628	G	C	Deep Intronic	SLC9A1	pooled test	0.00003097
+chr1	32280217	G	A	Donor Region	LCK	training	0.00024711
+chr1	32384027	C	T	Branch Point Region	BSDC1	pooled test	0.00214385
+chr1	32782570	A	T	Branch Point Region	YARS1	training	0.00005407
+chr1	33024294	T	C	Deep Intronic	AK2	training	0.00002990
+chr1	39432659	G	A	Donor Region	MACF1	pooled test	0.54015845
+chr1	40091324	G	C	Donor Region	PPT1	training	0.01349387
+chr1	40092540	G	A	Branch Point Region	PPT1	pooled test	0.00223688
+chr1	40311223	C	G	Donor Region	COL9A2	pooled test	0.00002979
+chr1	40819862	T	C	PPT Region	KCNQ4	training	0.00192643
+chr1	42759193	G	A	Donor Region	P3H1	pooled test	0.00028023
+chr1	42929807	G	A	Branch Point Region	SLC2A1	pooled test	0.00414942
+chr1	43338239	C	T	Donor Region	MPL	training	0.00032214
+chr1	43792156	A	C	Donor Region	ST3GAL3	pooled test	0.00042520
+chr1	45329474	G	C	Branch Point Region	MUTYH	training	0.00143483
+chr1	45331850	C	A	Canonical Acceptor Site	MUTYH	training	0.99867874
+chr1	45333277	G	C	Donor Region	MUTYH	training	0.00083803
+chr1	45341261	G	A	Branch Point Region	TOE1	training	0.00061234
+chr1	46192091	C	T	Donor Region	POMGNT1	training	0.00021081
+chr1	47281224	G	T	PPT Region	STIL	pooled test	0.00001102
+chr1	52688204	G	C	Branch Point Region	COA7	training	0.00054473
+chr1	55008209	T	C	Acceptor Region	BSND	training	0.00029200
+chr1	56912634	C	T	Deep Intronic	C8A	training	0.00003382
+chr1	64869304	G	A	Donor Region	JAK1	training	0.00009200
+chr1	68448615	G	A	Deep Intronic	RPE65	training	0.00004490
+chr1	74336155	A	G	Donor Region	TNNI3K	pooled test	0.00031749
+chr1	74353256	T	G	Acceptor Region	TNNI3K	pooled test	0.00009037
+chr1	75728382	A	T	PPT Region	ACADM	training	0.32846522
+chr1	94001857	C	A	Canonical Donor Site	ABCA4	pooled test	0.99977094
+chr1	94019581	C	A	Canonical Donor Site	ABCA4	pooled test	0.99975818
+chr1	94030536	G	A	Acceptor Region	ABCA4	pooled test	0.00024813
+chr1	94040155	A	G	Branch Point Region	ABCA4	pooled test	0.00099678
+chr1	94102999	A	G	Deep Intronic	ABCA4	training	0.00042888
+chr1	94489896	A	G	Acceptor Region	ABCD3	pooled test	0.00030726
+chr1	99870357	A	G	Branch Point Region	AGL	training	0.00509506
+chr1	99884328	T	G	PPT Region	AGL	training	0.02083054
+chr1	102913629	T	C	Donor Region	COL11A1	pooled test	0.00001088
+chr1	103026389	C	T	Deep Intronic	COL11A1	pooled test	0.00021329
+chr1	103573943	A	T	Donor Region	AMY2B	pooled test	0.00011150
+chr1	109626117	G	A	Branch Point Region	AMPD2	training	0.00004127
+chr1	114675528	A	G	Canonical Donor Site	AMPD1	pooled test	0.99940884
+chr1	115738222	A	G	Canonical Donor Site	CASQ2	pooled test	0.99987459
+chr1	115744821	C	T	Donor Region	CASQ2	pooled test	0.00007784
+chr1	119959386	C	A	Donor Region	NOTCH2	training	0.00036028
+chr1	145912596	G	C	Branch Point Region	PEX11B	pooled test	0.00036236
+chr1	145918415	C	T	Deep Intronic	PEX11B	pooled test	0.01082055
+chr1	145927355	C	T	Donor Region	RBM8A	pooled test	0.97506094
+chr1	150328473	G	T	Donor Region	PRPF3	pooled test	0.00026417
+chr1	150556619	A	G	Canonical Acceptor Site	ADAMTSL4	pooled test	0.99895346
+chr1	150558463	G	T	Acceptor Region	ADAMTSL4	pooled test	0.00028041
+chr1	150806668	C	T	Deep Intronic	CTSK	pooled test	0.00072015
+chr1	151027219	C	T	PPT Region	PRUNE1	pooled test	0.00008215
+chr1	151401536	T	C	Acceptor Region	PSMB4	training	0.00442568
+chr1	151658230	A	G	Acceptor Region	SNX27	training	0.00038854
+chr1	151813639	G	A	PPT Region	RORC	pooled test	0.00011524
+chr1	154176268	T	C	PPT Region	TPM3	pooled test	0.00005518
+chr1	154275145	C	A	Acceptor Region	HAX1	training	0.01988576
+chr1	154434501	T	C	PPT Region	IL6R	pooled test	0.00092304
+chr1	154449892	T	C	PPT Region	IL6R	training	0.00268116
+chr1	156137625	C	T	Branch Point Region	LMNA	pooled test	0.00086175
+chr1	156874886	C	G	PPT Region	NTRK1	training	0.00098224
+chr1	158672223	T	A	Branch Point Region	SPTA1	pooled test	0.00005203
+chr1	160127525	C	A	Branch Point Region	ATP1A2	training	0.01670705
+chr1	160135427	C	A	Acceptor Region	ATP1A2	pooled test	0.00025717
+chr1	160279796	C	T	Donor Region	PEX19	training	0.99753606
+chr1	160285047	G	C	Donor Region	PEX19	pooled test	0.00027367
+chr1	160311860	C	G	Donor Region	COPA	pooled test	0.00004171
+chr1	160333690	T	A	PPT Region	COPA	pooled test	0.00031053
+chr1	161846582	T	C	Canonical Donor Site	ATF6	training	0.99974984
+chr1	167833172	G	A	Acceptor Region	ADCY10	pooled test	0.00012447
+chr1	167883632	C	G	Acceptor Region	ADCY10	training	0.00022282
+chr1	169477147	G	A	Donor Region	SLC19A2	pooled test	0.00012386
+chr1	169524936	A	T	Branch Point Region	F5	pooled test	0.00039777
+chr1	169549793	C	T	Donor Region	F5	pooled test	0.00007812
+chr1	172608817	C	G	Deep Intronic	SUCO	training	0.00003873
+chr1	181758732	T	C	Branch Point Region	CACNA1E	training	0.00696051
+chr1	182385565	G	A	Acceptor Region	GLUL	training	0.00009715
+chr1	183118350	A	T	Deep Intronic	LAMC1	training	0.00062865
+chr1	186093122	T	C	PPT Region	HMCN1	pooled test	0.00020646
+chr1	186106874	G	T	Acceptor Region	HMCN1	pooled test	0.00047389
+chr1	186932752	C	T	PPT Region	PLA2G4A	training	0.00008185
+chr1	193135387	T	G	Acceptor Region	CDC73	pooled test	0.00039464
+chr1	196675950	A	G	Branch Point Region	CFH	pooled test	0.00018323
+chr1	196677432	A	T	Branch Point Region	CFH	pooled test	0.00931208
+chr1	196736792	A	T	Branch Point Region	CFH	pooled test	0.00011989
+chr1	196736794	A	C	Branch Point Region	CFH	pooled test	0.00036042
+chr1	196995706	C	T	PPT Region	CFHR5	pooled test	0.00000992
+chr1	197357020	C	T	Donor Region	CRB1	training	0.00023428
+chr1	198742027	G	T	Canonical Donor Site	PTPRC	training	0.99941039
+chr1	198749557	C	T	Donor Region	PTPRC	training	0.00003557
+chr1	200592063	A	T	Deep Intronic	KIF14	pooled test	0.00016421
+chr1	201060856	C	A	Branch Point Region	CACNA1S	training	0.00063405
+chr1	201077862	C	T	Deep Intronic	CACNA1S	pooled test	0.00000251
+chr1	201359616	C	T	Donor Region	TNNT2	pooled test	0.00000283
+chr1	202758383	G	A	Donor Region	KDM5B	training	0.00030607
+chr1	204532250	T	C	Donor Region	MDM4	pooled test	0.00007795
+chr1	207124139	G	C	Branch Point Region	C4BPA	training	0.00029982
+chr1	207471514	T	C	Deep Intronic	CR2	pooled test	0.00009654
+chr1	207473728	T	G	Donor Region	CR2	training	0.00433700
+chr1	207785728	T	G	Deep Intronic	CD46	pooled test	0.00067613
+chr1	209618052	G	T	Acceptor Region	LAMB3	training	0.00066532
+chr1	214638012	T	C	Deep Intronic	CENPF	pooled test	0.00011952
+chr1	215647762	C	T	Branch Point Region	USH2A	pooled test	0.00080159
+chr1	215671297	C	T	Acceptor Region	USH2A	pooled test	0.00057653
+chr1	215878757	C	T	Donor Region	USH2A	training	0.00105989
+chr1	216072987	T	C	PPT Region	USH2A	pooled test	0.00019169
+chr1	216084879	T	C	Canonical Acceptor Site	USH2A	training	0.99880660
+chr1	216217377	G	T	Deep Intronic	USH2A	pooled test	0.00014292
+chr1	218441192	G	C	PPT Region	TGFB2	pooled test	0.00001907
+chr1	220006098	A	C	Donor Region	EPRS1	pooled test	0.00009585
+chr1	220094487	C	T	Donor Region	IARS2	pooled test	0.00258810
+chr1	220195291	T	A	Donor Region	RAB3GAP2	training	0.00040027
+chr1	225410434	A	C	PPT Region	LBR	pooled test	0.00002597
+chr1	225418197	A	C	PPT Region	LBR	pooled test	0.00056143
+chr1	226883663	G	A	Branch Point Region	PSEN2	training	0.00069065
+chr1	226983634	G	A	Canonical Donor Site	COQ8A	pooled test	0.99965858
+chr1	228306642	G	C	Donor Region	OBSCN	training	0.00018110
+chr1	229432213	C	G	Branch Point Region	ACTA1	training	0.00172623
+chr1	230274416	C	T	Branch Point Region	GALNT2	pooled test	0.00012778
+chr1	230683555	C	A	PPT Region	COG2	training	0.00004098
+chr1	235734466	T	C	Deep Intronic	LYST	pooled test	0.00018377
+chr1	236045724	C	G	Branch Point Region	NID1	training	0.00056694
+chr1	236895569	C	T	Deep Intronic	MTR	training	0.00001123
+chr1	237330859	T	C	PPT Region	RYR2	training	0.00071648
+chr1	237364315	G	A	Branch Point Region	RYR2	training	0.00001298
+chr1	237678044	A	G	Acceptor Region	RYR2	training	0.00036441
+chr1	237705350	C	T	Donor Region	RYR2	pooled test	0.00005443
+chr1	237733772	T	G	Deep Intronic	RYR2	training	0.00002619
+chr1	243316745	G	T	Acceptor Region	SDCCAG8	pooled test	0.00036078
+chr1	243316910	G	A	Deep Intronic	SDCCAG8	training	0.00014011
+chr1	243344208	C	G	Acceptor Region	SDCCAG8	pooled test	0.00155138
+chr1	243512446	G	C	PPT Region	AKT3	training	0.00014201
+chr1	244856864	C	G	Acceptor Region	HNRNPU	training	0.00005350
+chr2	1495956	C	T	Branch Point Region	TPO	training	0.00012697
+chr2	1676848	G	A	Deep Intronic	PXDN	training	0.00025602
+chr2	1693056	C	T	Donor Region	PXDN	pooled test	0.00012126
+chr2	3465707	C	T	Deep Intronic	TRAPPC12	training	0.00007436
+chr2	15475906	C	T	Branch Point Region	NBAS	training	0.00055930
+chr2	24705237	C	T	Donor Region	NCOA1	training	0.00288688
+chr2	24838629	T	G	Acceptor Region	ADCY3	training	0.00014321
+chr2	25246790	C	T	PPT Region	DNMT3A	training	0.00006981
+chr2	26230301	G	A	Acceptor Region	HADHA	pooled test	0.00020027
+chr2	26244523	G	T	Donor Region	HADHA	pooled test	0.00159003
+chr2	26440349	A	G	Branch Point Region	DRC1	training	0.00111736
+chr2	26440369	T	A	Acceptor Region	DRC1	pooled test	0.00161304
+chr2	26471160	A	G	Acceptor Region	OTOF	pooled test	0.00336777
+chr2	26472663	T	G	PPT Region	OTOF	training	0.00130054
+chr2	26473578	T	C	PPT Region	OTOF	pooled test	0.99613535
+chr2	26482388	G	A	Deep Intronic	OTOF	training	0.00005886
+chr2	26944833	C	T	Deep Intronic	DPYSL5	pooled test	0.00015607
+chr2	27099582	G	C	Donor Region	KHK	training	0.92026103
+chr2	27217854	C	T	PPT Region	CAD	training	0.01256033
+chr2	27223901	G	T	PPT Region	CAD	training	0.00000913
+chr2	27242292	T	C	Acceptor Region	CAD	training	0.00005051
+chr2	27367449	C	T	Donor Region	EIF2B4	pooled test	0.00192143
+chr2	27445850	T	G	Acceptor Region	IFT172	pooled test	0.00004818
+chr2	27446005	T	G	PPT Region	IFT172	training	0.00002779
+chr2	27507958	T	C	PPT Region	GCKR	pooled test	0.00007634
+chr2	31379993	T	C	PPT Region	XDH	pooled test	0.00002386
+chr2	39010717	T	C	PPT Region	SOS1	pooled test	0.00005850
+chr2	39035204	T	C	Donor Region	SOS1	pooled test	0.00010610
+chr2	39056904	T	C	Branch Point Region	SOS1	training	0.00024456
+chr2	43800809	G	A	Branch Point Region	DYNC2LI1	training	0.00089173
+chr2	43813318	G	A	Acceptor Region	ABCG5	pooled test	0.00008558
+chr2	43901558	T	C	Branch Point Region	LRPPRC	training	0.01444798
+chr2	43949594	A	G	Donor Region	LRPPRC	training	0.00597943
+chr2	43973725	T	G	PPT Region	LRPPRC	training	0.00006292
+chr2	44338540	C	T	Acceptor Region	PREPL	training	0.00018015
+chr2	46974967	C	T	Acceptor Region	TTC7A	training	0.00018827
+chr2	47021843	C	T	PPT Region	TTC7A	pooled test	0.00210372
+chr2	47373805	C	T	Acceptor Region	EPCAM	training	0.01749462
+chr2	47408369	C	G	Branch Point Region	MSH2	pooled test	0.00137640
+chr2	47414426	A	G	Donor Region	MSH2	training	0.00012269
+chr2	47462990	C	G	Branch Point Region	MSH2	pooled test	0.00367886
+chr2	47466813	G	A	Donor Region	MSH2	pooled test	0.99071634
+chr2	47470922	C	T	Branch Point Region	MSH2	pooled test	0.00097609
+chr2	47482778	G	A	Canonical Acceptor Site	MSH2	training	0.99991405
+chr2	47803385	C	G	Branch Point Region	MSH6	pooled test	0.00076374
+chr2	47806361	A	T	Donor Region	MSH6	training	0.80842084
+chr2	47810430	T	C	Acceptor Region	FBXO11	training	0.00036769
+chr2	47822201	C	A	Deep Intronic	FBXO11	pooled test	0.00013657
+chr2	48708939	T	C	Deep Intronic	LHCGR	training	0.00036492
+chr2	54558897	C	A	Deep Intronic	SPTBN1	training	0.00104714
+chr2	69354576	T	C	Acceptor Region	GFPT1	training	0.99727988
+chr2	69374133	T	A	PPT Region	GFPT1	pooled test	0.00108505
+chr2	71511923	T	G	Canonical Donor Site	DYSF	pooled test	0.99974591
+chr2	71564046	C	A	PPT Region	DYSF	pooled test	0.00033269
+chr2	71613332	A	G	Canonical Acceptor Site	DYSF	pooled test	0.99970776
+chr2	71658870	C	G	Acceptor Region	DYSF	training	0.00029968
+chr2	71659051	C	T	Deep Intronic	DYSF	pooled test	0.00006767
+chr2	71668752	A	G	Canonical Acceptor Site	DYSF	training	0.99969876
+chr2	73426560	C	G	Donor Region	ALMS1	training	0.00011244
+chr2	74369526	G	A	Branch Point Region	DCTN1	training	0.10065006
+chr2	74534254	T	C	PPT Region	LOXL3	pooled test	0.00017593
+chr2	85550542	G	A	Deep Intronic	GGCX	pooled test	0.00001288
+chr2	85863500	G	A	PPT Region	ST3GAL5	training	0.00028106
+chr2	86040575	G	A	PPT Region	POLR1A	training	0.00013608
+chr2	97724446	C	A	Donor Region	ZAP70	pooled test	0.00007816
+chr2	98133817	G	A	Acceptor Region	VWA3B	pooled test	0.00027619
+chr2	98377667	C	G	PPT Region	CNGA3	pooled test	0.00006903
+chr2	110163041	G	A	Donor Region	NPHP1	training	0.00003581
+chr2	110201495	C	A	Canonical Acceptor Site	NPHP1	training	0.99895132
+chr2	120970617	G	T	Deep Intronic	GLI2	pooled test	0.00010302
+chr2	127070836	G	T	PPT Region	BIN1	training	0.00006449
+chr2	127257744	A	G	PPT Region	ERCC3	training	0.00026737
+chr2	127259464	C	T	PPT Region	ERCC3	pooled test	0.00037991
+chr2	127272963	T	C	Canonical Acceptor Site	ERCC3	training	0.99972028
+chr2	127640888	G	A	Donor Region	LIMS2	training	0.00003371
+chr2	131530735	G	A	Branch Point Region	CCDC74A	pooled test	0.00009795
+chr2	135800828	A	T	PPT Region	LCT	pooled test	0.00032005
+chr2	135804165	G	A	Branch Point Region	LCT	training	0.00085893
+chr2	144497643	T	C	Deep Intronic	ZEB2	training	0.00142011
+chr2	148490602	A	G	Donor Region	MBD5	pooled test	0.00008462
+chr2	148510056	C	T	Acceptor Region	MBD5	pooled test	0.00018736
+chr2	151443717	A	G	Donor Region	RIF1	pooled test	0.00039629
+chr2	151489969	A	T	Canonical Donor Site	NEB	training	0.99987292
+chr2	151492380	G	A	Donor Region	NEB	training	0.00018934
+chr2	151553504	T	G	Canonical Acceptor Site	NEB	pooled test	0.99978310
+chr2	151567160	T	C	Donor Region	NEB	training	0.00010815
+chr2	151570074	C	G	Donor Region	NEB	training	0.00019402
+chr2	151603778	T	G	Acceptor Region	NEB	training	0.00027401
+chr2	151627209	G	C	Acceptor Region	NEB	training	0.00063168
+chr2	151644449	A	G	Deep Intronic	NEB	pooled test	0.00012740
+chr2	151664867	C	A	Acceptor Region	NEB	training	0.00017999
+chr2	151690829	G	C	Acceptor Region	NEB	training	0.00095973
+chr2	157774205	G	A	PPT Region	ACVR1	pooled test	0.00252454
+chr2	161964322	G	A	Deep Intronic	SLC4A10	pooled test	0.00002483
+chr2	165941010	A	G	Deep Intronic	TTC21B	training	0.00005849
+chr2	166041507	G	T	Branch Point Region	SCN1A	training	0.00107756
+chr2	166052961	C	T	PPT Region	SCN1A	pooled test	0.00157323
+chr2	166288433	G	A	Donor Region	SCN9A	pooled test	0.00026595
+chr2	166303308	A	T	Acceptor Region	SCN9A	training	0.00039906
+chr2	168923856	T	C	Branch Point Region	ABCB11	training	0.00027993
+chr2	168927392	G	A	Branch Point Region	ABCB11	pooled test	0.00007006
+chr2	169170541	T	C	Deep Intronic	LRP2	training	0.00014800
+chr2	169173088	C	T	Donor Region	LRP2	training	0.00055843
+chr2	169279614	T	G	PPT Region	LRP2	pooled test	0.00012556
+chr2	169362301	G	A	Deep Intronic	LRP2	pooled test	0.00002721
+chr2	169497594	C	T	Branch Point Region	BBS5	pooled test	0.00245683
+chr2	169499627	T	C	Donor Region	BBS5	training	0.00154257
+chr2	169514989	T	A	Deep Intronic	KLHL41	training	0.00064498
+chr2	171443512	T	G	PPT Region	DCAF17	pooled test	0.00331161
+chr2	171443519	C	T	Acceptor Region	DCAF17	training	0.00026591
+chr2	172487946	C	A	PPT Region	ITGA6	training	0.00007243
+chr2	172491004	T	A	PPT Region	ITGA6	training	0.00005585
+chr2	173191184	T	C	Donor Region	MAP3K20	training	0.00002509
+chr2	173363209	T	G	PPT Region	CDCA7	pooled test	0.00048656
+chr2	174567328	G	A	Deep Intronic	WIPF1	training	0.00011108
+chr2	174759634	C	T	Canonical Acceptor Site	CHRNA1	training	0.99933606
+chr2	178436134	A	G	Deep Intronic	PRKRA	pooled test	0.00047259
+chr2	178527318	C	T	PPT Region	TTN	pooled test	0.00005972
+chr2	178546938	A	G	Branch Point Region	TTN	training	0.00060890
+chr2	178592284	A	G	Acceptor Region	TTN	pooled test	0.00015207
+chr2	178599096	T	A	Branch Point Region	TTN	training	0.00019439
+chr2	178614051	C	A	Canonical Donor Site	TTN	training	0.99984848
+chr2	178614768	A	G	PPT Region	TTN	training	0.00022393
+chr2	178616722	T	C	Donor Region	TTN	training	0.00037231
+chr2	178618574	A	T	Deep Intronic	TTN	training	0.00004497
+chr2	178618861	G	T	Acceptor Region	TTN	pooled test	0.00015259
+chr2	178633058	G	C	PPT Region	TTN	pooled test	0.00005690
+chr2	178649231	T	C	Deep Intronic	TTN	pooled test	0.00031878
+chr2	178665696	G	A	Deep Intronic	TTN	pooled test	0.00000948
+chr2	178676013	C	T	PPT Region	TTN	training	0.00001490
+chr2	178678842	T	C	PPT Region	TTN	pooled test	0.00004423
+chr2	178688226	T	C	Canonical Acceptor Site	TTN	pooled test	0.99937707
+chr2	178721210	A	G	Acceptor Region	TTN	pooled test	0.00159383
+chr2	178722550	T	C	Acceptor Region	TTN	training	0.00083171
+chr2	178756802	A	G	Acceptor Region	TTN	pooled test	0.00011313
+chr2	178774114	T	C	Acceptor Region	TTN	training	0.00009139
+chr2	178799732	C	T	Canonical Acceptor Site	TTN	training	0.99967694
+chr2	178918969	C	A	Deep Intronic	CCDC141	training	0.00152668
+chr2	181547611	T	C	Donor Region	CERKL	training	0.00137146
+chr2	181548672	A	T	Donor Region	CERKL	training	0.00012670
+chr2	188984758	A	T	Canonical Acceptor Site	COL3A1	training	0.99952316
+chr2	189002280	G	A	PPT Region	COL3A1	pooled test	0.00003985
+chr2	189042781	G	A	Acceptor Region	COL5A2	pooled test	0.00006963
+chr2	189068897	A	G	PPT Region	COL5A2	training	0.00026573
+chr2	190294639	A	C	Acceptor Region	HIBCH	training	0.97519737
+chr2	190954575	C	G	Acceptor Region	GLS	pooled test	0.89668804
+chr2	190985611	A	G	Donor Region	STAT1	pooled test	0.00004912
+chr2	191031438	A	G	Deep Intronic	STAT4	pooled test	0.00081815
+chr2	196222200	G	C	Deep Intronic	HECW2	pooled test	0.00001194
+chr2	201636889	T	C	Acceptor Region	TMEM237	pooled test	0.00013731
+chr2	201639079	G	C	Branch Point Region	TMEM237	training	0.00001446
+chr2	201704453	C	T	Canonical Donor Site	ALS2	training	0.99991035
+chr2	202514983	A	C	Donor Region	BMPR2	pooled test	0.00528618
+chr2	202555218	G	A	Branch Point Region	BMPR2	pooled test	0.00007147
+chr2	206162033	T	C	Acceptor Region	EEF1B2	pooled test	0.00073463
+chr2	209834898	C	T	PPT Region	UNC80	training	0.00022515
+chr2	209992162	G	A	Acceptor Region	UNC80	training	0.00015617
+chr2	210606949	C	G	Donor Region	CPS1	training	0.00035692
+chr2	210642666	G	A	Canonical Donor Site	CPS1	training	0.99989533
+chr2	210650334	A	T	Branch Point Region	CPS1	training	0.11760330
+chr2	214745199	A	G	Branch Point Region	BARD1	training	0.00083529
+chr2	214745898	A	G	Branch Point Region	BARD1	pooled test	0.00093727
+chr2	214792475	G	A	Branch Point Region	BARD1	pooled test	0.00007926
+chr2	214968705	A	G	Deep Intronic	ABCA12	pooled test	0.00020240
+chr2	215407121	A	T	Donor Region	FN1	pooled test	0.00093588
+chr2	215419235	T	A	Donor Region	FN1	training	0.00021358
+chr2	216416308	G	A	Canonical Donor Site	SMARCAL1	pooled test	0.99974710
+chr2	216451071	C	T	Donor Region	SMARCAL1	pooled test	0.00011893
+chr2	219006243	T	A	PPT Region	CFAP65	pooled test	0.00006644
+chr2	219078082	G	T	Donor Region	NHEJ1	training	0.00007275
+chr2	219420347	G	C	Canonical Donor Site	DES	training	0.99960834
+chr2	219420815	T	C	PPT Region	DES	training	0.00123620
+chr2	219553029	G	A	Acceptor Region	OBSL1	pooled test	0.00177337
+chr2	219630127	C	T	Branch Point Region	SLC4A3	training	0.01784486
+chr2	227047550	C	T	Canonical Acceptor Site	COL4A4	training	0.99937123
+chr2	227050141	T	C	Acceptor Region	COL4A4	training	0.00021656
+chr2	227101577	T	A	PPT Region	COL4A4	pooled test	0.00006552
+chr2	227269908	A	G	Canonical Acceptor Site	COL4A3	training	0.99957365
+chr2	227277561	T	A	Donor Region	COL4A3	training	0.00007174
+chr2	227290888	T	C	Canonical Donor Site	COL4A3	training	0.99985623
+chr2	229768608	G	A	Donor Region	TRIP12	pooled test	0.00000471
+chr2	229840811	A	C	Deep Intronic	TRIP12	pooled test	0.00008099
+chr2	231214826	C	T	Acceptor Region	ARMC9	training	0.00023922
+chr2	232136462	G	T	Acceptor Region	DIS3L2	training	0.00012623
+chr2	232333995	G	C	Donor Region	DIS3L2	training	0.00001107
+chr2	232456895	G	A	Acceptor Region	ALPI	pooled test	0.00024963
+chr2	232526681	G	A	Donor Region	CHRND	training	0.00017323
+chr2	232540138	C	T	Donor Region	CHRNG	training	0.00000239
+chr2	232540442	C	T	Deep Intronic	CHRNG	training	0.00003247
+chr2	237339151	G	A	Branch Point Region	COL6A3	training	0.00056268
+chr2	238333953	C	T	Acceptor Region	TRAF3IP1	training	0.00090782
+chr2	238352821	A	G	Acceptor Region	TRAF3IP1	pooled test	0.00033794
+chr2	239066869	C	T	PPT Region	HDAC4	training	0.00005313
+chr2	239084261	G	A	PPT Region	HDAC4	pooled test	0.00004679
+chr2	240719204	G	A	Acceptor Region	KIF1A	pooled test	0.00025483
+chr2	240723602	C	T	Branch Point Region	KIF1A	training	0.00038774
+chr2	240760849	A	C	Acceptor Region	KIF1A	training	0.00008899
+chr2	240771147	G	A	Branch Point Region	KIF1A	training	0.06897111
+chr2	240789323	G	C	PPT Region	KIF1A	pooled test	0.00098763
+chr2	241202098	C	T	Deep Intronic	ANO7	training	0.00008840
+chr3	4466965	C	T	Deep Intronic	SUMF1	pooled test	0.00005848
+chr3	4642258	G	A	Donor Region	ITPR1	pooled test	0.00024652
+chr3	4658092	T	C	Branch Point Region	ITPR1	training	0.00004041
+chr3	4670933	G	A	Donor Region	ITPR1	pooled test	0.00007394
+chr3	9470946	A	G	Deep Intronic	SETD5	pooled test	0.00009882
+chr3	9474583	G	A	Canonical Donor Site	SETD5	training	0.99978274
+chr3	9870098	C	A	Branch Point Region	CIDEC	pooled test	0.00013453
+chr3	10034460	T	C	Acceptor Region	FANCD2	training	0.01488140
+chr3	10085930	A	G	Donor Region	FANCD2	training	0.00005639
+chr3	11020208	T	C	Acceptor Region	SLC6A1	training	0.00063328
+chr3	11313298	T	C	Acceptor Region	ATG7	pooled test	0.00031480
+chr3	12529760	A	G	Canonical Acceptor Site	TSEN2	pooled test	0.99983847
+chr3	12585017	G	A	Branch Point Region	RAF1	training	0.00016938
+chr3	12587578	A	C	Deep Intronic	RAF1	pooled test	0.00020854
+chr3	12612377	G	C	Deep Intronic	RAF1	training	0.00009462
+chr3	14132539	C	T	Acceptor Region	TMEM43	pooled test	0.00001030
+chr3	14148954	C	A	Acceptor Region	XPC	training	0.00037810
+chr3	15475498	T	C	PPT Region	COLQ	pooled test	0.00035216
+chr3	15644300	C	T	PPT Region	BTD	training	0.00003349
+chr3	23918422	G	A	PPT Region	RPL15	training	0.00002229
+chr3	25626764	A	C	Donor Region	TOP2B	pooled test	0.00012692
+chr3	30606986	T	C	Deep Intronic	TGFBR2	pooled test	0.00000808
+chr3	33014312	T	A	Canonical Acceptor Site	GLB1	pooled test	0.99992704
+chr3	33124399	G	A	Acceptor Region	CRTAP	pooled test	0.00063117
+chr3	36996585	A	T	Branch Point Region	MLH1	pooled test	0.07801296
+chr3	37011786	A	G	Branch Point Region	MLH1	pooled test	0.00426688
+chr3	37011968	A	G	Branch Point Region	MLH1	pooled test	0.00058605
+chr3	37012004	T	C	Acceptor Region	MLH1	training	0.00058127
+chr3	37020280	G	C	Branch Point Region	MLH1	pooled test	0.00122216
+chr3	37049025	G	C	Donor Region	MLH1	pooled test	0.00022059
+chr3	38750066	C	T	Donor Region	SCN10A	pooled test	0.00005788
+chr3	38894997	A	G	Branch Point Region	SCN11A	training	0.00752857
+chr3	45826342	T	C	Acceptor Region	LZTFL1	training	0.00002861
+chr3	46860669	G	T	Donor Region	MYL3	pooled test	0.00032330
+chr3	47407965	G	A	Deep Intronic	PTPN23	pooled test	0.00191742
+chr3	48464811	C	G	PPT Region	ATRIP	training	0.00025253
+chr3	48567807	C	T	Branch Point Region	COL7A1	pooled test	0.00060338
+chr3	48576297	C	T	Canonical Acceptor Site	COL7A1	pooled test	0.99993730
+chr3	48578313	A	G	Donor Region	COL7A1	training	0.00065318
+chr3	48578384	G	A	PPT Region	COL7A1	training	0.00051807
+chr3	48578918	C	T	Canonical Donor Site	COL7A1	training	0.99996936
+chr3	48581951	C	G	Acceptor Region	COL7A1	training	0.00011792
+chr3	48585020	G	A	Deep Intronic	COL7A1	training	0.00009472
+chr3	48591669	T	A	Donor Region	COL7A1	training	0.99704736
+chr3	49100471	G	T	PPT Region	QARS1	training	0.00014488
+chr3	49103726	G	A	PPT Region	QARS1	training	0.00037185
+chr3	49123058	A	G	Acceptor Region	LAMB2	pooled test	0.00019403
+chr3	49123383	G	A	Acceptor Region	LAMB2	training	0.00022974
+chr3	49124322	A	C	Branch Point Region	LAMB2	training	0.00030213
+chr3	49129012	C	T	Donor Region	LAMB2	pooled test	0.00005324
+chr3	49722224	G	A	Donor Region	GMPPB	pooled test	0.01225529
+chr3	50345106	C	A	Deep Intronic	ZMYND10	pooled test	0.00055534
+chr3	50380825	G	A	PPT Region	CACNA2D2	training	0.00001868
+chr3	52393492	G	T	Donor Region	DNAH1	pooled test	0.00010686
+chr3	52403316	A	G	PPT Region	BAP1	training	0.00042100
+chr3	52404626	C	T	Branch Point Region	BAP1	training	0.00132628
+chr3	53183115	T	C	Acceptor Region	PRKCD	training	0.00011830
+chr3	53186045	G	A	Deep Intronic	PRKCD	pooled test	0.00006611
+chr3	53189050	A	G	Acceptor Region	PRKCD	pooled test	0.00005356
+chr3	53718748	G	T	Donor Region	CACNA1D	training	0.00102430
+chr3	53747297	T	C	Acceptor Region	CACNA1D	training	0.00029622
+chr3	53775876	T	C	Acceptor Region	CACNA1D	pooled test	0.00271509
+chr3	53780022	A	G	Acceptor Region	CACNA1D	pooled test	0.00020733
+chr3	66369543	G	T	Canonical Donor Site	SLC25A26	pooled test	0.99969745
+chr3	67528125	A	G	Donor Region	SUCLG2	training	0.00038425
+chr3	93893155	T	C	Branch Point Region	PROS1	pooled test	0.00175343
+chr3	98591187	G	T	Branch Point Region	CPOX	pooled test	0.00082681
+chr3	108206715	A	T	PPT Region	IFT57	pooled test	0.00009139
+chr3	113803695	C	T	Deep Intronic	ATP6V1A	pooled test	0.00000420
+chr3	120641709	A	T	PPT Region	HGD	training	0.89152849
+chr3	123304066	C	T	Canonical Donor Site	ADCY5	training	0.99849141
+chr3	123657433	G	T	Acceptor Region	MYLK	pooled test	0.00042703
+chr3	123692728	G	A	Donor Region	MYLK	pooled test	0.00010500
+chr3	123709909	C	T	PPT Region	MYLK	training	0.00064797
+chr3	127015324	C	T	Donor Region	PLXNA1	training	0.00090007
+chr3	128060672	T	A	Deep Intronic	SEC61A1	pooled test	0.00003015
+chr3	128483241	C	T	Deep Intronic	GATA2	pooled test	0.00664212
+chr3	128486795	G	C	Donor Region	GATA2	training	0.00214766
+chr3	129449606	T	C	Deep Intronic	IFT122	training	0.00084451
+chr3	129466875	A	G	PPT Region	IFT122	training	0.00010472
+chr3	129476659	G	A	Acceptor Region	IFT122	pooled test	0.00009313
+chr3	132531183	G	C	Deep Intronic	DNAJC13	training	0.00007496
+chr3	132672030	G	C	PPT Region	UBA5	pooled test	0.00018877
+chr3	133947446	C	T	Canonical Acceptor Site	SLCO2A1	training	0.99928290
+chr3	133953780	G	T	PPT Region	SLCO2A1	pooled test	0.00019194
+chr3	134547479	A	G	Donor Region	CEP63	training	0.00430769
+chr3	136340621	T	C	PPT Region	STAG1	pooled test	0.00010142
+chr3	136521200	G	C	Deep Intronic	STAG1	training	0.00002721
+chr3	138373083	C	A	Donor Region	MRAS	pooled test	0.00007080
+chr3	139356886	A	G	Branch Point Region	MRPS22	training	0.00114713
+chr3	141555829	C	T	PPT Region	RASA2	pooled test	0.00182290
+chr3	142449606	A	C	Acceptor Region	ATR	pooled test	0.00038823
+chr3	142465250	G	A	Acceptor Region	ATR	training	0.00060711
+chr3	142465860	G	C	Deep Intronic	ATR	training	0.97756517
+chr3	142542664	C	G	Canonical Donor Site	ATR	pooled test	0.99984241
+chr3	142549689	A	G	PPT Region	ATR	pooled test	0.00017320
+chr3	142563152	C	T	Branch Point Region	ATR	training	0.00038417
+chr3	146085153	G	A	Deep Intronic	PLOD2	pooled test	0.00002999
+chr3	151443892	G	T	Acceptor Region	IGSF10	training	0.00084264
+chr3	155143423	T	C	PPT Region	MME	pooled test	0.00027135
+chr3	158654538	T	A	Acceptor Region	GFM1	training	0.00245140
+chr3	169102051	T	C	Deep Intronic	MECOM	training	0.00001741
+chr3	172924196	T	G	Deep Intronic	SPATA16	pooled test	0.00122440
+chr3	177034191	G	T	Donor Region	TBL1XR1	pooled test	0.00011226
+chr3	180663847	A	T	Deep Intronic	CCDC39	pooled test	0.00091069
+chr3	183022415	A	G	Canonical Donor Site	MCCC1	pooled test	0.99935025
+chr3	183761488	T	C	PPT Region	YEATS2	pooled test	0.01744648
+chr3	191369649	A	C	Deep Intronic	CCDC50	training	0.00084130
+chr3	193618200	C	T	Deep Intronic	OPA1	training	0.00050811
+chr3	193648878	A	G	Donor Region	OPA1	training	0.00021866
+chr3	196068135	A	G	Acceptor Region	TFRC	pooled test	0.00165283
+chr3	196483903	G	C	PPT Region	RNF168	pooled test	0.01266174
+chr4	656014	C	G	Donor Region	PDE6B	pooled test	0.00599863
+chr4	1355100	G	A	PPT Region	UVSSA	pooled test	0.00042699
+chr4	1816718	C	T	Deep Intronic	LETM1	training	0.00003768
+chr4	1916870	G	C	Canonical Acceptor Site	NSD2	pooled test	0.99992204
+chr4	1953296	C	T	Branch Point Region	NSD2	pooled test	0.08972323
+chr4	2825216	A	C	Deep Intronic	SH3BP2	training	0.00018607
+chr4	2827685	C	G	Deep Intronic	SH3BP2	pooled test	0.00001381
+chr4	2831996	T	C	Deep Intronic	SH3BP2	training	0.00007779
+chr4	2832239	G	A	Deep Intronic	SH3BP2	training	0.00075702
+chr4	5632076	C	T	Branch Point Region	EVC2	training	0.00036001
+chr4	5685368	A	G	Canonical Donor Site	EVC2	training	0.99977726
+chr4	5685752	C	T	Deep Intronic	EVC2	training	0.00002719
+chr4	5745198	C	T	Acceptor Region	EVC	training	0.00003682
+chr4	5801945	C	G	Acceptor Region	EVC	pooled test	0.00024761
+chr4	6295029	C	T	PPT Region	WFS1	pooled test	0.00000949
+chr4	8612168	G	T	Donor Region	CPZ	training	0.00076617
+chr4	13369966	C	A	Canonical Acceptor Site	RAB28	pooled test	0.99981052
+chr4	13474410	G	A	Acceptor Region	RAB28	pooled test	0.00061486
+chr4	15597376	T	C	Branch Point Region	CC2D2A	training	0.00085685
+chr4	16008940	G	A	Deep Intronic	PROM1	pooled test	0.00002439
+chr4	16213907	A	G	Acceptor Region	TAPT1	pooled test	0.00510988
+chr4	22447421	G	T	Deep Intronic	ADGRA3	training	0.00046212
+chr4	36290354	A	C	PPT Region	DTHD1	pooled test	0.00009962
+chr4	39194507	C	T	Branch Point Region	WDR19	training	0.00005371
+chr4	39215669	T	C	Deep Intronic	WDR19	training	0.00095858
+chr4	39215830	G	A	PPT Region	WDR19	training	0.00001116
+chr4	39240260	T	C	PPT Region	WDR19	pooled test	0.00343306
+chr4	41257133	G	A	Donor Region	UCHL1	pooled test	0.00182393
+chr4	47403718	C	T	Donor Region	GABRB1	training	0.00000878
+chr4	54267273	T	C	PPT Region	PDGFRA	pooled test	0.00034257
+chr4	54273520	G	T	PPT Region	PDGFRA	pooled test	0.00002863
+chr4	54277512	G	T	Deep Intronic	PDGFRA	pooled test	0.00003187
+chr4	54278522	G	A	Donor Region	PDGFRA	training	0.00040294
+chr4	54295087	C	T	Branch Point Region	PDGFRA	training	0.00000895
+chr4	54703444	C	T	Deep Intronic	KIT	training	0.00027973
+chr4	54727994	C	A	PPT Region	KIT	pooled test	0.00001677
+chr4	72291072	C	T	Acceptor Region	ADAMTS3	pooled test	0.00004155
+chr4	76163385	T	C	Canonical Acceptor Site	SCARB2	training	0.99950230
+chr4	78066024	A	G	Donor Region	FRAS1	pooled test	0.00016161
+chr4	78513555	G	C	Donor Region	FRAS1	training	0.10576092
+chr4	80008623	T	C	Acceptor Region	ANTXR2	pooled test	0.00039576
+chr4	82827364	G	A	Donor Region	SEC31A	pooled test	0.00026662
+chr4	82844538	G	T	Branch Point Region	SEC31A	training	0.00028969
+chr4	88043232	G	C	Canonical Acceptor Site	PKD2	pooled test	0.99994290
+chr4	93769198	C	G	PPT Region	GRID2	pooled test	0.00016057
+chr4	99574990	T	C	Deep Intronic	MTTP	training	0.00030730
+chr4	99601574	T	G	Branch Point Region	MTTP	pooled test	0.08649109
+chr4	99601576	G	A	Branch Point Region	MTTP	pooled test	0.00150859
+chr4	99601722	C	T	Donor Region	MTTP	training	0.00014571
+chr4	102613424	G	A	Canonical Acceptor Site	NFKB1	pooled test	0.99637991
+chr4	109760268	A	T	Canonical Donor Site	CFI	pooled test	0.99939668
+chr4	109848318	G	A	Canonical Donor Site	LRIT3	pooled test	0.99323338
+chr4	109913469	A	G	Donor Region	EGF	pooled test	0.00055293
+chr4	109968933	T	A	Branch Point Region	EGF	training	0.00054919
+chr4	110004637	G	A	Deep Intronic	EGF	pooled test	0.00022607
+chr4	113198993	T	C	PPT Region	ANK2	training	0.00051194
+chr4	113336560	G	A	PPT Region	ANK2	pooled test	0.00004313
+chr4	113359316	G	A	Deep Intronic	ANK2	pooled test	0.00189055
+chr4	113360821	A	G	Canonical Acceptor Site	ANK2	training	0.99946243
+chr4	113367528	T	A	Branch Point Region	ANK2	training	0.00066226
+chr4	113373085	T	A	Acceptor Region	ANK2	training	0.00196847
+chr4	118752097	A	T	Acceptor Region	SEC24D	pooled test	0.00516157
+chr4	120777288	G	A	Acceptor Region	PRDM5	pooled test	0.00008396
+chr4	121802898	C	T	PPT Region	EXOSC9	training	0.00005418
+chr4	121847509	G	A	Acceptor Region	BBS7	pooled test	0.04143566
+chr4	122304991	C	T	Donor Region	BLTP1	training	0.00004365
+chr4	123090712	G	A	Donor Region	AFG2A	pooled test	0.00007897
+chr4	127891090	A	G	Canonical Acceptor Site	PLK4	pooled test	0.99857295
+chr4	128946002	C	A	Donor Region	SCLT1	pooled test	0.99220568
+chr4	146503962	A	T	Branch Point Region	SLC10A7	training	0.00003289
+chr4	150490910	C	G	Donor Region	LRBA	training	0.00018094
+chr4	152328192	C	A	Deep Intronic	FBXW7	pooled test	0.00000752
+chr4	152332593	T	A	Donor Region	FBXW7	pooled test	0.92761368
+chr4	153781759	T	A	Acceptor Region	SFRP2	training	0.00003205
+chr4	157136468	G	A	Canonical Acceptor Site	GLRB	pooled test	0.99995768
+chr4	163164209	G	A	Donor Region	NAF1	pooled test	0.00006953
+chr4	165337753	G	A	Branch Point Region	MSMO1	training	0.00403642
+chr4	166008124	A	G	Deep Intronic	TLL1	training	0.00088986
+chr4	177434375	G	A	Donor Region	AGA	pooled test	0.00010929
+chr4	183674698	T	G	PPT Region	TRAPPC11	pooled test	0.00028044
+chr4	183683961	C	G	PPT Region	TRAPPC11	pooled test	0.00009837
+chr4	183691309	T	A	Acceptor Region	TRAPPC11	training	0.00044229
+chr4	186258010	C	T	PPT Region	KLKB1	pooled test	0.00031637
+chr5	225570	G	T	Donor Region	SDHA	pooled test	0.00046358
+chr5	228335	T	C	Canonical Donor Site	SDHA	pooled test	0.99967158
+chr5	483254	C	T	Donor Region	SLC9A3	training	0.00048948
+chr5	914590	C	T	Deep Intronic	TRIP13	pooled test	0.00006215
+chr5	1255286	C	A	Canonical Donor Site	TERT	training	0.99962151
+chr5	7873353	T	C	PPT Region	MTRR	pooled test	0.00198739
+chr5	11022732	T	C	Deep Intronic	CTNND2	training	0.00006187
+chr5	13708374	C	T	Branch Point Region	DNAH5	training	0.00201098
+chr5	13714629	C	G	Acceptor Region	DNAH5	training	0.00009893
+chr5	13768959	C	T	Canonical Donor Site	DNAH5	training	0.99988747
+chr5	13829497	C	G	Deep Intronic	DNAH5	pooled test	0.00006970
+chr5	13841905	C	T	Canonical Acceptor Site	DNAH5	training	0.99990892
+chr5	13917287	G	A	Branch Point Region	DNAH5	training	0.00414208
+chr5	14366821	G	A	Branch Point Region	TRIO	training	0.00010052
+chr5	14390991	G	A	Canonical Donor Site	TRIO	pooled test	0.99994707
+chr5	14394143	C	T	Deep Intronic	TRIO	pooled test	0.00002738
+chr5	16565797	C	T	Acceptor Region	RETREG1	pooled test	0.00026388
+chr5	34004567	T	C	Donor Region	AMACR	pooled test	0.00204279
+chr5	36197690	C	G	Branch Point Region	NADK2	pooled test	0.00188033
+chr5	37000806	G	C	PPT Region	NIPBL	pooled test	0.00006170
+chr5	37003352	G	T	Donor Region	NIPBL	pooled test	0.99974090
+chr5	37187587	A	G	PPT Region	CPLANE1	pooled test	0.00047044
+chr5	37224349	C	A	PPT Region	CPLANE1	pooled test	0.00012612
+chr5	39306610	T	G	Donor Region	C9	training	0.00006872
+chr5	40931029	C	T	Branch Point Region	C7	pooled test	0.00078520
+chr5	41739524	A	G	Branch Point Region	OXCT1	training	0.00087236
+chr5	53042078	C	T	Branch Point Region	ITGA2	training	0.00053615
+chr5	60904784	T	C	Donor Region	ERCC8	training	0.00174431
+chr5	71646509	G	A	Deep Intronic	MCCC2	training	0.00012985
+chr5	74713505	G	C	Canonical Acceptor Site	HEXB	pooled test	0.99973911
+chr5	74750673	A	G	Acceptor Region	GFM2	training	0.00026566
+chr5	75707890	T	C	PPT Region	POC5	training	0.00016750
+chr5	78015402	G	A	Donor Region	AP3B1	pooled test	0.00006975
+chr5	78984930	C	G	Donor Region	ARSB	training	0.00007629
+chr5	79030821	A	G	Deep Intronic	DMGDH	pooled test	0.00009362
+chr5	87333260	T	C	Acceptor Region	RASA1	training	0.00350158
+chr5	87362534	T	C	PPT Region	RASA1	pooled test	0.00026381
+chr5	88882950	C	G	Donor Region	MEF2C	pooled test	0.99252325
+chr5	90629546	G	A	Donor Region	ADGRV1	training	0.00011627
+chr5	90692834	G	A	Deep Intronic	ADGRV1	training	0.00786584
+chr5	90704732	C	A	Deep Intronic	ADGRV1	training	0.00006785
+chr5	90728934	G	A	Canonical Donor Site	ADGRV1	pooled test	0.99795437
+chr5	90807739	T	C	Canonical Donor Site	ADGRV1	pooled test	0.99957949
+chr5	90863745	T	C	PPT Region	ADGRV1	training	0.00022697
+chr5	95464690	A	C	Acceptor Region	SKIC3	training	0.01451424
+chr5	95516518	T	C	Donor Region	SKIC3	training	0.00032859
+chr5	96776591	C	T	Branch Point Region	ERAP1	training	0.00001957
+chr5	98898249	T	C	Donor Region	CHD1	pooled test	0.00395331
+chr5	110742108	A	C	Deep Intronic	SLC25A46	training	0.00042325
+chr5	112775600	C	T	Branch Point Region	APC	training	0.00055428
+chr5	112780909	T	G	Donor Region	APC	training	0.00293445
+chr5	112792405	T	A	Branch Point Region	APC	pooled test	0.01017314
+chr5	112827886	A	G	Branch Point Region	APC	pooled test	0.00007348
+chr5	112834936	T	C	PPT Region	APC	training	0.00090424
+chr5	126546418	A	G	PPT Region	ALDH7A1	training	0.00011983
+chr5	126550016	G	A	PPT Region	ALDH7A1	training	0.00018003
+chr5	126561140	T	A	PPT Region	ALDH7A1	training	0.00002349
+chr5	127445442	C	T	PPT Region	MEGF10	training	0.00016735
+chr5	128309240	T	G	Donor Region	FBN2	training	0.00010383
+chr5	128312496	G	A	Deep Intronic	FBN2	training	0.00000469
+chr5	128344514	A	G	Acceptor Region	FBN2	training	0.00003995
+chr5	132587558	T	C	Acceptor Region	RAD50	pooled test	0.00021807
+chr5	132608611	T	A	Acceptor Region	RAD50	pooled test	0.00021806
+chr5	132642168	A	G	Acceptor Region	RAD50	training	0.00013349
+chr5	137887204	C	T	Acceptor Region	MYOT	pooled test	0.00012428
+chr5	138781881	G	A	Branch Point Region	CTNNA1	pooled test	0.00411721
+chr5	138887453	T	C	Branch Point Region	CTNNA1	pooled test	0.00228206
+chr5	138924467	T	C	Branch Point Region	CTNNA1	pooled test	0.00372897
+chr5	139477321	C	A	Donor Region	STING1	pooled test	0.00006093
+chr5	140677430	C	G	Acceptor Region	HARS1	training	0.00010648
+chr5	141583619	G	A	Acceptor Region	DIAPH1	pooled test	0.00014766
+chr5	146120538	G	C	Branch Point Region	LARS1	training	0.00032076
+chr5	148070468	T	C	Deep Intronic	SPINK5	pooled test	0.00076901
+chr5	148086373	A	T	Branch Point Region	SPINK5	pooled test	0.00018113
+chr5	148088535	A	G	Acceptor Region	SPINK5	training	0.00193866
+chr5	148123972	G	T	Deep Intronic	SPINK5	pooled test	0.00020385
+chr5	148404666	T	C	PPT Region	FBXO38	training	0.00014974
+chr5	148406414	A	G	Deep Intronic	FBXO38	pooled test	0.00019707
+chr5	148415921	T	C	Acceptor Region	FBXO38	training	0.00144271
+chr5	148433407	T	G	PPT Region	FBXO38	pooled test	0.00009727
+chr5	150361146	C	T	Acceptor Region	TCOF1	pooled test	0.00002457
+chr5	151507639	A	G	Branch Point Region	FAT2	training	0.00022569
+chr5	151666354	G	A	Donor Region	SPARC	training	0.00005246
+chr5	156647541	A	T	Donor Region	SGCD	pooled test	0.00610431
+chr5	157106982	G	C	PPT Region	HAVCR2	pooled test	0.00071230
+chr5	157223032	C	G	Deep Intronic	ITK	training	0.00004206
+chr5	157240211	G	C	Deep Intronic	ITK	pooled test	0.00039510
+chr5	157285497	A	G	Deep Intronic	CYFIP2	training	0.00001097
+chr5	157302898	C	T	Donor Region	CYFIP2	training	0.00017255
+chr5	157326153	G	A	PPT Region	CYFIP2	training	0.00002859
+chr5	157328057	A	G	Donor Region	CYFIP2	pooled test	0.00033754
+chr5	157341055	C	T	PPT Region	CYFIP2	pooled test	0.00017047
+chr5	157734574	A	G	Canonical Acceptor Site	THG1L	pooled test	0.99931145
+chr5	159318729	T	C	Donor Region	IL12B	pooled test	0.00028619
+chr5	161875654	T	G	Deep Intronic	GABRA1	pooled test	0.00076627
+chr5	161875656	T	C	Deep Intronic	GABRA1	pooled test	0.00007676
+chr5	162097631	A	G	Acceptor Region	GABRG2	pooled test	0.00009532
+chr5	162101223	C	T	PPT Region	GABRG2	training	0.00002592
+chr5	170047620	T	C	Donor Region	DOCK2	pooled test	0.02255769
+chr5	177267554	T	G	Acceptor Region	NSD1	pooled test	0.00037669
+chr5	177386418	C	A	Acceptor Region	SLC34A1	pooled test	0.00306266
+chr5	177514908	T	C	Donor Region	DDX41	pooled test	0.00019854
+chr5	177608530	C	T	Acceptor Region	B4GALT7	pooled test	0.00028443
+chr5	178230112	C	G	PPT Region	PHYKPL	pooled test	0.00078245
+chr5	179207509	T	C	Donor Region	ADAMTS2	pooled test	0.96474516
+chr5	179344168	C	G	Acceptor Region	ADAMTS2	training	0.00028763
+chr5	179824176	C	T	Acceptor Region	SQSTM1	training	0.00023964
+chr6	393375	G	A	Donor Region	IRF4	training	0.00003419
+chr6	7570583	T	C	Deep Intronic	DSP	pooled test	0.00000681
+chr6	7576282	A	G	PPT Region	DSP	training	0.00005526
+chr6	13160200	G	A	Acceptor Region	PHACTR1	pooled test	0.00025280
+chr6	24495357	G	A	Donor Region	ALDH5A1	training	0.00091592
+chr6	24532178	G	T	Canonical Donor Site	ALDH5A1	training	0.99996173
+chr6	24865466	C	G	PPT Region	RIPOR2	training	0.00010488
+chr6	30920561	G	A	Deep Intronic	VARS2	training	0.00003453
+chr6	30922418	A	C	Branch Point Region	VARS2	training	0.00086253
+chr6	31865003	C	T	Donor Region	SLC44A4	pooled test	0.00013574
+chr6	31951257	C	A	Deep Intronic	CFB	pooled test	0.00009349
+chr6	31962966	C	A	PPT Region	SKIC2	training	0.00125395
+chr6	31964344	T	C	Canonical Donor Site	SKIC2	training	0.99958163
+chr6	33170624	C	T	PPT Region	COL11A2	training	0.00945281
+chr6	33175687	T	C	Acceptor Region	COL11A2	pooled test	0.00145612
+chr6	33446568	C	T	Acceptor Region	SYNGAP1	training	0.00348931
+chr6	35310661	C	T	Deep Intronic	DEF6	pooled test	0.00017659
+chr6	35452800	C	G	Donor Region	FANCE	pooled test	0.00085583
+chr6	35460638	G	A	Deep Intronic	FANCE	pooled test	0.00132973
+chr6	35509820	G	T	Donor Region	TULP1	training	0.00012580
+chr6	38778471	A	G	Donor Region	DNAH8	pooled test	0.00102869
+chr6	38781583	C	T	Deep Intronic	DNAH8	training	0.00021280
+chr6	38845781	T	C	Donor Region	DNAH8	pooled test	0.00003142
+chr6	39913844	G	C	Acceptor Region	MOCS1	training	0.00040551
+chr6	42934474	G	A	Canonical Acceptor Site	CNPY3	pooled test	0.99973613
+chr6	42965067	G	C	Donor Region	PEX6	training	0.00076013
+chr6	43046439	G	A	Branch Point Region	CUL7	training	0.00022010
+chr6	43048263	G	A	Acceptor Region	CUL7	pooled test	0.00006549
+chr6	45432030	G	C	Deep Intronic	RUNX2	training	0.00031706
+chr6	49441972	C	A	Canonical Acceptor Site	MMUT	training	0.99952745
+chr6	49447790	T	C	Acceptor Region	MMUT	training	0.00075881
+chr6	49459531	A	T	Branch Point Region	MMUT	training	0.00030271
+chr6	51648145	G	A	Branch Point Region	PKHD1	pooled test	0.00302824
+chr6	51909276	C	G	Donor Region	PKHD1	training	0.00012703
+chr6	52065077	A	G	Branch Point Region	PKHD1	pooled test	0.00077175
+chr6	53012383	A	G	Deep Intronic	CILK1	training	0.00002933
+chr6	63789226	T	C	Canonical Acceptor Site	EYS	training	0.99916792
+chr6	63864367	G	A	Acceptor Region	EYS	training	0.00012906
+chr6	64081840	A	G	Deep Intronic	EYS	pooled test	0.00015024
+chr6	65494657	T	A	Donor Region	EYS	pooled test	0.00066138
+chr6	70252042	A	G	Deep Intronic	COL9A1	training	0.00001111
+chr6	70263304	A	C	Acceptor Region	COL9A1	training	0.00017744
+chr6	70270295	C	G	Deep Intronic	COL9A1	training	0.00001574
+chr6	73641690	C	G	Canonical Donor Site	SLC17A5	pooled test	0.99972945
+chr6	75089188	A	C	PPT Region	COL12A1	training	0.00004422
+chr6	75095101	C	T	Donor Region	COL12A1	training	0.00014222
+chr6	75119333	T	C	Deep Intronic	COL12A1	pooled test	0.00007340
+chr6	75134719	C	T	Donor Region	COL12A1	pooled test	0.00009394
+chr6	75142169	A	G	Acceptor Region	COL12A1	training	0.00026185
+chr6	75143251	C	A	Canonical Donor Site	COL12A1	pooled test	0.99962151
+chr6	75189834	C	G	PPT Region	COL12A1	training	0.00000679
+chr6	75887006	C	T	Deep Intronic	MYO6	pooled test	0.00000621
+chr6	78963272	C	T	PPT Region	PHIP	pooled test	0.00027373
+chr6	79026183	A	G	PPT Region	PHIP	training	0.00005832
+chr6	84760382	G	C	Branch Point Region	TBX18	training	0.00323083
+chr6	87518919	A	C	Branch Point Region	RARS2	pooled test	0.70804751
+chr6	99609324	C	G	Deep Intronic	PRDM13	training	0.00003115
+chr6	106649009	T	A	PPT Region	QRSL1	training	0.04207925
+chr6	108051023	G	A	Donor Region	OSTM1	pooled test	0.00003016
+chr6	109444802	T	C	Acceptor Region	MICAL1	pooled test	0.00098852
+chr6	112060218	A	T	Deep Intronic	CCN6	pooled test	0.00899097
+chr6	112119142	C	A	Deep Intronic	LAMA4	pooled test	0.00008038
+chr6	123260645	A	G	Acceptor Region	TRDN	training	0.00055693
+chr6	123337684	A	G	PPT Region	TRDN	pooled test	0.00085354
+chr6	123388569	G	A	PPT Region	TRDN	pooled test	0.00030148
+chr6	123548627	A	T	PPT Region	TRDN	pooled test	0.00002266
+chr6	129393009	G	A	Branch Point Region	LAMA2	pooled test	0.00108431
+chr6	129427750	A	G	Canonical Acceptor Site	LAMA2	training	0.99990356
+chr6	131582602	G	A	PPT Region	ARG1	pooled test	0.00561290
+chr6	131582620	G	C	Canonical Acceptor Site	ARG1	training	0.99809200
+chr6	131872897	T	C	Branch Point Region	ENPP1	training	0.00136887
+chr6	133462321	T	C	PPT Region	EYA4	training	0.01923557
+chr6	135394903	T	C	Acceptor Region	AHI1	training	0.00010329
+chr6	137875979	T	C	PPT Region	TNFAIP3	training	0.00130177
+chr6	138941328	A	G	Donor Region	REPS1	pooled test	0.00010842
+chr6	138947782	A	C	Donor Region	REPS1	pooled test	0.00050911
+chr6	151405849	A	C	PPT Region	RMND1	pooled test	0.00024912
+chr6	152133529	G	T	Branch Point Region	SYNE1	training	0.00176755
+chr6	152151702	G	A	PPT Region	SYNE1	training	0.00017048
+chr6	152219222	T	C	Branch Point Region	SYNE1	training	0.00086296
+chr6	152236797	T	C	Deep Intronic	SYNE1	pooled test	0.00003547
+chr6	152310384	A	T	Deep Intronic	SYNE1	pooled test	0.00003178
+chr6	152321917	G	A	Branch Point Region	SYNE1	pooled test	0.00267363
+chr6	152353437	T	A	Acceptor Region	SYNE1	pooled test	0.00016001
+chr6	152430470	A	T	Deep Intronic	SYNE1	training	0.00004453
+chr6	152447661	T	G	Branch Point Region	SYNE1	training	0.00463362
+chr6	157198801	C	T	Acceptor Region	ARID1B	pooled test	0.00032190
+chr6	158158267	A	G	Donor Region	SERAC1	training	0.98245895
+chr6	161092006	A	C	Acceptor Region	MAP3K4	training	0.00484905
+chr6	169756706	G	C	PPT Region	ERMARD	pooled test	0.00013300
+chr6	170282921	A	G	Branch Point Region	DLL1	training	0.00001991
+chr6	170286342	G	C	Branch Point Region	DLL1	training	0.00004380
+chr6	170288503	G	A	Acceptor Region	DLL1	pooled test	0.00033518
+chr7	258432	G	C	Deep Intronic	FAM20C	training	0.00010505
+chr7	2910039	G	C	Deep Intronic	CARD11	pooled test	0.00001621
+chr7	2910169	C	T	Acceptor Region	CARD11	training	0.00001693
+chr7	2924369	C	T	Acceptor Region	CARD11	pooled test	0.00030648
+chr7	2926731	G	A	Donor Region	CARD11	pooled test	0.00000606
+chr7	5730832	G	A	PPT Region	RNF216	pooled test	0.00042060
+chr7	5977797	A	T	Branch Point Region	PMS2	pooled test	0.00257914
+chr7	5995664	T	C	Branch Point Region	PMS2	training	0.03815295
+chr7	5997325	C	A	Canonical Donor Site	PMS2	training	0.99994516
+chr7	21619096	T	C	Acceptor Region	DNAH11	pooled test	0.00007662
+chr7	21735849	G	A	Donor Region	DNAH11	pooled test	0.98546946
+chr7	21750365	G	A	Canonical Donor Site	DNAH11	training	0.99984169
+chr7	21869005	T	G	Deep Intronic	DNAH11	training	0.00020622
+chr7	21892413	T	C	PPT Region	DNAH11	training	0.00094395
+chr7	24706403	A	G	Branch Point Region	GSDME	training	0.00028651
+chr7	24706403	A	T	Branch Point Region	GSDME	pooled test	0.01446265
+chr7	26193381	A	G	Acceptor Region	HNRNPA2B1	training	0.00013764
+chr7	33367748	T	A	PPT Region	BBS9	pooled test	0.00004520
+chr7	33905754	A	G	Donor Region	BMPER	training	0.00033845
+chr7	36449850	C	G	Deep Intronic	ANLN	pooled test	0.00012067
+chr7	36452436	G	A	Branch Point Region	ANLN	training	0.00036661
+chr7	37850451	G	C	Deep Intronic	NME8	pooled test	0.00003678
+chr7	37896858	C	T	PPT Region	NME8	pooled test	0.00003613
+chr7	39696671	T	G	PPT Region	RALA	training	0.00028717
+chr7	44116411	C	G	Deep Intronic	POLD2	pooled test	0.00195391
+chr7	44152429	A	G	Acceptor Region	GCK	pooled test	0.00489093
+chr7	44152432	G	A	Acceptor Region	GCK	pooled test	0.00120465
+chr7	44234683	C	A	Acceptor Region	CAMK2B	pooled test	0.00160322
+chr7	50540055	G	A	Branch Point Region	DDC	pooled test	0.00032442
+chr7	66076101	G	A	Donor Region	ASL	training	0.00014083
+chr7	71810328	G	T	Donor Region	CALN1	training	0.00009677
+chr7	74042983	G	A	Canonical Acceptor Site	ELN	pooled test	0.99938762
+chr7	75954182	T	C	Canonical Donor Site	POR	training	0.99970406
+chr7	80135285	G	C	Donor Region	GNAI1	pooled test	0.00004558
+chr7	80666502	G	C	Deep Intronic	CD36	pooled test	0.00000837
+chr7	81961886	T	C	Donor Region	CACNA2D1	training	0.00000753
+chr7	83162338	T	C	Donor Region	PCLO	training	0.00278999
+chr7	83405435	G	A	Deep Intronic	SEMA3E	training	0.00003364
+chr7	83469586	C	A	Deep Intronic	SEMA3E	training	0.00007793
+chr7	84007501	A	G	Acceptor Region	SEMA3A	training	0.00033659
+chr7	84014365	A	T	PPT Region	SEMA3A	training	0.00001056
+chr7	87402530	T	G	Deep Intronic	ABCB4	training	0.00011007
+chr7	87422101	G	C	Deep Intronic	ABCB4	pooled test	0.00038829
+chr7	87475272	C	G	Deep Intronic	ABCB4	training	0.19508421
+chr7	87475371	C	T	Deep Intronic	ABCB4	training	0.00059028
+chr7	88130479	A	G	Deep Intronic	ADAM22	pooled test	0.00005258
+chr7	92226709	A	C	Branch Point Region	KRIT1	pooled test	0.00796464
+chr7	92450696	C	T	Acceptor Region	GATAD1	training	0.00012175
+chr7	94399093	T	C	Deep Intronic	COL1A2	pooled test	0.00067312
+chr7	94409713	T	C	Acceptor Region	COL1A2	training	0.00006776
+chr7	94410304	C	T	Deep Intronic	COL1A2	pooled test	0.00023165
+chr7	94425241	G	A	Deep Intronic	COL1A2	pooled test	0.00144973
+chr7	94655989	C	A	Canonical Donor Site	SGCE	pooled test	0.99968791
+chr7	95410133	C	T	Branch Point Region	PON2	training	0.00008538
+chr7	96131742	C	T	Canonical Donor Site	SLC25A13	training	0.99983001
+chr7	96189390	A	G	PPT Region	SLC25A13	training	0.00015603
+chr7	97853394	G	C	Acceptor Region	ASNS	training	0.00236750
+chr7	98929980	T	C	Acceptor Region	TRRAP	pooled test	0.00013604
+chr7	99388030	C	G	Acceptor Region	ARPC1B	training	0.00042510
+chr7	99394133	C	G	Deep Intronic	ARPC1B	pooled test	0.00004386
+chr7	100626914	G	C	PPT Region	TFR2	pooled test	0.00068693
+chr7	100633561	G	A	Acceptor Region	TFR2	training	0.00096705
+chr7	100813750	T	C	Branch Point Region	EPHB4	training	0.00045349
+chr7	100818519	C	T	Canonical Donor Site	EPHB4	pooled test	0.99932563
+chr7	101206523	G	A	Deep Intronic	PLOD3	training	0.00001041
+chr7	101210314	G	A	Deep Intronic	PLOD3	training	0.00038798
+chr7	103604496	T	A	PPT Region	RELN	training	0.00007989
+chr7	105506275	T	A	Canonical Acceptor Site	PUS7	pooled test	0.99909222
+chr7	107548277	C	T	Canonical Donor Site	COG5	pooled test	0.99987662
+chr7	107689022	T	A	Branch Point Region	SLC26A4	pooled test	0.02385459
+chr7	107712635	T	C	Deep Intronic	SLC26A4	training	0.00002394
+chr7	107767763	T	C	Donor Region	SLC26A3	training	0.99659771
+chr7	107905506	T	C	Canonical Donor Site	DLD	training	0.99965477
+chr7	107960664	G	T	PPT Region	LAMB1	training	0.00327850
+chr7	108514136	G	C	Donor Region	PNPLA8	pooled test	0.00029276
+chr7	116755342	G	A	PPT Region	MET	training	0.00002215
+chr7	116759348	A	G	Branch Point Region	MET	pooled test	0.02806592
+chr7	116759367	C	T	PPT Region	MET	training	0.00254801
+chr7	116769797	A	G	Donor Region	MET	pooled test	0.00127950
+chr7	116774851	G	T	Branch Point Region	MET	pooled test	0.00048114
+chr7	116783518	A	T	Deep Intronic	MET	pooled test	0.00123158
+chr7	116795638	G	A	PPT Region	MET	training	0.00002377
+chr7	117541988	A	G	Branch Point Region	CFTR	pooled test	0.00584056
+chr7	117559429	G	A	Branch Point Region	CFTR	pooled test	0.00079933
+chr7	117652840	A	C	Canonical Acceptor Site	CFTR	training	0.99986863
+chr7	120806547	A	T	Canonical Donor Site	TSPAN12	pooled test	0.99966252
+chr7	124846932	A	G	Deep Intronic	POT1	training	0.00006960
+chr7	124859139	A	C	Branch Point Region	POT1	pooled test	0.02478805
+chr7	124859150	G	A	Branch Point Region	POT1	training	0.00038100
+chr7	124859150	G	T	Branch Point Region	POT1	pooled test	0.00096636
+chr7	128395038	A	G	Acceptor Region	IMPDH1	pooled test	0.00014641
+chr7	128398407	G	A	Donor Region	IMPDH1	training	0.00013798
+chr7	128841142	T	C	Branch Point Region	FLNC	training	0.00000963
+chr7	128843920	G	A	Donor Region	FLNC	pooled test	0.00054209
+chr7	138728880	C	T	PPT Region	ATP6V0A4	pooled test	0.00003542
+chr7	138739531	C	T	Deep Intronic	ATP6V0A4	training	0.00012102
+chr7	139911224	G	T	Canonical Acceptor Site	TBXAS1	pooled test	0.99981409
+chr7	139955442	G	A	PPT Region	TBXAS1	pooled test	0.00003402
+chr7	140781721	T	C	Branch Point Region	BRAF	training	0.00006585
+chr7	140792154	C	A	Deep Intronic	BRAF	training	0.00005983
+chr7	143342149	G	A	Donor Region	CLCN1	training	0.00014931
+chr7	150949085	G	A	Branch Point Region	KCNH2	pooled test	0.01620706
+chr7	150949090	G	A	Branch Point Region	KCNH2	pooled test	0.01528306
+chr7	150949092	G	A	Branch Point Region	KCNH2	pooled test	0.00150522
+chr7	151574967	A	G	PPT Region	PRKAG2	training	0.00019449
+chr7	152154460	A	G	PPT Region	KMT2C	pooled test	0.00010208
+chr7	152205098	T	G	Donor Region	KMT2C	pooled test	0.00105078
+chr7	152230030	G	A	Acceptor Region	KMT2C	pooled test	0.01586786
+chr7	152247896	C	A	Donor Region	KMT2C	training	0.00024497
+chr7	155806594	T	C	Branch Point Region	SHH	pooled test	0.00183334
+chr8	1923094	A	G	Deep Intronic	ARHGEF10	training	0.00097135
+chr8	6414617	T	C	Deep Intronic	MCPH1	training	0.00064142
+chr8	6414760	T	C	Acceptor Region	MCPH1	training	0.00011028
+chr8	6442060	T	C	Acceptor Region	MCPH1	training	0.01793447
+chr8	11548990	A	G	Branch Point Region	BLK	training	0.00006824
+chr8	18061747	A	G	Acceptor Region	ASAH1	pooled test	0.00106473
+chr8	18075530	T	A	Deep Intronic	ASAH1	training	0.00002925
+chr8	22162566	C	T	Acceptor Region	SFTPC	training	0.00000794
+chr8	22197431	A	T	Deep Intronic	BMP1	training	0.00054675
+chr8	23005364	G	A	Acceptor Region	RHOBTB2	training	0.00024403
+chr8	27799727	A	G	Deep Intronic	ESCO2	training	0.00057746
+chr8	31065064	G	A	Canonical Donor Site	WRN	training	0.99995029
+chr8	31067191	T	C	Deep Intronic	WRN	pooled test	0.00010698
+chr8	31120201	T	C	Branch Point Region	WRN	training	0.00156836
+chr8	38427918	T	C	Donor Region	FGFR1	training	0.03546795
+chr8	39090196	G	C	Donor Region	ADAM9	training	0.00033148
+chr8	41692877	C	T	Canonical Acceptor Site	ANK1	training	0.99541402
+chr8	41719860	T	C	Canonical Acceptor Site	ANK1	training	0.99456668
+chr8	41980944	A	G	PPT Region	KAT6A	pooled test	0.00318911
+chr8	42319255	T	C	PPT Region	IKBKB	training	0.00228784
+chr8	42839390	A	T	Acceptor Region	THAP1	pooled test	0.00633629
+chr8	43170576	T	C	Acceptor Region	HGSNAT	pooled test	0.00096996
+chr8	47782612	A	C	PPT Region	PRKDC	pooled test	0.00007176
+chr8	47877857	A	C	Acceptor Region	PRKDC	pooled test	0.00009243
+chr8	47889230	A	G	Acceptor Region	PRKDC	training	0.00020269
+chr8	47961221	C	A	Donor Region	MCM4	pooled test	0.00160459
+chr8	60862179	T	C	PPT Region	CHD7	training	0.00122571
+chr8	61681049	A	G	PPT Region	ASPH	pooled test	0.00024528
+chr8	67175291	A	G	Acceptor Region	CSPP1	pooled test	0.00038667
+chr8	67267447	G	T	Acceptor Region	ARFGEF1	pooled test	0.00463588
+chr8	69679370	G	C	Donor Region	SLCO5A1	pooled test	0.00137566
+chr8	71271750	T	C	Donor Region	EYA1	training	0.00095856
+chr8	73978744	C	T	PPT Region	TMEM70	training	0.00041324
+chr8	89978201	T	C	Deep Intronic	NBN	training	0.00010387
+chr8	89980726	C	T	Donor Region	NBN	training	0.00010017
+chr8	89984521	T	G	Donor Region	NBN	training	0.01767531
+chr8	95252172	T	C	Deep Intronic	CFAP418	training	0.00004977
+chr8	99868473	G	T	Donor Region	VPS13B	training	0.00002305
+chr8	100213435	G	A	Donor Region	SPAG1	training	0.00046142
+chr8	102218813	C	T	Canonical Donor Site	RRM2B	training	0.99987590
+chr8	102225055	T	C	Branch Point Region	RRM2B	training	0.00051744
+chr8	115605003	C	A	Canonical Acceptor Site	TRPS1	training	0.99994695
+chr8	118924767	A	G	Acceptor Region	TNFRSF11B	pooled test	0.00010296
+chr8	118926486	T	G	Donor Region	TNFRSF11B	training	0.00013602
+chr8	124539527	G	C	Deep Intronic	NDUFB9	training	0.00017095
+chr8	125032403	G	C	Acceptor Region	WASHC5	pooled test	0.00018018
+chr8	142876926	G	A	Branch Point Region	CYP11B1	training	0.00056972
+chr8	143215002	C	A	PPT Region	GPIHBP1	training	0.00021213
+chr8	143932625	C	T	Deep Intronic	PLEC	training	0.00003582
+chr8	144413888	G	C	Acceptor Region	SLC39A4	training	0.01929790
+chr8	144434804	C	T	Donor Region	TONSL	training	0.00052422
+chr8	144440254	A	G	Branch Point Region	TONSL	training	0.00078506
+chr8	144442824	A	T	PPT Region	TONSL	training	0.00047778
+chr8	144511673	G	A	Donor Region	RECQL4	training	0.00038364
+chr8	144515143	C	G	Donor Region	RECQL4	training	0.00016949
+chr9	286643	A	T	Donor Region	DOCK8	pooled test	0.00002142
+chr9	289505	A	C	Acceptor Region	DOCK8	pooled test	0.00038047
+chr9	311936	C	T	PPT Region	DOCK8	training	0.00005862
+chr9	328014	A	C	Acceptor Region	DOCK8	pooled test	0.00017388
+chr9	428348	T	G	PPT Region	DOCK8	pooled test	0.00181299
+chr9	439230	T	C	PPT Region	DOCK8	pooled test	0.00108570
+chr9	451973	A	T	Branch Point Region	DOCK8	pooled test	0.00037159
+chr9	451975	A	G	Branch Point Region	DOCK8	training	0.00087468
+chr9	2073539	C	T	Branch Point Region	SMARCA2	training	0.00002686
+chr9	2123685	T	G	Branch Point Region	SMARCA2	training	0.00114689
+chr9	3898851	G	A	PPT Region	GLIS3	training	0.00003187
+chr9	6589188	C	G	Donor Region	GLDC	training	0.00067911
+chr9	6593023	T	C	Branch Point Region	GLDC	training	0.00009588
+chr9	6645237	G	T	Donor Region	GLDC	training	0.00007327
+chr9	13186395	A	T	Acceptor Region	MPDZ	training	0.00068461
+chr9	13206104	G	A	Acceptor Region	MPDZ	training	0.00029297
+chr9	16435547	T	C	Donor Region	BNC2	pooled test	0.00071233
+chr9	20976406	A	G	PPT Region	FOCAD	training	0.00001906
+chr9	20986475	C	T	Deep Intronic	FOCAD	pooled test	0.00001666
+chr9	21968246	C	T	Acceptor Region	CDKN2A	training	0.00177974
+chr9	21968265	A	G	PPT Region	CDKN2A	pooled test	0.03443874
+chr9	21968269	G	A	Branch Point Region	CDKN2A	pooled test	0.00607349
+chr9	21968271	T	A	Branch Point Region	CDKN2A	pooled test	0.01126586
+chr9	21968272	A	T	Branch Point Region	CDKN2A	pooled test	0.17286059
+chr9	21968278	C	T	Branch Point Region	CDKN2A	pooled test	0.00771385
+chr9	21968280	G	A	Branch Point Region	CDKN2A	pooled test	0.02258406
+chr9	21968281	A	C	Branch Point Region	CDKN2A	pooled test	0.04009464
+chr9	27209115	T	C	Acceptor Region	TEK	pooled test	0.00201668
+chr9	35079150	C	T	Canonical Donor Site	FANCG	training	0.99916840
+chr9	35089363	C	A	Deep Intronic	PIGO	pooled test	0.00024805
+chr9	35090065	C	T	Canonical Donor Site	PIGO	pooled test	0.99975282
+chr9	35698615	A	G	Canonical Donor Site	TLN1	training	0.99973458
+chr9	35720805	T	C	Donor Region	TLN1	training	0.00007085
+chr9	37426662	A	G	Donor Region	GRHPR	training	0.00215192
+chr9	69237844	G	A	Branch Point Region	TJP2	training	0.00101055
+chr9	77201351	A	C	PPT Region	VPS13A	training	0.00009430
+chr9	78317669	A	C	Acceptor Region	PSAT1	training	0.00018466
+chr9	83970161	C	T	Canonical Donor Site	HNRNPK	training	0.99982882
+chr9	91298082	A	G	Acceptor Region	AUH	training	0.01673182
+chr9	92263063	A	C	Acceptor Region	IARS1	pooled test	0.00003985
+chr9	92764497	C	A	Donor Region	BICD2	training	0.00020007
+chr9	95172030	T	A	Donor Region	FANCC	pooled test	0.00997797
+chr9	95456446	G	A	Branch Point Region	PTCH1	pooled test	0.00040925
+chr9	95476894	C	T	Branch Point Region	PTCH1	pooled test	0.00001888
+chr9	95477731	C	G	Branch Point Region	PTCH1	pooled test	0.00062143
+chr9	95482083	A	C	Branch Point Region	PTCH1	pooled test	0.00037695
+chr9	95485888	A	T	PPT Region	PTCH1	training	0.00638895
+chr9	97689643	A	G	Acceptor Region	XPA	training	0.00151765
+chr9	98056947	C	T	Donor Region	NANS	training	0.00027471
+chr9	98081086	T	C	Donor Region	NANS	training	0.00116094
+chr9	100284307	G	C	PPT Region	INVS	pooled test	0.00026677
+chr9	100578557	C	A	Donor Region	CAVIN4	training	0.00092123
+chr9	101428532	A	G	Acceptor Region	ALDOB	training	0.00125582
+chr9	104792005	C	T	Acceptor Region	ABCA1	pooled test	0.00010035
+chr9	105472013	A	G	Donor Region	FSD1L	training	0.00114372
+chr9	105615419	A	C	Deep Intronic	FKTN	training	0.00012305
+chr9	105705560	T	G	Branch Point Region	TMEM38B	training	0.00043100
+chr9	113286191	A	G	Branch Point Region	PRPF4	pooled test	0.12466737
+chr9	114231073	C	T	Acceptor Region	COL27A1	training	0.00066979
+chr9	114237038	A	G	Donor Region	COL27A1	pooled test	0.85818154
+chr9	114275657	C	G	Acceptor Region	COL27A1	training	0.00104246
+chr9	114300694	T	C	Donor Region	COL27A1	training	0.00001081
+chr9	114301270	G	A	PPT Region	COL27A1	training	0.00001641
+chr9	121043000	C	A	Donor Region	C5	pooled test	0.00047193
+chr9	121317237	G	A	Deep Intronic	GSN	training	0.00038168
+chr9	123367436	C	A	Deep Intronic	CRB2	training	0.00020507
+chr9	127454968	A	C	Branch Point Region	LRSAM1	training	0.00198249
+chr9	127817216	G	A	PPT Region	ENG	pooled test	0.00078243
+chr9	127937528	A	G	Acceptor Region	DPM2	pooled test	0.00668596
+chr9	128239413	G	C	Branch Point Region	DNM1	training	0.00001493
+chr9	128322946	C	G	Deep Intronic	COQ4	pooled test	0.00001195
+chr9	128593061	T	G	Deep Intronic	SPTAN1	pooled test	0.00057602
+chr9	128618851	T	A	PPT Region	SPTAN1	training	0.00009414
+chr9	131039116	C	T	PPT Region	LAMC3	training	0.00013183
+chr9	131039255	G	A	Donor Region	LAMC3	training	0.00024732
+chr9	131863144	A	G	Acceptor Region	MED27	pooled test	0.00004875
+chr9	132897176	G	C	Donor Region	TSC1	pooled test	0.00206986
+chr9	132902600	T	C	Donor Region	TSC1	pooled test	0.00023091
+chr9	132903822	T	C	Acceptor Region	TSC1	training	0.98700082
+chr9	132910564	A	G	Donor Region	TSC1	training	0.00007943
+chr9	133356338	C	A	PPT Region	SURF1	training	0.00027012
+chr9	133456029	C	T	Branch Point Region	ADAMTS13	pooled test	0.00021534
+chr9	133520331	A	G	Branch Point Region	MYMK	training	0.00007694
+chr9	134782727	A	C	Donor Region	COL5A1	pooled test	0.00106514
+chr9	134795041	G	A	Branch Point Region	COL5A1	pooled test	0.03346075
+chr9	134825779	C	T	PPT Region	COL5A1	pooled test	0.00008412
+chr9	134830051	T	C	Donor Region	COL5A1	pooled test	0.00074517
+chr9	134834942	G	C	Branch Point Region	COL5A1	pooled test	0.00166198
+chr9	134834945	G	A	Branch Point Region	COL5A1	pooled test	0.00108974
+chr9	134842151	C	A	Acceptor Region	COL5A1	training	0.00004396
+chr9	136366854	G	C	Acceptor Region	CARD9	pooled test	0.00241919
+chr9	136370446	G	A	Acceptor Region	CARD9	pooled test	0.00062423
+chr9	136518309	G	C	PPT Region	NOTCH1	training	0.00008452
+chr9	137017726	G	A	Branch Point Region	ABCA2	training	0.00038067
+chr9	137145715	G	C	PPT Region	GRIN1	training	0.00001991
+chr9	137757847	G	A	Branch Point Region	EHMT1	training	0.00007387
+chr9	137986770	T	C	PPT Region	CACNA1B	training	0.00032059
+chr9	138013242	C	T	Donor Region	CACNA1B	pooled test	0.00155305
+chr9	138120889	G	A	Donor Region	CACNA1B	pooled test	0.00004345
+chr10	240884	C	A	Acceptor Region	ZMYND11	training	0.00068724
+chr10	248902	G	C	Canonical Acceptor Site	ZMYND11	pooled test	0.99987674
+chr10	345125	C	T	PPT Region	DIP2C	pooled test	0.00001119
+chr10	3157068	G	C	Acceptor Region	PITRM1	pooled test	0.00014253
+chr10	14949089	T	C	Canonical Acceptor Site	DCLRE1C	training	0.99988210
+chr10	15531030	A	G	Deep Intronic	ITGA8	pooled test	0.00025557
+chr10	15672432	C	A	Deep Intronic	ITGA8	training	0.00012335
+chr10	16901472	T	C	PPT Region	CUBN	pooled test	0.00131951
+chr10	16990517	T	C	Canonical Acceptor Site	CUBN	pooled test	0.99988580
+chr10	17114009	G	T	Deep Intronic	CUBN	pooled test	0.00009760
+chr10	17115635	C	T	Branch Point Region	CUBN	training	0.00448793
+chr10	20817700	G	C	Acceptor Region	NEBL	pooled test	0.00019810
+chr10	26120812	A	C	Deep Intronic	MYO3A	pooled test	0.00002048
+chr10	27082718	T	C	Deep Intronic	ANKRD26	training	0.00002174
+chr10	27112157	T	C	Branch Point Region	YME1L1	training	0.00021237
+chr10	27145418	A	G	Deep Intronic	YME1L1	pooled test	0.00060172
+chr10	27173112	A	G	Acceptor Region	MASTL	pooled test	0.00471498
+chr10	27219876	A	T	PPT Region	ACBD5	training	0.00021867
+chr10	27533887	T	A	Branch Point Region	RAB18	training	0.00073398
+chr10	28589853	T	G	Canonical Donor Site	WAC	training	0.99997413
+chr10	28595700	C	G	Branch Point Region	WAC	training	0.00735278
+chr10	29531985	C	T	Deep Intronic	SVIL	pooled test	0.00001723
+chr10	30450240	T	C	PPT Region	MAP3K8	pooled test	0.00004339
+chr10	42830848	G	A	PPT Region	BMS1	pooled test	0.00012246
+chr10	52133835	C	T	Acceptor Region	PRKG1	pooled test	0.00000956
+chr10	53866990	G	A	Deep Intronic	PCDH15	training	0.00000681
+chr10	54195903	G	A	PPT Region	PCDH15	training	0.00000330
+chr10	54213923	T	A	Deep Intronic	PCDH15	training	0.00005383
+chr10	58620837	G	A	PPT Region	BICC1	training	0.00000137
+chr10	68166277	T	C	PPT Region	MYPN	pooled test	0.00077149
+chr10	69008825	T	A	PPT Region	KIFBP	pooled test	0.00618711
+chr10	69369427	C	T	PPT Region	HK1	training	0.00052701
+chr10	69894716	G	T	Deep Intronic	COL13A1	pooled test	0.00018315
+chr10	69924954	A	G	Acceptor Region	COL13A1	training	0.00017987
+chr10	69925020	C	T	Deep Intronic	COL13A1	training	0.00009169
+chr10	69947292	T	G	PPT Region	COL13A1	training	0.00149753
+chr10	71615489	T	G	PPT Region	CDH23	training	0.00017170
+chr10	71690775	C	T	Deep Intronic	CDH23	training	0.00076704
+chr10	71807774	G	A	Donor Region	CDH23	training	0.00057418
+chr10	71811773	G	A	Deep Intronic	CDH23	training	0.00142093
+chr10	73210458	T	C	Deep Intronic	FAM149B1	pooled test	0.00000829
+chr10	76953784	C	T	Deep Intronic	KCNMA1	training	0.00004415
+chr10	76970075	T	C	Acceptor Region	KCNMA1	training	0.00093975
+chr10	77112458	C	T	PPT Region	KCNMA1	training	0.00011341
+chr10	78002316	G	C	Acceptor Region	POLR3A	pooled test	0.00152025
+chr10	79290940	A	G	PPT Region	ZMIZ1	pooled test	0.00007084
+chr10	84205935	C	G	Donor Region	CDHR1	training	0.00053615
+chr10	84208728	G	C	Canonical Acceptor Site	CDHR1	training	0.99993384
+chr10	86876099	C	T	Deep Intronic	BMPR1A	pooled test	0.00011105
+chr10	87876421	T	C	Deep Intronic	PTEN	training	0.00187873
+chr10	87932977	T	G	Branch Point Region	PTEN	pooled test	0.00119305
+chr10	87952087	A	G	Branch Point Region	PTEN	pooled test	0.01455905
+chr10	87957850	C	A	Acceptor Region	PTEN	pooled test	0.99568933
+chr10	87960860	C	A	Branch Point Region	PTEN	training	0.00021477
+chr10	87965251	A	G	Branch Point Region	PTEN	pooled test	0.00294244
+chr10	89010752	G	C	Canonical Acceptor Site	FAS	training	0.99630690
+chr10	89011994	T	G	Acceptor Region	FAS	pooled test	0.97228289
+chr10	89223677	T	C	Donor Region	LIPA	training	0.00032449
+chr10	92616700	A	G	Branch Point Region	KIF11	training	0.00024815
+chr10	92633620	T	C	Acceptor Region	KIF11	pooled test	0.00166558
+chr10	92648210	A	T	Canonical Acceptor Site	KIF11	pooled test	0.99990058
+chr10	94546510	A	G	Deep Intronic	HELLS	pooled test	0.00016824
+chr10	94562687	G	T	Acceptor Region	HELLS	pooled test	0.00118953
+chr10	94581540	T	G	Deep Intronic	HELLS	pooled test	0.00040369
+chr10	95823211	T	C	Branch Point Region	ENTPD1	training	0.00796622
+chr10	97599671	C	G	Acceptor Region	HOGA1	training	0.00542536
+chr10	98433976	T	C	Donor Region	HPS1	training	0.00830475
+chr10	99817278	T	A	Branch Point Region	ABCC2	pooled test	0.00055194
+chr10	101612334	C	T	Donor Region	FBXW4	pooled test	0.01505863
+chr10	102401935	C	T	Deep Intronic	NFKB2	pooled test	0.00009665
+chr10	102549959	A	C	PPT Region	SUFU	training	0.00031428
+chr10	102592555	A	C	Branch Point Region	SUFU	pooled test	0.00019018
+chr10	102958163	C	T	Deep Intronic	CNNM2	pooled test	0.00008462
+chr10	102995813	G	A	Deep Intronic	CNNM2	pooled test	0.00140806
+chr10	102999829	A	G	Deep Intronic	CNNM2	pooled test	0.00062719
+chr10	103005848	C	T	Deep Intronic	CNNM2	pooled test	0.00690654
+chr10	103024149	T	C	Deep Intronic	CNNM2	pooled test	0.01813175
+chr10	103049674	A	T	Branch Point Region	CNNM2	pooled test	0.00064502
+chr10	103054300	T	C	Branch Point Region	CNNM2	pooled test	0.00024137
+chr10	103071744	G	A	Branch Point Region	CNNM2	pooled test	0.00019802
+chr10	103071745	A	C	Branch Point Region	CNNM2	pooled test	0.00484981
+chr10	103071765	A	G	Acceptor Region	CNNM2	pooled test	0.00015633
+chr10	103076940	G	A	Branch Point Region	CNNM2	pooled test	0.00018611
+chr10	103181355	A	T	Branch Point Region	NT5C2	training	0.00006156
+chr10	103898860	G	T	Deep Intronic	STN1	training	0.00007342
+chr10	104032762	G	A	Acceptor Region	COL17A1	training	0.00008476
+chr10	104041349	A	C	Acceptor Region	COL17A1	training	0.00054407
+chr10	104051525	G	A	Acceptor Region	COL17A1	training	0.00005396
+chr10	110602811	A	G	PPT Region	SMC3	pooled test	0.00030698
+chr10	110813193	C	T	Deep Intronic	RBM20	pooled test	0.00012886
+chr10	110831020	G	C	Branch Point Region	RBM20	training	0.00203088
+chr10	110985618	C	T	Acceptor Region	SHOC2	training	0.00016403
+chr10	113161902	G	T	Deep Intronic	TCF7L2	training	0.00182242
+chr10	113597963	T	C	Donor Region	NRAP	pooled test	0.00022736
+chr10	113614951	C	T	Acceptor Region	NRAP	pooled test	0.00000864
+chr10	113641505	A	G	Branch Point Region	NRAP	training	0.00077120
+chr10	113646915	G	C	Donor Region	NRAP	pooled test	0.00026378
+chr10	113663345	C	T	Donor Region	NRAP	pooled test	0.00009150
+chr10	117257785	C	G	PPT Region	SLC18A2	training	0.00065240
+chr10	119155054	T	A	Donor Region	SFXN4	pooled test	0.00014280
+chr10	120866526	C	T	Branch Point Region	WDR11	training	0.00017537
+chr10	120906246	T	C	Deep Intronic	WDR11	training	0.00002255
+chr10	121487428	C	A	Acceptor Region	FGFR2	pooled test	0.00017979
+chr10	122488894	G	T	Acceptor Region	HTRA1	training	0.00163969
+chr10	124403933	C	G	PPT Region	OAT	pooled test	0.00004754
+chr10	133285249	C	T	Branch Point Region	TUBGCP2	training	0.00407525
+chr10	133370556	G	T	Donor Region	ECHS1	training	0.00014030
+chr11	612843	T	G	Branch Point Region	IRF7	training	0.00017315
+chr11	764441	T	A	Donor Region	TALDO1	pooled test	0.00069057
+chr11	824285	C	T	Branch Point Region	PNPLA2	pooled test	0.00063603
+chr11	1235416	G	A	Donor Region	MUC5B	pooled test	0.00982381
+chr11	1934667	G	A	Deep Intronic	TNNT3	training	0.00008122
+chr11	2768813	C	G	Branch Point Region	KCNQ1	training	0.00280417
+chr11	5226842	C	G	Branch Point Region	HBB	pooled test	0.00086901
+chr11	5706586	T	C	Acceptor Region	TRIM22	training	0.00001692
+chr11	6616538	G	C	Branch Point Region	TPP1	pooled test	0.05624291
+chr11	6626774	T	A	Deep Intronic	DCHS1	training	0.00008392
+chr11	9962372	T	G	Deep Intronic	SBF2	training	0.00017399
+chr11	13710887	C	A	Deep Intronic	FAR1	training	0.00014959
+chr11	13712950	A	C	PPT Region	FAR1	training	0.00163573
+chr11	14481115	A	G	PPT Region	COPB1	pooled test	0.00009497
+chr11	17119785	C	A	Canonical Donor Site	PIK3C2A	pooled test	0.99976653
+chr11	17407146	C	G	PPT Region	ABCC8	training	0.00374068
+chr11	17428269	C	T	Deep Intronic	ABCC8	pooled test	0.00005330
+chr11	17461827	T	A	Canonical Acceptor Site	ABCC8	training	0.99989414
+chr11	17553363	A	G	Canonical Acceptor Site	OTOG	training	0.99715233
+chr11	17631676	T	A	Branch Point Region	OTOG	training	0.02975381
+chr11	18281943	A	G	Donor Region	HPS5	training	0.00001459
+chr11	18295182	T	C	PPT Region	HPS5	training	0.00009000
+chr11	20636296	G	T	PPT Region	SLC6A5	pooled test	0.00033931
+chr11	22203803	G	A	Canonical Acceptor Site	ANO5	training	0.99817336
+chr11	22255351	A	G	PPT Region	ANO5	training	0.00003614
+chr11	26598455	G	A	Donor Region	ANO3	pooled test	0.00015374
+chr11	32428072	C	A	PPT Region	WT1	training	0.00045089
+chr11	34071721	C	G	Acceptor Region	CAPRIN1	pooled test	0.95781761
+chr11	34071889	T	C	PPT Region	CAPRIN1	pooled test	0.00162953
+chr11	46278221	G	A	Donor Region	CREB3L1	training	0.00012375
+chr11	46701685	G	A	Deep Intronic	ZNF408	pooled test	0.00069107
+chr11	46729375	C	T	Acceptor Region	F2	pooled test	0.00064051
+chr11	47232806	C	T	Acceptor Region	DDB2	pooled test	0.00008909
+chr11	47332285	G	A	Branch Point Region	MYBPC3	training	0.00155731
+chr11	47332293	C	G	Branch Point Region	MYBPC3	training	0.00233367
+chr11	47335024	G	A	Deep Intronic	MYBPC3	training	0.00288457
+chr11	47337806	G	C	PPT Region	MYBPC3	pooled test	0.00722877
+chr11	47337832	C	T	Branch Point Region	MYBPC3	pooled test	0.01010987
+chr11	47337833	G	A	Branch Point Region	MYBPC3	pooled test	0.00083793
+chr11	47342186	G	A	Branch Point Region	MYBPC3	pooled test	0.08629576
+chr11	47342955	A	G	PPT Region	MYBPC3	pooled test	0.00116502
+chr11	47349481	A	C	Deep Intronic	MYBPC3	training	0.00037961
+chr11	59831671	C	T	Donor Region	CBLIF	training	0.00023246
+chr11	61781337	T	C	Donor Region	MYRF	pooled test	0.00005370
+chr11	61957472	C	G	Donor Region	BEST1	pooled test	0.00005665
+chr11	62151576	G	A	Deep Intronic	INCENP	training	0.00021312
+chr11	62617397	T	C	Deep Intronic	B3GAT3	training	0.00040057
+chr11	62691143	T	A	Canonical Acceptor Site	BSCL2	pooled test	0.99929357
+chr11	62692594	T	C	Deep Intronic	BSCL2	training	0.00009180
+chr11	64210600	G	A	PPT Region	FERMT3	training	0.00006948
+chr11	64211754	C	T	Donor Region	FERMT3	training	0.00002433
+chr11	64805216	G	A	PPT Region	MEN1	training	0.00014007
+chr11	64805621	C	G	Deep Intronic	MEN1	pooled test	0.00045181
+chr11	64807696	G	T	PPT Region	MEN1	training	0.00284220
+chr11	64810165	C	A	Branch Point Region	MEN1	pooled test	0.00586281
+chr11	65340381	G	T	Acceptor Region	DPF2	pooled test	0.00045413
+chr11	65541298	G	A	Acceptor Region	LTBP3	training	0.00024664
+chr11	65546793	C	G	Donor Region	LTBP3	pooled test	0.99728596
+chr11	65655844	C	A	Deep Intronic	RELA	pooled test	0.00062853
+chr11	65868064	C	T	Acceptor Region	EFEMP2	pooled test	0.00112769
+chr11	66070848	C	G	Donor Region	PACS1	pooled test	0.00003191
+chr11	66193451	G	A	Branch Point Region	PACS1	training	0.00000584
+chr11	66523586	C	T	Deep Intronic	BBS1	training	0.00405747
+chr11	66853425	C	A	Branch Point Region	PC	pooled test	0.00473362
+chr11	67483276	C	T	Deep Intronic	AIP	pooled test	0.00020806
+chr11	68043566	T	C	Acceptor Region	TCIRG1	training	0.00009518
+chr11	68050735	C	A	Acceptor Region	TCIRG1	training	0.03968396
+chr11	68171013	A	T	Canonical Donor Site	KMT5B	pooled test	0.99993670
+chr11	68403707	C	A	Donor Region	LRP5	training	0.00012941
+chr11	68411421	C	G	PPT Region	LRP5	training	0.00024418
+chr11	68423710	C	T	Deep Intronic	LRP5	training	0.00007819
+chr11	68433588	T	C	PPT Region	LRP5	training	0.00066007
+chr11	68761706	G	T	PPT Region	CPT1A	training	0.00014367
+chr11	68785028	T	C	PPT Region	CPT1A	training	0.00337209
+chr11	68794944	T	C	Branch Point Region	CPT1A	training	0.00011612
+chr11	68799373	A	G	PPT Region	CPT1A	training	0.00018023
+chr11	68939521	G	T	PPT Region	IGHMBP2	training	0.00003242
+chr11	71441448	T	A	Acceptor Region	DHCR7	training	0.00002240
+chr11	72579018	G	A	Acceptor Region	PDE2A	training	0.00003995
+chr11	72674127	C	G	Deep Intronic	PDE2A	pooled test	0.00032557
+chr11	75796309	C	G	PPT Region	DGAT2	pooled test	0.00406905
+chr11	77159412	C	G	Branch Point Region	MYO7A	training	0.00096177
+chr11	77182387	C	T	Branch Point Region	MYO7A	pooled test	0.00104915
+chr11	77182397	G	A	Branch Point Region	MYO7A	pooled test	0.00043525
+chr11	77192035	C	T	PPT Region	MYO7A	training	0.00004308
+chr11	77197480	G	C	Canonical Acceptor Site	MYO7A	pooled test	0.99986339
+chr11	77214564	T	C	Branch Point Region	MYO7A	training	0.00065861
+chr11	78565953	T	C	Deep Intronic	NARS2	training	0.00171272
+chr11	85631686	G	A	Canonical Acceptor Site	TMEM126B	pooled test	0.95226663
+chr11	86250452	T	C	Donor Region	EED	pooled test	0.00144992
+chr11	89191419	G	A	Canonical Donor Site	TYR	training	0.99303138
+chr11	102186015	T	C	Acceptor Region	YAP1	pooled test	0.00708399
+chr11	103115176	G	A	Canonical Acceptor Site	DYNC2H1	pooled test	0.99964201
+chr11	103148458	A	T	Branch Point Region	DYNC2H1	pooled test	0.00071937
+chr11	103154437	A	G	PPT Region	DYNC2H1	pooled test	0.00001782
+chr11	103186241	G	T	Canonical Acceptor Site	DYNC2H1	pooled test	0.99963284
+chr11	103311861	G	T	PPT Region	DYNC2H1	pooled test	0.00001383
+chr11	103455313	C	T	Deep Intronic	DYNC2H1	pooled test	0.00004955
+chr11	103456057	C	T	Deep Intronic	DYNC2H1	training	0.00014644
+chr11	103468905	A	T	Deep Intronic	DYNC2H1	training	0.00046390
+chr11	108131897	T	G	Acceptor Region	ACAT1	training	0.00383842
+chr11	108134814	C	G	Deep Intronic	ACAT1	training	0.00058754
+chr11	108267166	T	C	Acceptor Region	ATM	pooled test	0.00125901
+chr11	108268628	A	G	Deep Intronic	ATM	pooled test	0.00020256
+chr11	108270495	T	C	Deep Intronic	ATM	pooled test	0.00079637
+chr11	108271033	A	C	Branch Point Region	ATM	pooled test	0.27223015
+chr11	108288944	C	T	Branch Point Region	ATM	pooled test	0.00029335
+chr11	108307871	T	C	Branch Point Region	ATM	pooled test	0.90341038
+chr11	108310157	T	C	Acceptor Region	ATM	pooled test	0.00336396
+chr11	108325292	C	G	PPT Region	ATM	pooled test	0.00304074
+chr11	108335117	T	C	Donor Region	ATM	pooled test	0.00057275
+chr11	108335814	A	T	Branch Point Region	ATM	training	0.00108508
+chr11	108347265	T	G	PPT Region	ATM	training	0.00043652
+chr11	112088866	G	C	Canonical Acceptor Site	SDHD	pooled test	0.99983275
+chr11	116837601	G	A	Donor Region	APOA1	pooled test	0.01158409
+chr11	117397314	G	A	Canonical Donor Site	CEP164	pooled test	0.99936610
+chr11	118260048	C	A	Donor Region	MPZL2	pooled test	0.00074763
+chr11	119054478	G	A	Deep Intronic	HYOU1	pooled test	0.00010818
+chr11	119055076	G	A	PPT Region	HYOU1	pooled test	0.00026318
+chr11	119101142	T	C	Acceptor Region	DPAGT1	training	0.00154066
+chr11	119278504	C	T	Acceptor Region	CBL	pooled test	0.00051729
+chr11	119284963	C	T	Acceptor Region	CBL	training	0.00005100
+chr11	119298349	T	G	Acceptor Region	CBL	pooled test	0.00023415
+chr11	121166821	G	A	Deep Intronic	TECTA	training	0.00035263
+chr11	124654813	G	A	PPT Region	SIAE	training	0.00008757
+chr11	124754764	C	T	Canonical Acceptor Site	ESAM	pooled test	0.99945766
+chr11	125612762	T	G	Deep Intronic	STT3A	training	0.00061701
+chr11	126456466	G	A	PPT Region	KIRREL3	pooled test	0.00011081
+chr11	129947374	G	A	Acceptor Region	PRDM10	pooled test	0.00174879
+chr11	130188515	T	C	PPT Region	ST14	pooled test	0.00002959
+chr11	134144226	G	A	PPT Region	JAM3	training	0.00024243
+chr12	1856243	C	T	PPT Region	CACNA2D4	pooled test	0.00021550
+chr12	1886382	A	G	Acceptor Region	CACNA2D4	training	0.00071581
+chr12	2605062	G	A	PPT Region	CACNA1C	pooled test	0.00012164
+chr12	2606967	T	C	PPT Region	CACNA1C	pooled test	0.00013837
+chr12	2612033	C	T	Deep Intronic	CACNA1C	training	0.00003217
+chr12	2651596	C	G	Branch Point Region	CACNA1C	pooled test	0.00969623
+chr12	6044493	G	T	Branch Point Region	VWF	training	0.00316710
+chr12	6058047	G	T	Acceptor Region	VWF	training	0.99807525
+chr12	6341769	G	A	Donor Region	TNFRSF1A	pooled test	0.00019133
+chr12	6570709	C	G	PPT Region	CHD4	pooled test	0.00005832
+chr12	6843624	G	A	Acceptor Region	GNB3	training	0.00001443
+chr12	7062698	A	G	Deep Intronic	C1S	pooled test	0.00005599
+chr12	7208456	G	C	Canonical Acceptor Site	PEX5	pooled test	0.99986780
+chr12	8829723	C	G	Acceptor Region	A2ML1	pooled test	0.00012897
+chr12	8852191	T	C	PPT Region	A2ML1	pooled test	0.00115714
+chr12	8857156	G	A	Acceptor Region	A2ML1	pooled test	0.00015144
+chr12	8857354	G	T	Deep Intronic	A2ML1	pooled test	0.00004884
+chr12	8863783	T	C	PPT Region	A2ML1	training	0.00039506
+chr12	12181457	A	T	PPT Region	LRP6	training	0.00033565
+chr12	13608578	G	A	Deep Intronic	GRIN2B	training	0.00033332
+chr12	13608602	C	T	Canonical Donor Site	GRIN2B	pooled test	0.99944133
+chr12	13675864	A	T	Acceptor Region	GRIN2B	training	0.00020313
+chr12	14645222	C	T	Donor Region	GUCY2C	training	0.00012915
+chr12	14686241	C	T	PPT Region	GUCY2C	pooled test	0.00006480
+chr12	20648675	C	T	PPT Region	PDE3A	pooled test	0.00017978
+chr12	21580551	T	A	Branch Point Region	GYS2	training	0.00167508
+chr12	21861061	G	A	Acceptor Region	ABCC9	training	0.00169794
+chr12	21926071	G	C	Acceptor Region	ABCC9	pooled test	0.00094509
+chr12	25209925	A	G	PPT Region	KRAS	training	0.00001597
+chr12	25225782	G	A	Acceptor Region	KRAS	pooled test	0.00026928
+chr12	26624295	A	G	Donor Region	ITPR2	training	0.00074303
+chr12	30649131	T	C	Donor Region	IPO8	training	0.00042654
+chr12	31093332	C	T	Donor Region	DDX11	training	0.00005605
+chr12	31102407	C	T	PPT Region	DDX11	pooled test	0.00005957
+chr12	32705869	C	T	Donor Region	DNM1L	pooled test	0.00993446
+chr12	32822232	A	G	Deep Intronic	PKP2	training	0.00043627
+chr12	32869072	C	T	Acceptor Region	PKP2	training	0.00007280
+chr12	32869075	G	A	PPT Region	PKP2	pooled test	0.00003716
+chr12	40257383	A	G	Donor Region	LRRK2	pooled test	0.00372040
+chr12	43768292	G	A	Deep Intronic	IRAK4	pooled test	0.00011505
+chr12	45302006	G	A	Acceptor Region	ANO6	pooled test	0.00000436
+chr12	47980975	G	C	Acceptor Region	COL2A1	training	0.00008857
+chr12	47985625	C	T	Branch Point Region	COL2A1	training	0.00080489
+chr12	47987728	G	A	PPT Region	COL2A1	pooled test	0.00002219
+chr12	47998023	C	T	Deep Intronic	COL2A1	pooled test	0.00005662
+chr12	48145194	C	T	PPT Region	PFKM	pooled test	0.00004131
+chr12	49024728	T	A	PPT Region	KMT2D	training	0.00146975
+chr12	49039652	T	C	Branch Point Region	KMT2D	training	0.00102734
+chr12	49951191	G	C	Canonical Donor Site	AQP2	pooled test	0.99747413
+chr12	49954136	G	A	PPT Region	AQP2	training	0.00001771
+chr12	49963668	C	T	Deep Intronic	AQP5	pooled test	0.00002209
+chr12	50714385	A	G	Acceptor Region	DIP2B	pooled test	0.00007536
+chr12	51355799	G	A	Donor Region	GALNT6	training	0.00007150
+chr12	51786503	T	C	Branch Point Region	SCN8A	training	0.00001109
+chr12	51914590	G	A	Donor Region	ACVRL1	pooled test	0.97373939
+chr12	52305635	A	G	Branch Point Region	KRT86	training	0.00024024
+chr12	52316462	T	C	Donor Region	KRT83	training	0.00006261
+chr12	52470641	G	A	PPT Region	KRT6C	pooled test	0.00004295
+chr12	53307721	G	A	Acceptor Region	AAAS	training	0.00012880
+chr12	54516886	T	C	Acceptor Region	NCKAP1L	training	0.00001748
+chr12	55698924	G	A	Acceptor Region	ITGA7	training	0.00010425
+chr12	56351204	G	C	PPT Region	STAT2	training	0.00074265
+chr12	56356425	T	C	Deep Intronic	STAT2	pooled test	0.00010669
+chr12	56422103	C	T	Donor Region	TIMELESS	pooled test	0.00635308
+chr12	64467090	A	G	Donor Region	TBK1	pooled test	0.00003282
+chr12	65210922	A	T	Acceptor Region	LEMD3	pooled test	0.01364629
+chr12	65238819	G	A	Donor Region	LEMD3	pooled test	0.99808586
+chr12	68690594	G	A	Branch Point Region	NUP107	pooled test	0.00188607
+chr12	88068675	A	C	Branch Point Region	CEP290	pooled test	0.94117278
+chr12	88079231	T	C	Canonical Acceptor Site	CEP290	training	0.99991953
+chr12	88083011	A	G	Deep Intronic	CEP290	training	0.00043629
+chr12	88084870	T	C	PPT Region	CEP290	training	0.00001179
+chr12	88107110	A	G	PPT Region	CEP290	training	0.00019102
+chr12	89497349	A	G	Acceptor Region	POC1B	pooled test	0.00425212
+chr12	94376035	T	C	PPT Region	CEP83	training	0.00011482
+chr12	98531666	C	A	PPT Region	TMPO	pooled test	0.00326806
+chr12	100536618	T	A	Donor Region	NR1H4	training	0.00024282
+chr12	101780292	A	G	Acceptor Region	GNPTAB	training	0.00142319
+chr12	109489903	T	G	PPT Region	UBE3B	pooled test	0.00136585
+chr12	109516748	G	A	PPT Region	UBE3B	training	0.00001134
+chr12	109579762	C	G	Branch Point Region	MVK	training	0.00643273
+chr12	109591208	G	T	Branch Point Region	MVK	pooled test	0.04121517
+chr12	110332554	T	A	Branch Point Region	ATP2A2	training	0.00002288
+chr12	111322415	T	C	Acceptor Region	CUX2	pooled test	0.00025813
+chr12	111485869	C	T	Acceptor Region	ATXN2	pooled test	0.00030744
+chr12	111598775	G	T	Deep Intronic	ATXN2	pooled test	0.00049877
+chr12	112246883	G	A	Deep Intronic	HECTD4	pooled test	0.00025513
+chr12	112472932	C	G	PPT Region	PTPN11	training	0.00024761
+chr12	115996688	C	T	Acceptor Region	MED13L	pooled test	0.00003065
+chr12	121839917	G	A	Deep Intronic	HPD	training	0.00108400
+chr12	121854692	A	G	Deep Intronic	HPD	training	0.00048120
+chr12	122224680	G	A	Branch Point Region	DIABLO	pooled test	0.00029095
+chr12	122481514	T	C	Donor Region	ZCCHC8	pooled test	0.00003860
+chr12	123686834	A	T	Canonical Acceptor Site	TCTN2	training	0.99938416
+chr12	123785949	G	A	Deep Intronic	DNAH10	pooled test	0.00002572
+chr12	124966785	C	T	Donor Region	DHX37	pooled test	0.00006729
+chr12	132632527	T	A	PPT Region	POLE	training	0.00038880
+chr12	132642167	G	C	Deep Intronic	POLE	training	0.00000798
+chr12	132643990	C	A	PPT Region	POLE	training	0.00003881
+chr12	132649113	C	A	Branch Point Region	POLE	pooled test	0.00071228
+chr12	132657301	C	G	Branch Point Region	POLE	training	0.00084276
+chr12	132657452	C	T	PPT Region	POLE	pooled test	0.00001777
+chr12	132668741	G	T	Acceptor Region	POLE	pooled test	0.00009202
+chr12	132668791	C	T	Deep Intronic	POLE	training	0.00003424
+chr12	132672349	C	G	Branch Point Region	POLE	training	0.00047182
+chr12	132672857	G	A	PPT Region	POLE	training	0.00015107
+chr12	132681310	T	A	Branch Point Region	POLE	pooled test	0.00027764
+chr13	32315679	T	C	Deep Intronic	BRCA2	pooled test	0.00000620
+chr13	32321334	T	A	Deep Intronic	BRCA2	training	0.00197992
+chr13	32331031	G	C	Canonical Donor Site	BRCA2	training	0.99992979
+chr13	32336239	T	C	Branch Point Region	BRCA2	pooled test	0.00208885
+chr13	32355341	C	T	Deep Intronic	BRCA2	training	0.00006044
+chr13	32370560	A	G	Donor Region	BRCA2	training	0.99290997
+chr13	32371104	A	G	Donor Region	BRCA2	pooled test	0.08340163
+chr13	32379713	T	G	Branch Point Region	BRCA2	pooled test	0.00220394
+chr13	32398125	A	C	Branch Point Region	BRCA2	pooled test	0.00037161
+chr13	35452251	T	C	Deep Intronic	NBEA	pooled test	0.00008774
+chr13	36995063	A	G	Branch Point Region	ALG5	pooled test	0.14635323
+chr13	48347821	T	C	Acceptor Region	RB1	pooled test	0.00121215
+chr13	48464972	T	C	Branch Point Region	RB1	pooled test	0.00260203
+chr13	48477412	C	T	Donor Region	RB1	training	0.00007182
+chr13	51941242	T	C	PPT Region	ATP7B	training	0.00020787
+chr13	59974465	A	G	Acceptor Region	DIAPH3	pooled test	0.00039860
+chr13	94398648	A	G	Donor Region	GPC6	pooled test	0.00019162
+chr13	101143062	C	G	Deep Intronic	NALCN	pooled test	0.00001579
+chr13	102638333	C	G	Deep Intronic	TPP2	pooled test	0.00003958
+chr13	102644894	A	C	PPT Region	TPP2	training	0.00012955
+chr13	110201433	G	C	Donor Region	COL4A1	training	0.00038576
+chr13	110205487	C	A	Donor Region	COL4A1	training	0.00004858
+chr13	110430530	G	A	PPT Region	COL4A2	pooled test	0.00003005
+chr13	110491351	C	T	Deep Intronic	COL4A2	pooled test	0.00007700
+chr13	110493191	G	A	PPT Region	COL4A2	training	0.00044207
+chr13	110638368	C	T	Acceptor Region	NAXD	pooled test	0.00006671
+chr13	110641623	T	C	PPT Region	CARS2	pooled test	0.00006834
+chr13	110651027	G	A	Donor Region	CARS2	training	0.00006609
+chr13	113129451	G	C	Canonical Acceptor Site	F10	pooled test	0.99945062
+chr13	113731357	G	A	Deep Intronic	GRK1	pooled test	0.00003332
+chr14	20197396	C	T	Branch Point Region	OR11G2	training	0.00005557
+chr14	20474576	G	A	Canonical Donor Site	PNP	training	0.99993587
+chr14	21294810	G	T	Canonical Donor Site	RPGRIP1	training	0.99993896
+chr14	21328634	C	T	Donor Region	RPGRIP1	pooled test	0.00020333
+chr14	21400621	C	G	Acceptor Region	CHD8	pooled test	0.00026285
+chr14	21401549	T	C	Branch Point Region	CHD8	training	0.02121250
+chr14	23322174	A	G	Acceptor Region	PABPN1	pooled test	0.00015179
+chr14	23412875	T	G	Acceptor Region	MYH7	pooled test	0.00053538
+chr14	23416849	G	A	Deep Intronic	MYH7	training	0.00002494
+chr14	23419326	C	G	Branch Point Region	MYH7	training	0.00003385
+chr14	23429916	G	A	Acceptor Region	MYH7	training	0.01640553
+chr14	23431747	G	A	Deep Intronic	MYH7	pooled test	0.00019209
+chr14	29927236	T	C	Deep Intronic	PRKD1	pooled test	0.00000116
+chr14	34999542	A	C	PPT Region	SRP54	training	0.00045384
+chr14	35013504	A	G	Deep Intronic	SRP54	pooled test	0.00016957
+chr14	49654766	A	G	Deep Intronic	POLE2	pooled test	0.00095064
+chr14	50138788	G	T	Acceptor Region	SOS2	training	0.00047383
+chr14	50156993	C	A	Donor Region	SOS2	pooled test	0.00056606
+chr14	50174582	A	G	Branch Point Region	SOS2	training	0.00018554
+chr14	50916639	G	A	Donor Region	PYGL	pooled test	0.02974453
+chr14	58444176	G	C	Canonical Donor Site	KIAA0586	pooled test	0.99976557
+chr14	58453322	A	C	Branch Point Region	KIAA0586	training	0.02179128
+chr14	64087654	A	G	PPT Region	SYNE2	pooled test	0.00000670
+chr14	64769006	T	C	Deep Intronic	SPTB	pooled test	0.00002301
+chr14	64771158	C	T	Branch Point Region	SPTB	pooled test	0.00025614
+chr14	64774393	G	A	Donor Region	SPTB	pooled test	0.00289566
+chr14	64775432	G	T	Branch Point Region	SPTB	pooled test	0.00510245
+chr14	67727198	T	A	Donor Region	RDH12	training	0.00029395
+chr14	67885843	G	A	Branch Point Region	RAD51B	training	0.00006592
+chr14	73219121	A	G	PPT Region	PSEN1	pooled test	0.00001346
+chr14	74072003	A	G	Branch Point Region	ALDH6A1	pooled test	0.00583294
+chr14	75032218	G	A	Branch Point Region	MLH3	pooled test	0.04842836
+chr14	75040042	G	T	Branch Point Region	MLH3	pooled test	0.00014853
+chr14	75683536	C	G	PPT Region	TTLL5	pooled test	0.00012313
+chr14	75776736	G	T	PPT Region	TTLL5	pooled test	0.00017721
+chr14	77279967	G	A	Branch Point Region	POMT2	training	0.03886145
+chr14	77284895	G	A	Deep Intronic	POMT2	training	0.00076696
+chr14	77291399	C	T	PPT Region	POMT2	training	0.00019784
+chr14	77444368	C	T	Branch Point Region	VIPAS39	training	0.00001788
+chr14	77465674	A	C	Donor Region	AHSA1	pooled test	0.00002921
+chr14	87950750	T	A	Canonical Acceptor Site	GALC	pooled test	0.99959105
+chr14	88391380	G	A	Canonical Acceptor Site	SPATA7	training	0.99955899
+chr14	88861220	A	C	Canonical Acceptor Site	TTC8	pooled test	0.99992514
+chr14	90397241	G	A	Donor Region	CALM1	pooled test	0.00117904
+chr14	92000122	A	G	PPT Region	TRIP11	pooled test	0.00035239
+chr14	92003418	C	A	Canonical Donor Site	TRIP11	training	0.99934691
+chr14	93779321	T	C	Acceptor Region	PRIMA1	pooled test	0.00037555
+chr14	95090667	T	C	Acceptor Region	DICER1	training	0.00075562
+chr14	95106234	A	C	PPT Region	DICER1	training	0.00033676
+chr14	95107605	T	C	Donor Region	DICER1	pooled test	0.00049408
+chr14	95112290	G	A	Branch Point Region	DICER1	pooled test	0.00010182
+chr14	95129468	A	G	Donor Region	DICER1	pooled test	0.00030423
+chr14	96329660	G	C	Branch Point Region	ATG2B	training	0.00046949
+chr14	96334250	C	A	Deep Intronic	ATG2B	training	0.00013187
+chr14	96446614	T	C	Donor Region	AK7	training	0.00098767
+chr14	99495486	T	C	PPT Region	CCNK	pooled test	0.00081168
+chr14	101995106	T	C	Deep Intronic	DYNC1H1	pooled test	0.00007969
+chr14	101995171	C	T	Acceptor Region	DYNC1H1	training	0.00025983
+chr14	102002975	T	G	Deep Intronic	DYNC1H1	pooled test	0.00011672
+chr14	102033259	T	G	Acceptor Region	DYNC1H1	pooled test	0.00086368
+chr14	102039597	C	T	Branch Point Region	DYNC1H1	training	0.00003548
+chr14	102040417	G	A	Donor Region	DYNC1H1	training	0.00020516
+chr14	102376948	T	C	Donor Region	TECPR2	training	0.00008666
+chr14	102428236	T	G	PPT Region	TECPR2	training	0.00020102
+chr14	102497127	G	A	Donor Region	TECPR2	training	0.00032923
+chr14	102497566	A	C	Acceptor Region	TECPR2	training	0.00326963
+chr14	102930099	G	A	Deep Intronic	AMN	training	0.00012415
+chr14	102939965	G	A	PPT Region	CDC42BPB	pooled test	0.00014282
+chr14	104167055	G	A	Donor Region	KIF26A	pooled test	0.00009542
+chr14	105376748	C	T	PPT Region	PACS2	training	0.00002647
+chr15	25405452	T	C	Deep Intronic	UBE3A	training	0.00012605
+chr15	26583421	T	C	Acceptor Region	GABRB3	training	0.00002421
+chr15	26943188	T	A	Branch Point Region	GABRA5	training	0.00024583
+chr15	27989699	C	T	Branch Point Region	OCA2	pooled test	0.00326498
+chr15	27990675	G	A	Branch Point Region	OCA2	pooled test	0.00015024
+chr15	28014763	G	T	Deep Intronic	OCA2	training	0.00005477
+chr15	31028318	G	A	Deep Intronic	TRPM1	pooled test	0.00007927
+chr15	31050617	A	G	Branch Point Region	TRPM1	training	0.02539921
+chr15	31060682	C	T	Branch Point Region	TRPM1	training	0.00029544
+chr15	33548126	A	C	Acceptor Region	RYR3	training	0.03193778
+chr15	34342118	G	T	Acceptor Region	NOP10	training	0.00189727
+chr15	36895133	C	T	Deep Intronic	MEIS2	training	0.00005805
+chr15	40032818	C	T	Deep Intronic	EIF2AK4	pooled test	0.00003661
+chr15	40200914	A	T	PPT Region	BUB1B	pooled test	0.00093401
+chr15	40701935	C	T	Deep Intronic	RAD51	pooled test	0.01445331
+chr15	40932308	G	C	Acceptor Region	DLL4	training	0.00006561
+chr15	40985429	A	G	Acceptor Region	INO80	training	0.00670129
+chr15	41812504	C	T	PPT Region	MAPKBP1	training	0.00019493
+chr15	41817996	A	T	PPT Region	MAPKBP1	pooled test	0.00016508
+chr15	41820812	C	G	PPT Region	MAPKBP1	pooled test	0.00012923
+chr15	42408325	G	A	Canonical Donor Site	CAPN3	pooled test	0.99985778
+chr15	42966299	A	G	PPT Region	UBR1	training	0.00010453
+chr15	43043400	G	A	Acceptor Region	UBR1	training	0.00030324
+chr15	45592117	G	T	PPT Region	BLOC1S6	pooled test	0.00068072
+chr15	48288376	A	T	Branch Point Region	SLC12A1	training	0.25872880
+chr15	48460348	G	A	Branch Point Region	FBN1	training	0.00217595
+chr15	48472704	T	C	Branch Point Region	FBN1	pooled test	0.00036433
+chr15	48490082	T	C	Acceptor Region	FBN1	training	0.00075922
+chr15	48494264	A	G	Acceptor Region	FBN1	training	0.00041278
+chr15	48510037	T	G	Donor Region	FBN1	pooled test	0.00002467
+chr15	51212563	T	C	Canonical Acceptor Site	CYP19A1	training	0.99950111
+chr15	51237011	T	C	Canonical Acceptor Site	CYP19A1	training	0.99970549
+chr15	51394995	G	A	Deep Intronic	GLDN	pooled test	0.00003743
+chr15	51491784	G	C	Branch Point Region	DMXL2	training	0.00004821
+chr15	51622452	C	A	Donor Region	DMXL2	pooled test	0.00003892
+chr15	52327849	G	A	Donor Region	MYO5A	pooled test	0.00066090
+chr15	52405413	G	C	PPT Region	MYO5A	pooled test	0.00019117
+chr15	57198047	T	A	Deep Intronic	TCF12	training	0.00001890
+chr15	62013037	A	G	Canonical Donor Site	VPS13C	training	0.99876750
+chr15	63626198	C	T	Branch Point Region	HERC1	training	0.00079716
+chr15	63755334	C	T	Acceptor Region	HERC1	training	0.00161861
+chr15	64969248	A	G	Donor Region	SPG21	pooled test	0.00112673
+chr15	66481749	C	T	Acceptor Region	MAP2K1	pooled test	0.00009182
+chr15	72349072	C	G	Donor Region	HEXA	training	0.00017056
+chr15	73343822	C	G	PPT Region	HCN4	pooled test	0.00005578
+chr15	74893136	A	G	Canonical Acceptor Site	MPI	training	0.99943048
+chr15	74896136	G	A	PPT Region	MPI	pooled test	0.00047683
+chr15	74897001	G	C	Acceptor Region	MPI	training	0.00025689
+chr15	75389644	G	A	Donor Region	SIN3A	training	0.00050911
+chr15	75400720	A	G	Deep Intronic	SIN3A	pooled test	0.00003174
+chr15	75400722	G	A	Donor Region	SIN3A	training	0.00008927
+chr15	76287947	T	C	Canonical Acceptor Site	ETFA	training	0.99983847
+chr15	76765557	C	A	Donor Region	SCAPER	pooled test	0.00226680
+chr15	80181177	C	G	Deep Intronic	FAH	training	0.00002891
+chr15	80574129	T	C	PPT Region	ARNT2	training	0.00008785
+chr15	82664956	G	A	PPT Region	AP3B2	pooled test	0.00022429
+chr15	84785121	C	T	Deep Intronic	ZNF592	training	0.00000355
+chr15	88859418	G	T	Canonical Donor Site	ACAN	pooled test	0.99712914
+chr15	89210698	C	T	Canonical Donor Site	RLBP1	pooled test	0.99917489
+chr15	89215042	A	C	Deep Intronic	RLBP1	pooled test	0.00041390
+chr15	89328572	C	A	Branch Point Region	POLG	training	0.00037364
+chr15	89631488	A	G	Donor Region	KIF7	pooled test	0.00017354
+chr15	89633014	G	C	PPT Region	KIF7	pooled test	0.00121155
+chr15	89634124	T	C	Deep Intronic	KIF7	training	0.00004536
+chr15	90765284	G	T	PPT Region	BLM	training	0.00006050
+chr15	90769420	A	T	PPT Region	BLM	training	0.00004227
+chr15	90790640	T	C	Acceptor Region	BLM	training	0.00064753
+chr15	90794147	A	G	PPT Region	BLM	training	0.00015998
+chr15	90949721	G	A	Canonical Donor Site	UNC45A	pooled test	0.99970859
+chr15	93004752	G	A	Canonical Donor Site	CHD2	training	0.99983060
+chr15	99997608	G	T	PPT Region	ADAMTS17	training	0.00589195
+chr15	101061167	A	G	Acceptor Region	LRRK1	pooled test	0.00005601
+chr16	110524	C	A	Canonical Donor Site	NPRL3	training	0.99998057
+chr16	575821	C	T	PPT Region	PIGQ	pooled test	0.00028526
+chr16	725061	G	A	Deep Intronic	CCDC78	training	0.00107944
+chr16	725220	G	A	Deep Intronic	CCDC78	training	0.00002506
+chr16	1206292	G	A	Donor Region	CACNA1H	pooled test	0.00393230
+chr16	1242038	A	C	Branch Point Region	TPSAB1	training	0.00004246
+chr16	1362188	C	T	PPT Region	GNPTG	training	0.00042579
+chr16	1362567	C	T	Branch Point Region	GNPTG	pooled test	0.00020045
+chr16	1446993	C	T	Deep Intronic	CLCN7	training	0.00006088
+chr16	1449269	G	C	Donor Region	CLCN7	pooled test	0.00009059
+chr16	1460566	T	G	Branch Point Region	CLCN7	training	0.00015953
+chr16	1461474	C	A	Acceptor Region	CLCN7	training	0.00170820
+chr16	1525345	G	A	PPT Region	IFT140	pooled test	0.00032699
+chr16	2040276	C	G	Branch Point Region	NTHL1	training	0.01494909
+chr16	2044608	C	G	Deep Intronic	NTHL1	training	0.00009606
+chr16	2046398	G	C	Branch Point Region	NTHL1	pooled test	0.00199227
+chr16	2055401	G	T	Canonical Acceptor Site	TSC2	pooled test	0.99990225
+chr16	2056190	C	T	Acceptor Region	TSC2	pooled test	0.00701271
+chr16	2075782	C	T	PPT Region	TSC2	pooled test	0.00115417
+chr16	2075900	G	C	Donor Region	TSC2	training	0.00035837
+chr16	2085033	G	A	Donor Region	TSC2	training	0.00006489
+chr16	2093094	C	T	Canonical Acceptor Site	PKD1	pooled test	0.99976856
+chr16	2304163	T	A	PPT Region	ABCA3	pooled test	0.00020990
+chr16	3256304	C	T	Donor Region	MEFV	training	0.00000989
+chr16	3532849	C	T	Donor Region	CLUAP1	training	0.00034038
+chr16	3679706	G	C	Deep Intronic	TRAP1	pooled test	0.00002463
+chr16	3729877	G	A	Acceptor Region	CREBBP	training	0.00584090
+chr16	3767703	A	G	Deep Intronic	CREBBP	pooled test	0.00004667
+chr16	5075368	C	G	PPT Region	ALG1	pooled test	0.00009604
+chr16	5075543	G	A	Donor Region	ALG1	pooled test	0.00007757
+chr16	7518396	G	T	Donor Region	RBFOX1	training	0.00042337
+chr16	10538088	G	A	PPT Region	EMP2	training	0.00031218
+chr16	10908156	T	C	Donor Region	CIITA	training	0.00001509
+chr16	10908995	C	T	Branch Point Region	CIITA	pooled test	0.03884651
+chr16	13932292	T	C	Donor Region	ERCC4	pooled test	0.00057099
+chr16	14584426	C	T	Acceptor Region	PARN	pooled test	0.00021148
+chr16	15718449	G	T	PPT Region	MYH11	training	0.00004371
+chr16	15763784	A	G	Deep Intronic	MYH11	pooled test	0.00001569
+chr16	16161579	G	A	PPT Region	ABCC6	training	0.00001067
+chr16	16169644	A	C	Canonical Donor Site	ABCC6	pooled test	0.99932539
+chr16	16187238	C	G	Branch Point Region	ABCC6	pooled test	0.00595815
+chr16	16188981	G	A	Acceptor Region	ABCC6	pooled test	0.00019789
+chr16	17158911	T	G	Canonical Acceptor Site	XYLT1	training	0.99979681
+chr16	21968621	T	C	Acceptor Region	UQCRC2	pooled test	0.00252157
+chr16	23189360	C	T	PPT Region	SCNN1G	pooled test	0.00008731
+chr16	23398142	C	A	PPT Region	COG7	training	0.00014164
+chr16	23417128	A	G	Acceptor Region	COG7	pooled test	0.00071025
+chr16	23524470	G	A	PPT Region	EARS2	pooled test	0.00028670
+chr16	23607845	A	T	Deep Intronic	PALB2	training	0.00007186
+chr16	23608047	C	T	Branch Point Region	PALB2	pooled test	0.00080148
+chr16	23624098	A	C	Acceptor Region	PALB2	training	0.00073849
+chr16	23629196	C	T	Donor Region	PALB2	training	0.00008243
+chr16	23630512	C	T	Branch Point Region	PALB2	pooled test	0.00107665
+chr16	23637982	A	G	Branch Point Region	PALB2	pooled test	0.00072928
+chr16	23637983	C	T	Branch Point Region	PALB2	pooled test	0.00053095
+chr16	23637984	G	A	Branch Point Region	PALB2	pooled test	0.00002319
+chr16	27708922	T	C	Canonical Donor Site	KATNIP	pooled test	0.99962914
+chr16	28846117	C	G	PPT Region	TUFM	training	0.00054580
+chr16	28888782	C	G	Acceptor Region	ATP2A1	training	0.00040927
+chr16	28936502	C	T	Acceptor Region	CD19	pooled test	0.00168534
+chr16	28937261	A	C	Acceptor Region	CD19	training	0.00008551
+chr16	28938779	C	T	Deep Intronic	CD19	pooled test	0.00055011
+chr16	28986613	G	C	Branch Point Region	LAT	pooled test	0.00499546
+chr16	28989487	C	T	Branch Point Region	LAT	training	0.00782637
+chr16	29814600	G	A	Branch Point Region	PRRT2	pooled test	0.00205142
+chr16	29979085	G	A	Deep Intronic	TAOK2	training	0.00047560
+chr16	29979516	C	T	Donor Region	TAOK2	pooled test	0.00008923
+chr16	29983067	C	T	Acceptor Region	TAOK2	training	0.00101107
+chr16	30086864	G	C	PPT Region	TBX6	training	0.01452761
+chr16	30712242	C	T	PPT Region	SRCAP	training	0.00011328
+chr16	30734628	T	C	Deep Intronic	SRCAP	pooled test	0.00078752
+chr16	31110325	G	A	Canonical Donor Site	BCKDK	pooled test	0.99969995
+chr16	31182507	A	G	Acceptor Region	FUS	pooled test	0.00000996
+chr16	31297497	G	C	PPT Region	ITGAM	training	0.00005499
+chr16	31489340	T	C	Canonical Donor Site	SLC5A2	pooled test	0.99171960
+chr16	46683621	A	G	PPT Region	VPS35	training	0.00010551
+chr16	46727397	G	A	PPT Region	MYLK3	pooled test	0.00059608
+chr16	47547432	G	A	Canonical Acceptor Site	PHKB	training	0.99995661
+chr16	47650515	A	G	Branch Point Region	PHKB	pooled test	0.00414915
+chr16	50697326	G	A	Deep Intronic	NOD2	pooled test	0.01084173
+chr16	53602193	G	A	Acceptor Region	RPGRIP1L	training	0.00011337
+chr16	56502307	C	T	Deep Intronic	BBS2	training	0.00020308
+chr16	56805489	G	T	PPT Region	NUP93	pooled test	0.00049801
+chr16	56838912	G	A	Branch Point Region	NUP93	training	0.00015636
+chr16	56872344	C	T	Acceptor Region	SLC12A3	training	0.00027413
+chr16	56969904	C	T	Acceptor Region	CETP	pooled test	0.00013202
+chr16	57654413	C	A	Deep Intronic	ADGRG1	training	0.00018887
+chr16	57657497	G	A	Donor Region	ADGRG1	training	0.00143228
+chr16	57661967	T	C	Canonical Donor Site	ADGRG1	pooled test	0.99975485
+chr16	58002477	A	C	Canonical Acceptor Site	USB1	pooled test	0.99971908
+chr16	67611620	C	T	Donor Region	CTCF	pooled test	0.00001310
+chr16	67646985	G	A	Deep Intronic	CARMIL2	training	0.00052504
+chr16	67647267	C	T	Branch Point Region	CARMIL2	training	0.01182887
+chr16	67647603	G	T	Canonical Donor Site	CARMIL2	training	0.99962449
+chr16	67649974	C	T	Donor Region	CARMIL2	pooled test	0.00134805
+chr16	67654258	G	A	Deep Intronic	CARMIL2	pooled test	0.00040298
+chr16	67654693	G	A	Canonical Donor Site	CARMIL2	pooled test	0.99955755
+chr16	67658401	C	T	Branch Point Region	ACD	training	0.00024089
+chr16	67660060	C	A	PPT Region	ACD	training	0.00004309
+chr16	68676381	A	C	Acceptor Region	CDH3	pooled test	0.01119309
+chr16	68737468	C	T	Donor Region	CDH1	training	0.00041829
+chr16	68808380	G	C	Branch Point Region	CDH1	pooled test	0.00006187
+chr16	68815474	T	C	Branch Point Region	CDH1	training	0.00060219
+chr16	68821988	T	C	PPT Region	CDH1	training	0.00007264
+chr16	70264950	C	A	Donor Region	AARS1	pooled test	0.00001686
+chr16	70267819	G	A	Acceptor Region	AARS1	training	0.00000879
+chr16	70731488	G	A	Donor Region	VAC14	training	0.00117979
+chr16	70829844	G	A	PPT Region	HYDIN	pooled test	0.00011400
+chr16	70857887	G	A	PPT Region	HYDIN	pooled test	0.00006526
+chr16	70943808	C	T	Donor Region	HYDIN	pooled test	0.00006907
+chr16	70959639	T	C	Donor Region	HYDIN	pooled test	0.00001417
+chr16	72008793	C	T	Donor Region	DHODH	pooled test	0.00063662
+chr16	72024113	T	G	Branch Point Region	DHODH	training	0.00098567
+chr16	74624085	G	C	PPT Region	RFWD3	training	0.00009679
+chr16	74637976	G	C	Acceptor Region	RFWD3	training	0.01008058
+chr16	75541482	C	T	Branch Point Region	TMEM231	pooled test	0.04117994
+chr16	75541484	C	T	Branch Point Region	TMEM231	pooled test	0.00091035
+chr16	75541485	G	A	Branch Point Region	TMEM231	pooled test	0.01752764
+chr16	77291258	G	C	Donor Region	ADAMTS18	training	0.00042005
+chr16	81701808	C	T	Donor Region	CMIP	training	0.00018475
+chr16	81900800	C	G	Deep Intronic	PLCG2	training	0.00008526
+chr16	84041968	C	T	Canonical Donor Site	SLC38A8	training	0.99919492
+chr16	84063446	C	G	Canonical Acceptor Site	MBTPS1	pooled test	0.99995399
+chr16	84155573	T	A	Acceptor Region	DNAAF1	training	0.00626337
+chr16	84176306	G	C	Donor Region	DNAAF1	pooled test	0.00005669
+chr16	88715165	T	C	PPT Region	CTU2	pooled test	0.00005540
+chr16	88804749	G	T	PPT Region	CDT1	training	0.00014841
+chr16	88805704	C	T	PPT Region	CDT1	training	0.00008345
+chr16	88837781	C	G	PPT Region	GALNS	training	0.00019227
+chr16	88840875	G	T	Deep Intronic	GALNS	training	0.00077864
+chr16	89120933	G	A	Deep Intronic	ACSF3	pooled test	0.00002672
+chr16	89274985	T	C	Branch Point Region	ANKRD11	training	0.00025169
+chr16	89690551	A	G	Canonical Acceptor Site	CDK10	pooled test	0.99931169
+chr16	89742799	C	A	Canonical Donor Site	FANCA	training	0.99951172
+chr16	89764882	T	C	Donor Region	FANCA	pooled test	0.00031116
+chr16	89765076	A	G	Acceptor Region	FANCA	training	0.00557243
+chr16	89767133	G	T	Donor Region	FANCA	training	0.00021859
+chr16	89782944	C	A	Branch Point Region	FANCA	pooled test	0.00067969
+chr16	89791395	T	C	Donor Region	FANCA	training	0.00021754
+chr16	89792078	A	T	Acceptor Region	FANCA	pooled test	0.01131254
+chr16	89815994	G	A	Acceptor Region	FANCA	training	0.00028979
+chr17	1365066	G	A	Acceptor Region	YWHAE	training	0.00003035
+chr17	1365074	A	G	PPT Region	YWHAE	training	0.00009708
+chr17	1653699	G	A	PPT Region	PRPF8	pooled test	0.00004480
+chr17	1684465	G	C	Donor Region	PRPF8	pooled test	0.00002708
+chr17	1771218	C	A	Deep Intronic	SERPINF1	pooled test	0.00015634
+chr17	4167951	C	T	Branch Point Region	ANKFY1	training	0.00026499
+chr17	4731907	G	T	Canonical Donor Site	MED11	pooled test	0.99925810
+chr17	4899398	G	A	PPT Region	CHRNE	pooled test	0.00014332
+chr17	4946829	G	A	Acceptor Region	PFN1	training	0.00033625
+chr17	5004850	C	T	Acceptor Region	KIF1C	pooled test	0.00027848
+chr17	6428520	C	A	PPT Region	AIPL1	pooled test	0.00005131
+chr17	6455669	G	C	Branch Point Region	PITPNM3	training	0.00000978
+chr17	6477247	G	T	Branch Point Region	PITPNM3	training	0.00005243
+chr17	6600364	G	A	Deep Intronic	KIAA0753	pooled test	0.00008806
+chr17	6612211	T	C	Deep Intronic	KIAA0753	training	0.00037452
+chr17	7222099	T	C	Deep Intronic	ACADVL	pooled test	0.00077945
+chr17	7673508	T	C	Deep Intronic	TP53	pooled test	0.00001455
+chr17	7673634	T	C	Branch Point Region	TP53	pooled test	0.00067365
+chr17	7673872	T	C	Branch Point Region	TP53	training	0.00600648
+chr17	7674319	G	A	Branch Point Region	TP53	training	0.00410417
+chr17	7905996	G	A	Donor Region	CHD3	training	0.00042504
+chr17	8015728	C	T	PPT Region	GUCY2D	training	0.00006607
+chr17	8015914	C	T	PPT Region	GUCY2D	pooled test	0.00005668
+chr17	8073770	G	A	PPT Region	ALOX12B	training	0.00028101
+chr17	8110074	C	A	Deep Intronic	ALOXE3	pooled test	0.00043272
+chr17	8114615	G	A	Acceptor Region	ALOXE3	pooled test	0.00176832
+chr17	8229210	G	A	Acceptor Region	CTC1	pooled test	0.00515635
+chr17	8231822	G	A	Acceptor Region	CTC1	pooled test	0.00055638
+chr17	8518804	G	A	PPT Region	MYH10	pooled test	0.00000936
+chr17	10412963	G	A	Deep Intronic	MYH8	training	0.00028499
+chr17	10414514	A	G	Branch Point Region	MYH8	training	0.00045009
+chr17	10639279	A	G	Deep Intronic	MYH3	pooled test	0.00018449
+chr17	10641377	G	C	Acceptor Region	MYH3	training	0.00710372
+chr17	11608115	C	T	PPT Region	DNAH9	training	0.00036621
+chr17	11719520	G	T	Deep Intronic	DNAH9	training	0.00435678
+chr17	11744778	G	A	PPT Region	DNAH9	pooled test	0.00009364
+chr17	11823048	C	T	Deep Intronic	DNAH9	training	0.00002112
+chr17	11902920	A	G	Donor Region	DNAH9	training	0.00008661
+chr17	11931998	G	A	PPT Region	DNAH9	training	0.00005094
+chr17	13005913	A	G	Donor Region	ELAC2	training	0.00142467
+chr17	15259226	G	C	Branch Point Region	PMP22	pooled test	0.00076605
+chr17	16317916	T	C	Donor Region	PIGL	training	0.00018234
+chr17	17215125	C	T	Branch Point Region	FLCN	pooled test	0.00025321
+chr17	17216538	G	A	Branch Point Region	FLCN	pooled test	0.00008025
+chr17	17224181	G	A	Branch Point Region	FLCN	pooled test	0.00067273
+chr17	18125244	G	A	Deep Intronic	MYO15A	training	0.00393217
+chr17	19347366	G	A	Branch Point Region	B9D1	training	0.06331826
+chr17	19657716	T	C	Branch Point Region	ALDH3A2	pooled test	0.01125357
+chr17	19671691	A	C	Branch Point Region	ALDH3A2	training	0.00238234
+chr17	28524984	A	G	Deep Intronic	FOXN1	training	0.00004198
+chr17	28737742	T	C	Donor Region	NEK8	pooled test	0.02903409
+chr17	31159009	G	A	Canonical Acceptor Site	NF1	training	0.99996185
+chr17	31159100	A	T	Donor Region	NF1	pooled test	0.00452504
+chr17	31214599	T	A	Deep Intronic	NF1	training	0.00023972
+chr17	31221936	G	A	Donor Region	NF1	training	0.00028846
+chr17	31227187	A	T	Branch Point Region	NF1	training	0.00150309
+chr17	31229979	G	T	Donor Region	NF1	pooled test	0.99754119
+chr17	31248982	A	G	Canonical Acceptor Site	NF1	training	0.99997640
+chr17	31326260	C	G	Donor Region	NF1	training	0.00009678
+chr17	31336607	T	A	Branch Point Region	NF1	training	0.00529763
+chr17	31337338	G	A	Branch Point Region	NF1	pooled test	0.00190380
+chr17	31337817	A	T	Canonical Acceptor Site	NF1	training	0.99990427
+chr17	31338689	C	G	PPT Region	NF1	pooled test	0.00031899
+chr17	31358450	G	A	Branch Point Region	NF1	pooled test	0.00238276
+chr17	35103334	G	A	Acceptor Region	RAD51D	training	0.00052274
+chr17	35118493	A	C	Donor Region	RAD51D	training	0.00473922
+chr17	35576211	G	A	Branch Point Region	PEX12	pooled test	0.00027896
+chr17	35750409	A	C	Deep Intronic	GAS2L2	training	0.00000765
+chr17	37263923	C	T	Branch Point Region	ACACA	pooled test	0.00013138
+chr17	39708547	G	A	Deep Intronic	ERBB2	training	0.00002054
+chr17	40093310	G	A	Branch Point Region	NR1D1	pooled test	0.00080053
+chr17	40637483	A	C	Deep Intronic	SMARCE1	training	0.00026802
+chr17	41612157	C	T	Canonical Donor Site	KRT16	training	0.96655667
+chr17	41757627	A	G	Donor Region	JUP	training	0.00031095
+chr17	41769225	G	A	PPT Region	JUP	training	0.00003557
+chr17	41813287	C	T	Donor Region	FKBP10	training	0.00004774
+chr17	42202749	A	C	Donor Region	STAT5B	training	0.00005209
+chr17	42219695	C	T	Deep Intronic	STAT5B	pooled test	0.00000257
+chr17	42315836	C	T	Branch Point Region	STAT3	pooled test	0.00017635
+chr17	42337428	C	A	Donor Region	STAT3	pooled test	0.00121209
+chr17	42565223	C	G	Acceptor Region	COASY	pooled test	0.00148272
+chr17	42685432	G	T	Deep Intronic	CNTNAP1	training	0.00005802
+chr17	43047735	G	A	Branch Point Region	BRCA1	pooled test	0.00071075
+chr17	43047737	G	A	Branch Point Region	BRCA1	pooled test	0.00879212
+chr17	43051144	A	C	Branch Point Region	BRCA1	pooled test	0.00167393
+chr17	43057165	A	G	Branch Point Region	BRCA1	pooled test	0.00032546
+chr17	43063413	A	G	Branch Point Region	BRCA1	training	0.00007769
+chr17	43063983	A	G	Branch Point Region	BRCA1	pooled test	0.00011369
+chr17	43076642	A	C	Branch Point Region	BRCA1	pooled test	0.38563299
+chr17	43076642	A	G	Branch Point Region	BRCA1	training	0.01169997
+chr17	43091035	T	G	Acceptor Region	BRCA1	training	0.00606709
+chr17	43099909	C	T	Branch Point Region	BRCA1	pooled test	0.00094572
+chr17	44007780	C	A	Donor Region	NAGS	training	0.00053527
+chr17	44071239	A	G	Deep Intronic	G6PC3	pooled test	0.01737020
+chr17	44075107	G	C	Deep Intronic	G6PC3	training	0.03157867
+chr17	44216015	G	C	Branch Point Region	UBTF	training	0.00042783
+chr17	44350434	T	A	Acceptor Region	GRN	pooled test	0.01800197
+chr17	44351029	C	T	Acceptor Region	GRN	training	0.00028520
+chr17	44380158	C	T	Acceptor Region	ITGA2B	pooled test	0.00065295
+chr17	44852602	T	C	Branch Point Region	EFTUD2	training	0.00011982
+chr17	44853289	C	T	Donor Region	EFTUD2	training	0.00003672
+chr17	44862706	G	A	Donor Region	EFTUD2	pooled test	0.00020964
+chr17	44886770	G	A	PPT Region	EFTUD2	pooled test	0.00010097
+chr17	44902335	C	G	Branch Point Region	DNAAF19	pooled test	0.04367856
+chr17	44914020	T	G	Donor Region	GFAP	pooled test	0.00012512
+chr17	45439886	T	C	Deep Intronic	PLEKHM1	training	0.00000475
+chr17	45454281	A	G	Acceptor Region	PLEKHM1	pooled test	0.00002193
+chr17	46031721	G	A	PPT Region	KANSL1	pooled test	0.00003114
+chr17	46038706	A	T	PPT Region	KANSL1	training	0.00016658
+chr17	47220068	A	G	Deep Intronic	MYL4	pooled test	0.00037940
+chr17	50169060	C	A	Branch Point Region	SGCA	training	0.09091366
+chr17	50186509	T	C	Canonical Acceptor Site	COL1A1	pooled test	0.99989355
+chr17	50190307	A	G	Deep Intronic	COL1A1	pooled test	0.00008341
+chr17	50194854	G	A	Branch Point Region	COL1A1	pooled test	0.00027753
+chr17	50195336	G	A	Acceptor Region	COL1A1	pooled test	0.00174008
+chr17	50606031	C	T	Donor Region	CACNA1G	training	0.00013720
+chr17	58207887	C	A	Donor Region	MKS1	training	0.00004834
+chr17	58212975	C	T	Donor Region	MKS1	training	0.00016261
+chr17	58214413	T	A	Branch Point Region	MKS1	pooled test	0.00229233
+chr17	58360775	T	C	Donor Region	RNF43	pooled test	0.00010887
+chr17	58362685	C	T	Branch Point Region	RNF43	pooled test	0.00008891
+chr17	58362686	G	A	Branch Point Region	RNF43	training	0.00058274
+chr17	58363520	G	A	Donor Region	RNF43	pooled test	0.00072021
+chr17	58692802	A	C	Deep Intronic	RAD51C	pooled test	0.00007082
+chr17	58703098	C	G	Deep Intronic	RAD51C	training	0.00138799
+chr17	58703194	A	C	Canonical Acceptor Site	RAD51C	pooled test	0.99983203
+chr17	58720706	A	G	Branch Point Region	RAD51C	pooled test	0.00067492
+chr17	58720819	A	C	Donor Region	RAD51C	training	0.01050083
+chr17	59041906	T	G	Acceptor Region	TRIM37	training	0.00002972
+chr17	59682255	C	G	PPT Region	CLTC	pooled test	0.00002033
+chr17	61743177	G	A	Branch Point Region	BRIP1	training	0.00027574
+chr17	61793908	T	C	Deep Intronic	BRIP1	training	0.00024211
+chr17	61799326	A	C	Branch Point Region	BRIP1	pooled test	0.07866907
+chr17	61808759	T	C	Canonical Acceptor Site	BRIP1	training	0.99964881
+chr17	68527803	G	A	Branch Point Region	PRKAR1A	pooled test	0.00001507
+chr17	68528861	G	A	Acceptor Region	PRKAR1A	training	0.00012474
+chr17	74289586	C	T	Acceptor Region	DNAI2	training	0.00014257
+chr17	74922903	T	A	Donor Region	USH1G	pooled test	0.00045917
+chr17	74958773	C	T	Acceptor Region	HID1	pooled test	0.00012647
+chr17	75486004	C	T	Donor Region	TMEM94	training	0.00048399
+chr17	75496484	G	A	Deep Intronic	TMEM94	pooled test	0.00010171
+chr17	75521674	A	G	Branch Point Region	TSEN54	training	0.00288039
+chr17	75522334	G	T	Canonical Donor Site	TSEN54	training	0.99986184
+chr17	75741006	G	A	Canonical Donor Site	ITGB4	training	0.99890590
+chr17	75851717	G	A	Branch Point Region	WBP2	training	0.01881110
+chr17	77498511	C	T	PPT Region	SEPTIN9	pooled test	0.00002089
+chr17	78133822	C	T	Branch Point Region	TMC8	training	0.01046418
+chr17	80085995	C	T	Acceptor Region	CCDC40	training	0.00008463
+chr17	80105722	A	G	Branch Point Region	GAA	pooled test	0.00010140
+chr17	80118613	C	T	Branch Point Region	GAA	pooled test	0.00081634
+chr17	80182810	C	T	Deep Intronic	CARD14	training	0.00000321
+chr17	81510850	G	A	PPT Region	ACTG1	pooled test	0.00000676
+chr17	81511166	A	T	Deep Intronic	ACTG1	training	0.00014404
+chr17	81934314	G	C	Deep Intronic	PYCR1	training	0.00017625
+chr17	82027380	C	T	Acceptor Region	LRRC45	training	0.00024866
+chr17	82080684	G	A	Donor Region	FASN	training	0.00005494
+chr18	2732255	C	T	Acceptor Region	SMCHD1	training	0.00004415
+chr18	2762247	T	G	Deep Intronic	SMCHD1	training	0.00020266
+chr18	3067562	G	A	Acceptor Region	MYOM1	pooled test	0.00020003
+chr18	6986120	G	C	Deep Intronic	LAMA1	pooled test	0.00170124
+chr18	7025959	T	A	Deep Intronic	LAMA1	pooled test	0.00005824
+chr18	10760113	A	G	Deep Intronic	PIEZO2	training	0.00049380
+chr18	21495790	A	T	Donor Region	GREB1L	training	0.00007706
+chr18	21496712	T	A	Deep Intronic	GREB1L	pooled test	0.00026876
+chr18	23533523	A	G	Acceptor Region	NPC1	training	0.00278063
+chr18	23535465	T	C	Donor Region	NPC1	training	0.83725727
+chr18	23544337	A	C	Donor Region	NPC1	training	0.00008968
+chr18	23544530	A	T	Acceptor Region	NPC1	training	0.00020094
+chr18	26455913	C	A	PPT Region	KCTD1	training	0.00004734
+chr18	31070713	C	G	Deep Intronic	DSC2	pooled test	0.00004076
+chr18	31318356	G	T	Donor Region	DSG1	training	0.00008261
+chr18	31329888	C	T	Acceptor Region	DSG1	training	0.00025880
+chr18	31330044	A	T	Donor Region	DSG1	pooled test	0.00020104
+chr18	34825284	T	C	Deep Intronic	DTNA	pooled test	0.04582731
+chr18	45912465	A	C	Acceptor Region	EPG5	training	0.00005165
+chr18	46533339	A	G	PPT Region	LOXHD1	training	0.00011534
+chr18	46541951	A	G	PPT Region	LOXHD1	training	0.00116330
+chr18	46563064	C	G	Canonical Donor Site	LOXHD1	training	0.99966049
+chr18	46569652	G	A	PPT Region	LOXHD1	training	0.00012951
+chr18	46594330	C	T	Canonical Donor Site	LOXHD1	training	0.99952447
+chr18	51048682	C	A	Acceptor Region	SMAD4	training	0.00083830
+chr18	55279690	T	G	Branch Point Region	TCF4	pooled test	0.00050887
+chr18	55279691	G	A	Branch Point Region	TCF4	pooled test	0.00083690
+chr18	57671607	C	T	Branch Point Region	ATP8B1	pooled test	0.00087470
+chr18	58323227	T	C	Acceptor Region	NEDD4L	training	0.00184989
+chr18	58323338	C	T	Donor Region	NEDD4L	pooled test	0.00003912
+chr18	58370480	A	G	Deep Intronic	NEDD4L	training	0.00001303
+chr18	59466920	A	G	Branch Point Region	CCBE1	training	0.00095562
+chr18	62145896	G	T	Deep Intronic	PIGN	pooled test	0.00002386
+chr18	62361805	A	G	Deep Intronic	TNFRSF11A	pooled test	0.00003704
+chr18	70030862	G	A	Deep Intronic	RTTN	pooled test	0.00002621
+chr18	70086687	G	T	Acceptor Region	RTTN	training	0.12490887
+chr18	79410399	C	T	Acceptor Region	NFATC1	pooled test	0.00038932
+chr18	79695220	T	C	Acceptor Region	CTDP1	training	0.00018607
+chr19	853421	G	T	Deep Intronic	ELANE	pooled test	0.00084981
+chr19	855799	G	A	Donor Region	ELANE	training	0.99188930
+chr19	855799	G	T	Donor Region	ELANE	training	0.99073935
+chr19	860859	A	C	Canonical Acceptor Site	CFD	training	0.99877161
+chr19	1222008	T	G	Canonical Donor Site	STK11	training	0.99996221
+chr19	1491404	C	T	Deep Intronic	REEP6	pooled test	0.00095683
+chr19	1621051	G	A	Acceptor Region	TCF3	training	0.00010630
+chr19	1622230	A	G	Acceptor Region	TCF3	pooled test	0.00196571
+chr19	1622431	C	T	PPT Region	TCF3	training	0.00026756
+chr19	2115425	G	C	Acceptor Region	AP3D1	pooled test	0.00070336
+chr19	2117206	A	C	Deep Intronic	AP3D1	training	0.00001352
+chr19	2121891	G	A	PPT Region	AP3D1	training	0.00009172
+chr19	3113296	G	A	Branch Point Region	GNA11	pooled test	0.00058315
+chr19	3119367	G	A	Donor Region	GNA11	training	0.00000721
+chr19	4099194	G	A	Donor Region	MAP2K2	training	0.00179365
+chr19	4117660	T	C	Branch Point Region	MAP2K2	training	0.00044223
+chr19	4431951	G	A	Canonical Acceptor Site	CHAF1A	pooled test	0.99863130
+chr19	5903468	C	G	Deep Intronic	NDUFA11	training	0.00068424
+chr19	6590087	A	T	Deep Intronic	CD70	pooled test	0.00017415
+chr19	6686298	G	T	PPT Region	C3	pooled test	0.00285553
+chr19	6714083	C	A	Canonical Acceptor Site	C3	pooled test	0.99970108
+chr19	6720509	C	G	Donor Region	C3	training	0.00006417
+chr19	7440300	G	A	Branch Point Region	ARHGEF18	training	0.00481178
+chr19	7468824	G	C	Canonical Acceptor Site	ARHGEF18	pooled test	0.99974841
+chr19	7529729	A	C	Deep Intronic	MCOLN1	pooled test	0.00002082
+chr19	7540728	G	A	Deep Intronic	PNPLA6	training	0.00001315
+chr19	7550121	G	A	Deep Intronic	PNPLA6	training	0.00021524
+chr19	7640701	C	A	Branch Point Region	STXBP2	pooled test	0.00287634
+chr19	7640858	G	C	Branch Point Region	STXBP2	pooled test	0.00256709
+chr19	7641698	C	T	Acceptor Region	STXBP2	training	0.00080891
+chr19	8302641	G	C	Branch Point Region	CD320	training	0.00102719
+chr19	8304092	G	C	Acceptor Region	CD320	pooled test	0.00021240
+chr19	8592137	G	C	Branch Point Region	ADAMTS10	pooled test	0.00089390
+chr19	8597233	C	A	Canonical Donor Site	ADAMTS10	pooled test	0.99979478
+chr19	10135879	G	C	Branch Point Region	DNMT1	training	0.00009651
+chr19	10310658	G	A	PPT Region	FDX2	training	0.00011010
+chr19	10985255	C	T	PPT Region	SMARCA4	pooled test	0.00001276
+chr19	11034795	G	A	Deep Intronic	SMARCA4	pooled test	0.00007542
+chr19	11041301	C	T	Acceptor Region	SMARCA4	training	0.00086977
+chr19	11113454	G	T	Donor Region	LDLR	training	0.98118895
+chr19	11113508	T	C	Branch Point Region	LDLR	pooled test	0.11740379
+chr19	11120364	C	A	Acceptor Region	LDLR	pooled test	0.00880622
+chr19	11128005	C	A	Acceptor Region	LDLR	training	0.89923173
+chr19	13257341	A	G	Deep Intronic	CACNA1A	training	0.00042854
+chr19	13371679	C	T	Deep Intronic	CACNA1A	training	0.00558650
+chr19	13453033	C	A	PPT Region	CACNA1A	training	0.00002545
+chr19	13923458	G	A	Donor Region	CC2D1A	pooled test	0.00194680
+chr19	14765575	A	G	Acceptor Region	ADGRE2	training	0.00008780
+chr19	14774316	A	G	Acceptor Region	ADGRE2	training	0.00112725
+chr19	15251445	G	C	Deep Intronic	BRD4	training	0.00057255
+chr19	15264770	C	G	Acceptor Region	BRD4	pooled test	0.00058753
+chr19	17567544	G	C	Donor Region	COLGALT1	pooled test	0.00062539
+chr19	17762743	C	G	PPT Region	FCHO1	pooled test	0.00010416
+chr19	17826911	C	T	Canonical Acceptor Site	JAK3	training	0.99919671
+chr19	17838404	A	T	PPT Region	JAK3	training	0.00006310
+chr19	17841778	A	T	PPT Region	JAK3	training	0.00121349
+chr19	17843179	G	C	Acceptor Region	JAK3	training	0.01746753
+chr19	18069526	A	G	Deep Intronic	IL12RB1	pooled test	0.00001082
+chr19	18161957	C	T	Acceptor Region	PIK3R2	training	0.00104128
+chr19	18594108	C	A	Canonical Acceptor Site	CRLF1	training	0.99871802
+chr19	19105553	A	C	Acceptor Region	SLC25A42	pooled test	0.00019254
+chr19	32882019	C	T	Acceptor Region	CEP89	pooled test	0.00000730
+chr19	32937677	G	A	Acceptor Region	CEP89	pooled test	0.00031175
+chr19	34377892	C	G	Deep Intronic	GPI	training	0.00011614
+chr19	35557648	G	C	Donor Region	ATP4A	pooled test	0.00029496
+chr19	35724946	G	A	Branch Point Region	KMT2B	training	0.00013017
+chr19	35725203	A	G	PPT Region	KMT2B	training	0.00001313
+chr19	35727150	C	G	Acceptor Region	KMT2B	pooled test	0.00032714
+chr19	35730624	G	A	Donor Region	KMT2B	training	0.00263270
+chr19	35841871	A	G	Acceptor Region	NPHS1	training	0.00039648
+chr19	36008372	G	A	Acceptor Region	SYNE4	pooled test	0.00060441
+chr19	36086820	C	G	Donor Region	WDR62	pooled test	0.00009313
+chr19	36103992	C	T	Deep Intronic	WDR62	pooled test	0.00001012
+chr19	38206091	G	A	Acceptor Region	SIPA1L3	pooled test	0.00001497
+chr19	38499833	G	A	Deep Intronic	RYR1	training	0.00003294
+chr19	38504713	C	T	Branch Point Region	RYR1	training	0.00198574
+chr19	38507707	T	C	Acceptor Region	RYR1	pooled test	0.00008974
+chr19	38528703	G	A	Donor Region	RYR1	pooled test	0.01036916
+chr19	38548196	G	T	Branch Point Region	RYR1	training	0.00860059
+chr19	38573136	A	G	Branch Point Region	RYR1	training	0.00128270
+chr19	39503064	C	A	Donor Region	DLL3	training	0.00085936
+chr19	39504041	C	T	Branch Point Region	DLL3	training	0.00106419
+chr19	39827435	G	A	Acceptor Region	DYRK1B	training	0.00071072
+chr19	40238898	G	T	Donor Region	AKT2	pooled test	0.00006513
+chr19	40605025	C	T	Acceptor Region	LTBP4	pooled test	0.00042692
+chr19	41332300	C	T	PPT Region	TGFB1	pooled test	0.00004383
+chr19	41419127	C	A	Acceptor Region	BCKDHA	pooled test	0.00015663
+chr19	41879660	C	T	Donor Region	CD79A	pooled test	0.00050038
+chr19	41967232	T	C	Deep Intronic	ATP1A3	training	0.00014419
+chr19	41970334	G	A	Branch Point Region	ATP1A3	training	0.00005101
+chr19	42294321	A	G	Deep Intronic	CIC	pooled test	0.00043590
+chr19	42354570	G	A	PPT Region	MEGF8	pooled test	0.00030626
+chr19	42356211	G	A	Deep Intronic	MEGF8	pooled test	0.00005516
+chr19	43507937	T	G	Donor Region	ETHE1	training	0.00040158
+chr19	45352503	C	T	Donor Region	ERCC2	training	0.00990134
+chr19	45352842	G	A	Branch Point Region	ERCC2	training	0.00160942
+chr19	45353163	G	T	Acceptor Region	ERCC2	training	0.00006260
+chr19	45421434	G	A	Branch Point Region	ERCC1	training	0.00236743
+chr19	45494508	G	A	Deep Intronic	RTN2	pooled test	0.00086521
+chr19	46838558	G	A	Acceptor Region	AP2S1	training	0.00032306
+chr19	46839583	A	G	Acceptor Region	AP2S1	pooled test	0.00014013
+chr19	48143618	C	T	PPT Region	LIG1	pooled test	0.00003648
+chr19	48971030	G	A	Acceptor Region	GYS1	pooled test	0.00025455
+chr19	49168514	C	T	Branch Point Region	TRPM4	training	0.00017236
+chr19	49196884	C	T	Deep Intronic	TRPM4	training	0.00011538
+chr19	49861538	G	A	Branch Point Region	PNKP	pooled test	0.00082247
+chr19	49861544	G	A	Branch Point Region	PNKP	pooled test	0.00099971
+chr19	49862522	G	A	Deep Intronic	PNKP	training	0.00004941
+chr19	50280149	T	G	Donor Region	MYH14	pooled test	0.00010065
+chr19	50402438	C	T	PPT Region	POLD1	training	0.00009677
+chr19	50402608	A	G	Acceptor Region	POLD1	pooled test	0.00005013
+chr19	50408917	C	A	Deep Intronic	POLD1	pooled test	0.00002399
+chr19	50409515	G	T	Acceptor Region	POLD1	pooled test	0.00034033
+chr19	50414810	C	T	Acceptor Region	POLD1	training	0.00497230
+chr19	50417829	C	T	PPT Region	POLD1	training	0.00009766
+chr19	50419939	C	T	Acceptor Region	SPIB	training	0.00070244
+chr19	51366259	G	A	Deep Intronic	ETFB	pooled test	0.00043850
+chr19	53898763	T	G	Deep Intronic	PRKCG	training	0.00000957
+chr19	54129228	A	G	Branch Point Region	PRPF31	pooled test	0.00004325
+chr19	55134050	C	T	Deep Intronic	TNNT1	training	0.00001390
+chr19	55157571	T	C	Donor Region	TNNI3	training	0.00008426
+chr19	55161426	G	A	Acceptor Region	DNAAF3	pooled test	0.00008647
+chr20	428921	G	A	Branch Point Region	RBCK1	pooled test	0.00012025
+chr20	488676	A	G	Canonical Donor Site	CSNK2A1	training	0.99189705
+chr20	6119594	A	G	PPT Region	FERMT1	training	0.00481259
+chr20	8760392	T	C	PPT Region	PLCB1	training	0.00023490
+chr20	10644994	C	T	PPT Region	JAG1	pooled test	0.00145165
+chr20	13788660	T	C	Donor Region	NDUFAF5	training	0.00269556
+chr20	18472916	A	G	Donor Region	POLR3F	training	0.00063020
+chr20	18527612	G	A	Canonical Donor Site	SEC23B	pooled test	0.99992192
+chr20	18532745	G	T	Canonical Donor Site	SEC23B	pooled test	0.99995399
+chr20	18543190	G	A	Deep Intronic	SEC23B	pooled test	0.00023525
+chr20	18554223	G	A	PPT Region	SEC23B	pooled test	0.00003057
+chr20	19965031	C	A	Donor Region	RIN2	pooled test	0.00039860
+chr20	21215661	T	C	Deep Intronic	KIZ	pooled test	0.00135996
+chr20	21232722	C	T	PPT Region	KIZ	training	0.00057468
+chr20	25306830	C	T	Donor Region	ABHD12	pooled test	0.02792146
+chr20	25441688	A	G	PPT Region	GINS1	pooled test	0.00000675
+chr20	33443301	C	G	Deep Intronic	SNTA1	training	0.00027535
+chr20	33783871	A	C	Donor Region	ZNF341	training	0.00015959
+chr20	34588445	T	C	Donor Region	PIGU	pooled test	0.00045677
+chr20	34986213	G	T	Deep Intronic	MYH7B	pooled test	0.00002253
+chr20	35473865	T	A	Acceptor Region	CEP250	pooled test	0.00050047
+chr20	37236948	G	A	Deep Intronic	RPN2	training	0.00069748
+chr20	43603897	G	A	Donor Region	IFT52	pooled test	0.00012167
+chr20	44159602	C	T	Deep Intronic	JPH2	training	0.00002047
+chr20	44160417	A	C	Acceptor Region	JPH2	pooled test	0.00061468
+chr20	44413692	A	T	Canonical Acceptor Site	HNF4A	pooled test	0.99927980
+chr20	44414503	G	C	Acceptor Region	HNF4A	pooled test	0.00089478
+chr20	44623006	C	A	Canonical Donor Site	ADA	pooled test	0.99969959
+chr20	45897052	G	A	Deep Intronic	CTSA	pooled test	0.00003338
+chr20	46053573	T	C	Acceptor Region	SLC12A5	pooled test	0.00024077
+chr20	46057150	A	C	PPT Region	SLC12A5	training	0.00000630
+chr20	49011922	A	C	Canonical Acceptor Site	ARFGEF2	training	0.99961782
+chr20	54165512	A	G	Deep Intronic	CYP24A1	training	0.00008933
+chr20	58910082	G	T	Canonical Donor Site	GNAS	pooled test	0.99998617
+chr20	59301390	C	T	PPT Region	EDN3	pooled test	0.00035917
+chr20	62817563	T	G	Acceptor Region	COL9A3	training	0.00121493
+chr20	62832150	C	A	Acceptor Region	COL9A3	pooled test	0.00038848
+chr20	62837076	C	T	Acceptor Region	COL9A3	pooled test	0.00013302
+chr20	63415144	G	A	PPT Region	KCNQ2	training	0.00041088
+chr20	63667561	C	T	Donor Region	RTEL1	training	0.00005920
+chr20	63688058	C	A	Donor Region	RTEL1	training	0.00004582
+chr20	63688187	C	A	Donor Region	RTEL1	training	0.00012416
+chr20	63689878	C	A	Deep Intronic	RTEL1	training	0.00038007
+chr21	25976059	A	G	Branch Point Region	APP	training	0.00070930
+chr21	26111966	G	A	Deep Intronic	APP	training	0.00002624
+chr21	26111972	G	T	Donor Region	APP	training	0.00006903
+chr21	33432699	G	C	PPT Region	IFNGR2	pooled test	0.00001500
+chr21	34834635	G	A	Branch Point Region	RUNX1	training	0.00017888
+chr21	44330365	G	A	Branch Point Region	CFAP410	training	0.00014292
+chr21	44899048	G	A	Deep Intronic	ITGB2	pooled test	0.00007537
+chr21	44910269	C	T	Deep Intronic	ITGB2	training	0.00005441
+chr21	45486713	C	T	Deep Intronic	COL18A1	training	0.00103288
+chr21	45989574	C	T	Branch Point Region	COL6A1	pooled test	0.00088050
+chr21	45990254	G	A	Acceptor Region	COL6A1	training	0.00005644
+chr21	45991057	C	A	Deep Intronic	COL6A1	pooled test	0.00004398
+chr21	45992411	G	A	Deep Intronic	COL6A1	training	0.00010575
+chr21	45997492	C	T	Deep Intronic	COL6A1	pooled test	0.00007401
+chr21	46002407	G	C	Donor Region	COL6A1	pooled test	0.00023120
+chr21	46125432	C	T	Branch Point Region	COL6A2	training	0.00022946
+chr21	46367147	G	T	Donor Region	PCNT	training	0.00002589
+chr22	17188331	A	G	Donor Region	ADA2	pooled test	0.00010369
+chr22	17191671	A	G	Deep Intronic	ADA2	training	0.00005286
+chr22	17601197	A	C	PPT Region	ATP6V1E1	pooled test	0.00032618
+chr22	19177114	G	T	Donor Region	SLC25A1	pooled test	0.00358407
+chr22	19234716	C	T	Acceptor Region	CLTCL1	pooled test	0.00005840
+chr22	19361383	A	G	Branch Point Region	HIRA	training	0.00008575
+chr22	19895596	A	C	PPT Region	TXNRD2	pooled test	0.00054959
+chr22	19932347	G	A	Deep Intronic	TXNRD2	training	0.00555698
+chr22	19933420	C	G	Deep Intronic	TXNRD2	pooled test	0.00083832
+chr22	20430920	G	T	PPT Region	SCARF2	pooled test	0.00007476
+chr22	20989623	A	T	Canonical Acceptor Site	LZTR1	pooled test	0.99965608
+chr22	20992385	C	T	Deep Intronic	LZTR1	training	0.00014483
+chr22	20996869	G	A	PPT Region	LZTR1	training	0.00004899
+chr22	20997213	C	T	PPT Region	LZTR1	training	0.00001077
+chr22	21931141	C	A	Donor Region	PPM1F	training	0.00005347
+chr22	23825422	T	A	Donor Region	SMARCB1	pooled test	0.00005420
+chr22	23834111	G	A	Branch Point Region	SMARCB1	pooled test	0.00006787
+chr22	24510851	A	C	Donor Region	UPB1	pooled test	0.00013297
+chr22	25877922	C	T	Branch Point Region	MYO18B	training	0.00017648
+chr22	25890879	A	C	Donor Region	MYO18B	training	0.00029546
+chr22	26468638	A	G	PPT Region	HPS4	training	0.00373612
+chr22	26470818	G	T	Acceptor Region	HPS4	training	0.00349907
+chr22	28695251	T	C	Acceptor Region	CHEK2	training	0.00087248
+chr22	28712025	G	C	Acceptor Region	CHEK2	training	0.00027342
+chr22	29604120	G	A	Donor Region	NF2	training	0.00042607
+chr22	29636884	T	C	Donor Region	NF2	training	0.00117143
+chr22	29668324	T	C	Acceptor Region	NF2	pooled test	0.00065907
+chr22	30617317	C	G	PPT Region	TCN2	training	0.00592816
+chr22	31874254	T	G	PPT Region	DEPDC5	pooled test	0.00309529
+chr22	35416332	C	T	Acceptor Region	MCM5	training	0.00017135
+chr22	36284529	T	C	PPT Region	MYH9	pooled test	0.00001003
+chr22	36293322	T	C	Donor Region	MYH9	pooled test	0.00002895
+chr22	36766122	A	G	Deep Intronic	IFT27	pooled test	0.00056006
+chr22	37103198	G	A	Deep Intronic	TMPRSS6	pooled test	0.00006932
+chr22	41152352	T	A	Canonical Donor Site	EP300	pooled test	0.99996173
+chr22	41523814	C	T	PPT Region	ACO2	training	0.00014043
+chr22	45518795	T	C	Donor Region	FBLN1	training	0.00013066
+chr22	45533749	G	C	PPT Region	FBLN1	pooled test	0.00011557
+chr22	50468488	C	A	Branch Point Region	SBF1	training	0.02092151
+chr22	50627554	A	T	Canonical Donor Site	ARSA	training	0.99908900
+chrX	1300634	T	C	Donor Region	CSF2RA	training	0.00044115
+chrX	12694474	T	A	Deep Intronic	FRMPD4	pooled test	0.00012555
+chrX	13736690	C	G	Deep Intronic	OFD1	training	0.00045493
+chrX	13761083	A	C	Canonical Acceptor Site	OFD1	pooled test	0.99980575
+chrX	18897155	C	T	Donor Region	PHKA2	training	0.00026404
+chrX	18897360	A	G	Branch Point Region	PHKA2	pooled test	0.78321916
+chrX	19353049	G	A	Branch Point Region	PDHA1	pooled test	0.00241031
+chrX	19354461	G	A	Branch Point Region	PDHA1	pooled test	0.94335371
+chrX	19550088	A	G	Acceptor Region	SH3KBP1	pooled test	0.06971227
+chrX	20209271	A	G	Deep Intronic	RPS6KA3	pooled test	0.00278167
+chrX	21501592	T	C	Donor Region	CNKSR2	pooled test	0.01611672
+chrX	24531777	C	T	Donor Region	PDK3	pooled test	0.00007106
+chrX	31178662	T	G	Donor Region	DMD	pooled test	0.02522351
+chrX	31206710	C	T	Branch Point Region	DMD	pooled test	0.00019738
+chrX	31348643	A	C	Acceptor Region	DMD	pooled test	0.00190791
+chrX	31679612	A	G	Branch Point Region	DMD	pooled test	0.04851318
+chrX	31729617	G	A	Deep Intronic	DMD	pooled test	0.00031729
+chrX	32216904	T	G	Deep Intronic	DMD	pooled test	0.00024363
+chrX	32342291	C	T	Acceptor Region	DMD	training	0.00203210
+chrX	32361041	T	C	Deep Intronic	DMD	training	0.02233206
+chrX	32390193	A	G	PPT Region	DMD	training	0.00469481
+chrX	32485108	T	C	Acceptor Region	DMD	training	0.00042851
+chrX	32698004	G	C	Acceptor Region	DMD	training	0.00344156
+chrX	32809642	A	C	Branch Point Region	DMD	pooled test	0.05102351
+chrX	37659458	A	G	Acceptor Region	LANCL3	training	0.00214129
+chrX	37782055	G	A	Branch Point Region	CYBB	pooled test	0.00024349
+chrX	41166222	A	G	Donor Region	USP9X	pooled test	0.00080025
+chrX	41167585	T	C	Donor Region	USP9X	training	0.00180118
+chrX	41197352	C	T	PPT Region	USP9X	pooled test	0.00283826
+chrX	41341483	G	A	Canonical Acceptor Site	DDX3X	training	0.99994230
+chrX	41341625	T	A	Deep Intronic	DDX3X	training	0.00092725
+chrX	41344022	T	C	Acceptor Region	DDX3X	pooled test	0.00115855
+chrX	45011292	T	C	Deep Intronic	KDM6A	training	0.00003328
+chrX	46853474	A	G	Canonical Acceptor Site	RP2	training	0.99991512
+chrX	47211029	C	T	Acceptor Region	UBA1	training	0.00057702
+chrX	47576247	G	A	PPT Region	SYN1	pooled test	0.00066830
+chrX	49215560	G	A	PPT Region	CACNA1F	pooled test	0.00020277
+chrX	53382220	G	A	Deep Intronic	SMC1A	pooled test	0.00186562
+chrX	53399572	A	C	Deep Intronic	SMC1A	training	0.00088952
+chrX	53413445	G	A	Acceptor Region	SMC1A	training	0.00088271
+chrX	53534737	A	G	Branch Point Region	HUWE1	training	0.00137587
+chrX	53538323	T	G	Deep Intronic	HUWE1	pooled test	0.00008633
+chrX	53559342	A	G	Deep Intronic	HUWE1	pooled test	0.00029447
+chrX	53573743	A	G	Donor Region	HUWE1	pooled test	0.00001496
+chrX	53940551	G	C	Branch Point Region	PHF8	training	0.00251006
+chrX	54443394	A	C	Acceptor Region	TSR2	pooled test	0.00116160
+chrX	54450270	C	T	Canonical Donor Site	FGD1	pooled test	0.99990463
+chrX	54470762	T	G	Canonical Acceptor Site	FGD1	pooled test	0.99995482
+chrX	63666034	A	T	PPT Region	ARHGEF9	training	0.00025473
+chrX	67643414	G	A	Donor Region	AR	training	0.00021034
+chrX	70030528	T	A	Donor Region	EDA	pooled test	0.00506423
+chrX	70276498	G	A	Donor Region	ARR3	pooled test	0.00020669
+chrX	70277702	C	T	PPT Region	ARR3	pooled test	0.00018094
+chrX	70402700	A	G	Donor Region	KIF4A	pooled test	0.00544929
+chrX	71110716	G	T	Branch Point Region	IL2RG	pooled test	0.00543888
+chrX	71394057	C	G	Acceptor Region	TAF1	training	0.00091113
+chrX	71397474	T	G	Donor Region	TAF1	pooled test	0.00044630
+chrX	71421305	A	G	Acceptor Region	TAF1	pooled test	0.00026628
+chrX	72464736	A	G	Acceptor Region	HDAC8	pooled test	0.01003671
+chrX	72491007	C	G	Canonical Acceptor Site	HDAC8	pooled test	0.99993157
+chrX	72667481	G	C	Acceptor Region	PHKA1	pooled test	0.00010127
+chrX	75071687	C	G	Acceptor Region	ABCB7	training	0.00054156
+chrX	77697675	C	T	Branch Point Region	ATRX	training	0.00541237
+chrX	78045455	A	G	PPT Region	ATP7A	pooled test	0.00600684
+chrX	78125428	G	A	Donor Region	PGK1	pooled test	0.00817546
+chrX	80707514	G	A	PPT Region	BRWD3	pooled test	0.00033194
+chrX	85879077	A	T	PPT Region	CHM	pooled test	0.00070253
+chrX	100403506	G	A	Deep Intronic	PCDH19	pooled test	0.00096996
+chrX	101354702	G	A	Acceptor Region	BTK	pooled test	0.00058324
+chrX	101354725	C	T	Branch Point Region	BTK	pooled test	0.00004903
+chrX	101362171	A	T	Canonical Donor Site	BTK	training	0.99996066
+chrX	101398781	T	C	Donor Region	GLA	pooled test	0.99638724
+chrX	107826443	C	T	Deep Intronic	MID2	pooled test	0.00229579
+chrX	108665506	G	A	Canonical Acceptor Site	COL4A5	training	0.99995375
+chrX	108668522	A	G	Deep Intronic	COL4A5	pooled test	0.00143622
+chrX	111728178	G	C	Acceptor Region	ALG13	pooled test	0.00147893
+chrX	120546627	T	C	PPT Region	CUL4B	training	0.00059993
+chrX	123404689	C	T	PPT Region	GRIA3	pooled test	0.00397934
+chrX	130129639	G	A	PPT Region	AIFM1	training	0.00015344
+chrX	130140656	G	T	Branch Point Region	AIFM1	pooled test	0.00081208
+chrX	131277850	C	T	Donor Region	IGSF1	training	0.00251705
+chrX	136013055	G	A	Canonical Donor Site	SLC9A6	training	0.99994075
+chrX	136033402	A	G	PPT Region	SLC9A6	pooled test	0.00033418
+chrX	136659024	C	G	PPT Region	CD40LG	training	0.00049873
+chrX	151403604	A	C	Branch Point Region	VMA21	pooled test	0.90925545
+chrX	152846241	C	G	Branch Point Region	NSDHL	training	0.00247000
+chrX	153693258	T	C	Acceptor Region	SLC6A8	pooled test	0.00145188
+chrX	153867125	C	T	Canonical Acceptor Site	L1CAM	pooled test	0.99991834
+chrX	153868484	G	A	Branch Point Region	L1CAM	pooled test	0.05651795
+chrX	153869802	C	T	Canonical Donor Site	L1CAM	training	0.99987137
+chrX	153950558	G	T	PPT Region	HCFC1	training	0.00016527
+chrX	153955557	G	A	PPT Region	HCFC1	pooled test	0.00001874
+chrX	154012521	G	A	Donor Region	IRAK1	pooled test	0.00002753
+chrX	154353232	G	A	Branch Point Region	FLNA	pooled test	0.03303512
+chrX	154354373	C	T	Donor Region	FLNA	pooled test	0.00003993
+chrX	154359172	G	A	PPT Region	FLNA	training	0.00019204
+chrX	154361800	C	T	PPT Region	FLNA	pooled test	0.00037777
+chrX	154400687	T	C	PPT Region	RPL10	pooled test	0.00001845
+chrX	154535151	G	A	Deep Intronic	G6PD	training	0.00008768
+chrX	154770886	G	A	Donor Region	DKC1	training	0.00030030

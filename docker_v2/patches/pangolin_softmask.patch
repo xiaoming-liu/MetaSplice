@@ -1,0 +1,15 @@
+# Modification notice (GNU GPL v3, section 5(a)).
+# Pangolin (https://github.com/tkzeng/Pangolin), commit 5cf94b8db938c658391b4305cd7ce33297d44ff7.
+# Changed by the MetaSplice authors on 2026-04-13: pangolin/pangolin.py upper-cases the reference sequence before the
+# REF check, so variants at soft-masked (lower-case) reference positions are scored instead of skipped. Scores of
+# other variants are unchanged (one_hot_encode already upper-cases). MetaSplice Release 2.0 scores were produced with this change.
+--- a/pangolin/pangolin.py
++++ b/pangolin/pangolin.py
+@@ -107,6 +107,7 @@
+                                   "See error message above.")
+         return -1    
+ 
++    seq = seq.upper()
+     if seq[5000+d:5000+d+len(ref)] != ref:
+         print("[Line %s]" % lnum, "WARNING, skipping variant: Mismatch between FASTA (ref base: %s) and variant file (ref base: %s)."
+               % (seq[5000+d:5000+d+len(ref)], ref))

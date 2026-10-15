@@ -1,47 +1,56 @@
-Third-Party Data and Software Attributions
+MetaSplice Release 2.0 -- third-party software and data
+=========================================================
 
-MetaSplice incorporates or depends on the following third-party resources.
-Users are responsible for complying with each resource's terms of use.
+MetaSplice's own code, model and derived data are under the MetaSplice licence (LICENSE). The components below keep
+their own terms. Sources and the wording of each licence are recorded in docs/FEATURE_LICENCES.md of the MetaSplice
+repository.
 
-Bundled data
-------------
-- SMS 7-mer scores: Ke, S. et al. Genome Res. 28, 11-24 (2018).
-  Supplementary Table S7 from PMC5749175.
-- RESCUE-ESE hexamers: Fairbrother, W.G. et al. Science 297, 1007-1013 (2002).
-- FAS-ESS hexamers: Wang, Z. et al. Cell 119, 831-845 (2004).
+Software included in the Docker image
+-------------------------------------
+SpliceTransformer -- Apache License 2.0.
+  You N, et al. Nat Commun. 2024;15:9129. https://github.com/ShenLab-Genomics/SpliceTransformer, commit b67a51d.
+  Weights: SpTransformer_pytorch.ckpt (md5 f9f9c491cae4e854eef644a7a97753de), from the authors' distribution.
+  MODIFIED: /opt/SpliceTransformer/MODIFICATIONS.patch (Apache-2.0 section 4(b)) -- a PyTorch 2.6 checkpoint-loading
+  fix in tasks_annotate_mutations.py; weights and computations unchanged.
 
-Python dependencies (installed at build time)
-----------------------------------------------
-- XGBoost: Apache License 2.0
-- pysam: MIT License
-- pandas: BSD 3-Clause License
-- NumPy: BSD 3-Clause License
-- scikit-learn: BSD 3-Clause License
-- joblib: BSD 3-Clause License
+Pangolin 1.0.2 -- GNU General Public License v3.
+  Zeng T, Li YI. Genome Biol. 2022;23:103. https://github.com/tkzeng/Pangolin, commit 5cf94b8.
+  Pangolin and its weights run as a separate program. Its complete source, including the modification, is in
+  /opt/Pangolin; the GPL v3 text is /opt/Pangolin/LICENSE.
+  MODIFIED: /opt/Pangolin/MODIFICATIONS.patch (GPL v3 section 5(a)), dated 2026-04-13 -- the reference sequence is
+  upper-cased before the REF check, so soft-masked positions are scored instead of skipped.
 
-User-supplied databases (not distributed with MetaSplice)
----------------------------------------------------------
-- DANN: Quang, D. et al. Bioinformatics 31, 761-763 (2015). Free for
-  non-commercial use; available from cbcl.ics.uci.edu.
-- Eigen: Ionita-Laza, I. et al. Nat. Genet. 48, 214-220 (2016).
-- GERP++: Davydov, E.V. et al. PLoS Comput. Biol. 6, e1001025 (2010).
-- phyloP: Pollard, K.S. et al. Genome Res. 20, 110-121 (2010).
-- phastCons: Siepel, A. et al. Genome Res. 15, 1034-1050 (2005).
-- gnomAD v4.1: Karczewski, K.J. et al. Nature 581, 434-443 (2020).
-  Open Database License (ODbL).
-- GPN-MSA: Benegas, G. et al. Nat. Biotechnol. 43, 1960-1965 (2025).
-  MIT License.
-- dbNSFP: Liu, X. et al. Genome Med. 12, 103 (2020).
-- GENCODE: Harrow, J. et al. Genome Res. 22, 1760-1774 (2012);
-  Frankish, A. et al. Nucleic Acids Res. 49, D916-D923 (2021).
-  v49 is CC BY 4.0.
-- hg19/hg38 reference genomes: UCSC Genome Browser.
+Python packages: PyTorch 2.6.0 and the packages pinned in requirements.lock, each under its own licence. The licence
+  metadata of every installed package is listed in /opt/metasplice/PYTHON_PACKAGE_LICENSES.txt, generated in the image
+  at build time from the packages themselves.
 
-Optional external tools (user installs separately)
----------------------------------------------------
-- SpliceTransformer: You, Y. et al. Nat. Commun. 15, 9129 (2024).
-  Apache License 2.0.
-- Pangolin: Zeng, T. & Li, Y.I. Genome Biol. 23, 103 (2022).
-  GNU GPLv3. Note: Pangolin is not bundled with MetaSplice; users run it
-  independently and pass scores via --pangolin-scores. MetaSplice does not
-  link to or incorporate Pangolin code.
+Not included: SpliceAI. Its source code is under the PolyForm Strict License 1.0.0, which does not permit
+redistribution. It is used only as a comparator in the paper.
+
+Data included in the image
+--------------------------
+GENCODE v50 MANE Select and MANE Plus Clinical annotation (and databases built from it) -- GENCODE/Ensembl: "no
+  restrictions on access to, or use of, the data". Harrow J, et al. Genome Res. 2012;22:1760-74; Morales J, et al.
+  Nature. 2022;604:310-5.
+
+Gene-level values (metasplice_gene_level_dbNSFP5.4.tsv.gz): gnomAD_pLI (gnomAD v2.1.1), gnomAD_LOEUF (gnomAD v4.1)
+  and ClinGen_Haploinsufficiency_Score (ClinGen gene curation list of 28 July 2026), for HGNC's genes of 28 July 2026.
+  gnomAD, ClinGen and HGNC release these data under CC0. data/build_gene_level.py builds the file from them, with the
+  rules of the dbNSFP 5.4 gene file, whose values it reproduces (data/README_gene_level.md). Karczewski KJ, et al.
+  Nature. 2020;581:434-43; Chen S, et al. Nature. 2024;625:92-100; Liu X, et al. Genome Med. 2020;12:103.
+
+Data in the annotation bundle (mounted at /data; not in the image)
+-----------------------------------------------------------------
+DANN -- MIT License. "Both DANN and pre-computer [sic] DANN scores are under the MIT license." Copyright (c) 2015 Daniel
+  Quang. Quang D, et al. Bioinformatics. 2015;31:761-3. The original host (cbcl.ics.uci.edu) is offline; the bundle
+  carries the full-precision GRCh37 scores with the MIT notice.
+GPN-MSA precomputed scores -- MIT License (songlab/gpn-msa-hg38-scores). Benegas G, et al. Nat Biotechnol.
+  2025;43:1960-5.
+phyloP and phastCons, 100-way vertebrate and 470-way mammalian (UCSC, GRCh38) -- "freely available for public use";
+  UCSC data are free "for both public and commercial use". Pollard KS, et al. Genome Res. 2010;20:110-21;
+  Siepel A, et al. Genome Res. 2005;15:1034-50.
+gnomAD v4.1 (optional; allele frequency is reported, not a model input) -- Creative Commons Zero. Chen S, et al.
+  Nature. 2024;625:92-100.
+GRCh38 and GRCh37 reference sequences (UCSC hg38, hg19) -- UCSC Genome Browser data.
+Ensembl GRCh37<->GRCh38 chain (per-position tables built from it) -- Ensembl: no restrictions.
+GENCODE v50 comprehensive GTF -- as above.

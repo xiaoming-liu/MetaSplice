@@ -1,0 +1,6 @@
+##fileformat=VCFv4.2
+##reference=GRCh37
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr1	879191	valid	G	A	.	PASS	.
+chr19	11221454	wrong_source_ref	C	G	.	PASS	.
+chr19	11221454	ref_differs_between_builds	T	G	.	PASS	.
